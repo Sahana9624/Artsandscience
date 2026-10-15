@@ -1,0 +1,143 @@
+/* ==========================================================================
+   Committee Student Coordinators Section Styles
+   Strictly following Figma Auto Layout specs in rem units across all resolutions:
+   - Width: Fixed 400px = 25rem (max-width: 100%)
+   - Height: Hug 162px = min-height: 10.125rem
+   - Radius: 20px = 1.25rem
+   - Border: 1px = 0.0625rem
+   - Padding: 20px = 1.25rem
+   - Gap: 10px = 0.625rem
+   ========================================================================== */
+
+/* ── Section Container ── */
+.committee-students-section {
+  margin-bottom: 3.5rem;
+  width: 100%;
+}
+
+/* ── Container Grid / Flex Layout ── */
+.committee-students-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+/* ── Student Coordinator Box (Figma Specs: 400px x 162px Hug) ── */
+.committee-student-card {
+  width: 25rem; /* 400px */
+  max-width: 100%;
+  min-height: 10.125rem; /* Hug 162px */
+  height: auto;
+  border-radius: 1.25rem; /* 20px */
+  border: 0.0625rem solid #ECECEC; /* 1px */
+  padding: 1.25rem; /* 20px */
+  gap: 0.625rem; /* 10px */
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  box-shadow: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.03);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  flex-shrink: 0;
+}
+
+.committee-student-card:hover {
+  transform: translateY(-0.125rem);
+  box-shadow: 0 0.5rem 1.5rem -0.25rem rgba(0, 0, 0, 0.08);
+  border-color: #D1D5DB;
+}
+
+/* ── Circular Avatar (Fits within 122px inner height to hug 162px total) ── */
+.committee-student-avatar-wrapper {
+  width: 7.5rem; /* 120px */
+  height: 7.5rem; /* 120px */
+  border-radius: 50%;
+  overflow: hidden;
+  background: #f3f4f6;
+  border: 0.1875rem solid #ffffff; /* 3px */
+  box-shadow: 0 0 0 0.0625rem #E5E7EB, 0 0.125rem 0.5rem rgba(0, 0, 0, 0.06);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.committee-student-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 50%;
+}
+
+/* ── Student Information Block ── */
+.committee-student-info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.committee-student-name {
+  font-family: inherit;
+  font-size: max(min(1.25rem, var(--fs-min)), calc(1.25rem * var(--fs-scale)));
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  line-height: 1.25;
+  margin: 0 0 0.25rem 0;
+  letter-spacing: -0.01em;
+  word-break: break-word;
+}
+
+.committee-student-designation {
+  font-family: inherit;
+  font-size: max(min(1rem, var(--fs-min)), calc(1rem * var(--fs-scale)));
+  font-weight: 400;
+  color: #1F2937;
+  margin: 0 0 0.625rem 0;
+  line-height: 1.2;
+}
+
+/* ── Pill Badge ── */
+.committee-student-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4375rem 1rem;
+  border-radius: 0.5rem; /* 8px */
+  font-size: max(min(0.9375rem, var(--fs-min)), calc(0.9375rem * var(--fs-scale))); /* 15px */
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  background: #e8f7f0;
+  color: #059669;
+  white-space: nowrap;
+  line-height: 1.2;
+  width: fit-content;
+  max-width: 100%;
+}
+
+/* ── Responsive Adaptability for Small Mobile Viewports ── */
+@media (max-width: 25rem) {
+  .committee-student-card {
+    width: 100%;
+  }
+
+  .committee-student-avatar-wrapper {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+
+  .committee-student-name {
+    font-size: max(min(1.1rem, var(--fs-min)), calc(1.1rem * var(--fs-scale)));
+  }
+
+  .committee-student-badge {
+    font-size: max(min(0.8125rem, var(--fs-min)), calc(0.8125rem * var(--fs-scale)));
+    padding: 0.35rem 0.75rem;
+  }
+}

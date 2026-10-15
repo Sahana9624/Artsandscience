@@ -1,0 +1,92 @@
+/* ==========================================================================
+   Career Opportunities Section Styles - Mother Terasa College of Arts & Science
+   ========================================================================== */
+
+:root {
+  --course-careers-title-fs: clamp(1.85rem, 2rem, 2.4rem);
+  --course-career-badge-fs: 1.25rem;
+}
+
+.course-careers-section {
+  padding: clamp(3.5rem, 3vw, 5rem) var(--global-padding-x);
+  background-color: #FFFFFF;
+  width: 100%;
+  text-align: center;
+}
+
+.course-careers-container {
+  width: 100%;
+}
+
+.course-careers-title {
+  font-family: var(--font-heading);
+  font-size: max(min(var(--course-careers-title-fs), var(--fs-min)), calc(var(--course-careers-title-fs) * var(--fs-scale)));
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 3.125rem;
+  letter-spacing: -0.01875rem;
+}
+
+.course-careers-tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.3rem 1rem;
+  /* max-width: 61.25rem; */
+  margin: 0 auto;
+}
+
+.course-career-badge {
+  /* background-color: #FAF0F2; */
+  background: #90091D1A;
+border: 1px solid #90091D66;  /* border: 0.09375rem solid #E2BDC4; */
+  color: #000000;
+  font-family: inherit;
+  font-size: max(min(var(--course-career-badge-fs), var(--fs-min)), calc(var(--course-career-badge-fs) * var(--fs-scale)));
+  font-weight: 700;
+  padding: 0.5rem 1.375rem;
+  border-radius: 624.9375rem;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+/* .course-career-badge:hover {
+  background-color: #80142A;
+  border-color: #80142A;
+  color: #FFFFFF;
+  transform: translateY(-0.125rem);
+  box-shadow: 0 0.25rem 0.75rem rgba(128, 20, 42, 0.25);
+} */
+
+/* ── Mobile (Figma 375px) ── */
+@media (max-width: 768px) {
+  :root {
+    --course-careers-title-mobile-fs: 1.25rem;
+    --course-career-badge-mobile-fs: 1.25rem;
+  }
+
+  .course-careers-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .course-careers-title {
+    font-size: max(min(var(--course-careers-title-mobile-fs), var(--fs-min)), calc(var(--course-careers-title-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    letter-spacing: 0;
+    margin-bottom: 1.25rem;
+  }
+
+  .course-careers-tags-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 1.25rem;
+  }
+
+  .course-career-badge {
+    width: 100%;
+    padding: 1.25rem 2rem;
+    border-radius: 3.125rem;
+    font-size: max(min(var(--course-career-badge-mobile-fs), var(--fs-min)), calc(var(--course-career-badge-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+  }
+}

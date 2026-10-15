@@ -1,0 +1,162 @@
+/* ==========================================================================
+   Academic Stats Bar Styles - Mother Terasa College of Arts & Science
+   ========================================================================== */
+
+:root {
+  --academic-stat-number-fs: clamp(2rem, 2.5rem, 2.6rem);
+  --academic-stat-label-fs: 1rem;
+}
+
+.academic-stats-section {
+  padding: 2rem var(--global-padding-x) 1rem;
+  margin-top: 4rem;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
+.academic-stats-container {
+  /* max-width: 1160px; */
+  margin: 0 auto;
+}
+
+.academic-stats-bar {
+  background-color: #90091D; /* Dark burgundy bar */
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* box-shadow: 0 10px 30px rgba(112, 20, 38, 0.28); */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.academic-stat-col {
+  padding: 2.5rem 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.academic-stat-col:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 55%;
+  width: 1.5px;
+  background-color: #ffffffb2;
+  opacity: 0.85;
+}
+
+.academic-stat-number {
+  font-family: var(--font-heading, 'Outfit', 'Poppins', sans-serif);
+  font-size: max(min(var(--academic-stat-number-fs), var(--fs-min)), calc(var(--academic-stat-number-fs) * var(--fs-scale)));
+  font-weight: 600;
+  color: #FFFFFF;
+  line-height: 1.1;
+  margin-bottom: 0.8rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.academic-stat-label {
+  font-size: max(min(var(--academic-stat-label-fs), var(--fs-min)), calc(var(--academic-stat-label-fs) * var(--fs-scale)));
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 1.35;
+}
+
+/* Responsive Breakpoints for Academic Stats Bar */
+@media (max-width: 820px) {
+  .academic-stats-bar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .academic-stat-col:nth-child(2)::after {
+    display: none;
+  }
+
+  .academic-stat-col:nth-child(1),
+  .academic-stat-col:nth-child(2) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+}
+
+@media (max-width: 580px) {
+  .academic-stats-bar {
+    grid-template-columns: 1fr;
+  }
+
+  .academic-stat-col::after {
+    display: none;
+  }
+
+  .academic-stat-col {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .academic-stat-col:last-child {
+    border-bottom: none;
+  }
+}
+
+/* ── Mobile (Figma 375px) ── */
+@media (max-width: 768px) {
+  :root {
+    --academic-stat-number-mobile-fs: 2.5rem;
+    --academic-stat-label-mobile-fs: 1rem;
+  }
+
+  .academic-stats-section {
+    margin-top: 0;
+    padding: 2.5rem 1rem;
+  }
+
+  .academic-stats-bar {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 0.75rem;
+    padding: 1.25rem 1rem;
+    border-radius: 1.25rem;
+    border: none;
+  }
+
+  .academic-stat-col,
+  .academic-stat-col:nth-child(1),
+  .academic-stat-col:nth-child(2) {
+    padding: 0;
+    border-bottom: none;
+  }
+
+  .academic-stat-col:not(:last-child) {
+    padding-bottom: 0.75rem;
+  }
+
+  .academic-stat-col:not(:last-child)::after,
+  .academic-stat-col:nth-child(2)::after {
+    display: block;
+    top: auto;
+    bottom: 0;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5rem;
+    height: 1px;
+    background-color: #FFFFFF;
+    opacity: 1;
+  }
+
+  .academic-stat-number {
+    font-size: max(min(var(--academic-stat-number-mobile-fs), var(--fs-min)), calc(var(--academic-stat-number-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    margin-bottom: -0.25rem;
+  }
+
+  .academic-stat-label {
+    font-size: max(min(var(--academic-stat-label-mobile-fs), var(--fs-min)), calc(var(--academic-stat-label-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+  }
+}

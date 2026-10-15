@@ -1,0 +1,168 @@
+:root {
+  --contact-map-title-fs: 1.25rem;
+  --contact-map-info-name-fs: 1rem;
+  --contact-map-info-addr-fs: 0.874rem;
+  --contact-map-info-link-fs: 0.75rem;
+}
+
+/* ── Contact Location Map Card ── */
+.contact-map-card {
+  background: #ffffff;
+  border: none;
+  border-radius: 20px;
+  box-shadow: none;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.contact-map-title {
+  font-family: inherit;
+  font-size: max(min(var(--contact-map-title-fs), var(--fs-min)), calc(var(--contact-map-title-fs) * var(--fs-scale)));
+  font-weight: 600;
+  color: #000000;
+  margin: 0 0 1.5rem 0;
+  line-height: 1.3;
+}
+
+.contact-map-viewport {
+  position: relative;
+  width: 100%;
+  flex: 1;
+  min-height: 380px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  background: #e5e7eb;
+}
+
+.contact-map-iframe {
+  position: absolute;
+  top: -90px;
+  left: -90px;
+  width: calc(100% + 90px);
+  height: calc(100% + 90px);
+  border: none;
+  display: block;
+}
+
+.contact-map-info-overlay {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  padding: 0.85rem 1.15rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  max-width: 260px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.contact-map-info-name {
+  font-family: inherit;
+  font-size: max(min(var(--contact-map-info-name-fs), var(--fs-min)), calc(var(--contact-map-info-name-fs) * var(--fs-scale)));
+  font-weight: 600;
+  color: #000000;
+  line-height: 1.25;
+}
+
+.contact-map-info-addr {
+  font-family: inherit;
+  font-size: max(min(var(--contact-map-info-addr-fs), var(--fs-min)), calc(var(--contact-map-info-addr-fs) * var(--fs-scale)));
+  color: #000000;
+  line-height: 1.35;
+}
+
+.contact-map-info-link {
+  font-family: inherit;
+  font-size: max(min(var(--contact-map-info-link-fs), var(--fs-min)), calc(var(--contact-map-info-link-fs) * var(--fs-scale)));
+  font-weight: 400;
+  color: #2470D3;
+  text-decoration: none;
+  margin-top: 0.2rem;
+  display: inline-block;
+}
+
+.contact-map-info-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  :root {
+    --contact-map-title-mob-fs: 1.2rem;
+  }
+
+  .contact-map-card {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .contact-map-title {
+    font-size: max(min(var(--contact-map-title-mob-fs), var(--fs-min)), calc(var(--contact-map-title-mob-fs) * var(--fs-scale)));
+  }
+
+  .contact-map-viewport {
+    height: 300px;
+  }
+
+  .contact-map-info-overlay {
+    top: 0.65rem;
+    left: 0.65rem;
+    padding: 0.65rem 0.85rem;
+    max-width: 220px;
+  }
+}
+
+/* ── Mobile (Figma 375px) ── */
+@media (max-width: 768px) {
+  :root {
+    --contact-map-title-mobile-fs: 1.25rem;
+    --contact-map-info-name-mobile-fs: 0.75rem;
+    --contact-map-info-addr-mobile-fs: 0.625rem;
+  }
+
+  .contact-map-card {
+    padding: 1rem;
+    border-radius: 1.25rem;
+  }
+
+  .contact-map-title {
+    font-size: max(min(var(--contact-map-title-mobile-fs), var(--fs-min)), calc(var(--contact-map-title-mobile-fs) * var(--fs-scale)));
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 1.25rem;
+  }
+
+  .contact-map-viewport {
+    height: 27.5rem;
+    min-height: 27.5rem;
+    border-radius: 0.75rem;
+  }
+
+  .contact-map-info-overlay {
+    top: 0.75rem;
+    left: 0.75rem;
+    padding: 0.625rem 0.75rem;
+    gap: 0.625rem;
+    max-width: 11.5rem;
+    border: 1px solid #EEEEEE;
+    border-radius: 0.5rem;
+  }
+
+  .contact-map-info-name {
+    font-size: max(min(var(--contact-map-info-name-mobile-fs), var(--fs-min)), calc(var(--contact-map-info-name-mobile-fs) * var(--fs-scale)));
+  }
+
+  .contact-map-info-addr,
+  .contact-map-info-link {
+    font-size: max(min(var(--contact-map-info-addr-mobile-fs), var(--fs-min)), calc(var(--contact-map-info-addr-mobile-fs) * var(--fs-scale)));
+    margin-top: 0;
+  }
+}

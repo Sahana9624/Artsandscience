@@ -1,0 +1,108 @@
+/* ==========================================================================
+   Role of R&D Cell Section Styles (Pink Box with 4 Cards)
+   Strictly uses var(--global-padding-x) for all side padding
+   ========================================================================== */
+
+:root {
+  --research-roles-title-fs: clamp(1.85rem, 2rem, 2.3rem);
+  --research-role-card-fs: 1.25rem;
+}
+
+.research-roles-section {
+  padding: 0 var(--global-padding-x);
+  width: 100%;
+  margin-bottom: 3.5rem;
+}
+
+.research-roles-box {
+  background-color: #E9CED2;
+  border-radius: 2.5rem;
+  padding: clamp(2rem, 2.5vw, 3rem) clamp(1.5rem, 3.5vw, 3rem);
+  width: 100%;
+}
+
+.research-roles-title {
+  font-family: var(--font-heading);
+  font-size: max(min(var(--research-roles-title-fs), var(--fs-min)), calc(var(--research-roles-title-fs) * var(--fs-scale)));
+  font-weight: 700;
+  color: #90091D;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  letter-spacing: -0.01875rem;
+}
+
+.research-roles-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+.research-role-card {
+  background-color: #FFFFFF;
+  border-radius: 1.25rem;
+  padding: 2.5rem 1rem;
+  text-align: center;
+  font-family: var(--font-heading);
+  font-size: max(min(var(--research-role-card-fs), var(--fs-min)), calc(var(--research-role-card-fs) * var(--fs-scale)));
+  font-weight: 600;
+  color: #000000;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.02);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+/* .research-role-card:hover {
+  transform: translateY(-0.1875rem);
+  box-shadow: 0 0.5rem 1.25rem rgba(128, 20, 42, 0.08);
+} */
+
+@media (max-width: 1150px) {
+  .research-roles-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .research-roles-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Mobile (Figma 375px) ── */
+@media (max-width: 768px) {
+  :root {
+    --research-roles-title-mobile-fs: 1.25rem;
+  }
+
+  .research-roles-section {
+    padding: 0 1rem;
+    margin: 5rem 0 0;
+  }
+
+  .research-roles-box {
+    border-radius: 1.25rem;
+    padding: 1.25rem 1rem;
+  }
+
+  .research-roles-title {
+    font-size: max(min(var(--research-roles-title-mobile-fs), var(--fs-min)), calc(var(--research-roles-title-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    letter-spacing: 0;
+    margin-bottom: 1.25rem;
+  }
+
+  .research-roles-row {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .research-role-card {
+    padding: 2.5rem 1rem;
+    border: 1px solid #DDDDDD;
+    box-shadow: none;
+    line-height: normal;
+  }
+}

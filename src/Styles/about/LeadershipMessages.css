@@ -1,0 +1,327 @@
+/* ==========================================================================
+   Leadership Messages Section Styles - Mother Terasa College of Arts & Science
+   ========================================================================== */
+
+:root {
+  --leadership-main-title-fs: clamp(1.85rem, 2rem, 2.4rem);
+  --leadership-card-title-fs: 2rem;
+  --leadership-author-name-fs: 1.25rem;
+  --leadership-author-role-fs: 1.25rem;
+  --leadership-body-p-fs: 1.25rem;
+}
+
+.about-leadership-section {
+  padding: 4rem var(--global-padding-x);
+  background-color: #FFFFFF;
+}
+
+.about-leadership-container {
+  /* max-width: 70rem; */
+  margin: 0 auto;
+}
+
+.about-leadership-main-title {
+  font-family: var(--font-heading, 'Outfit', 'Poppins', sans-serif);
+  font-size: max(min(var(--leadership-main-title-fs), var(--fs-min)), calc(var(--leadership-main-title-fs) * var(--fs-scale)));
+  font-weight: 800;
+  color: #1A1A1A;
+  text-align: center;
+  margin-bottom: 2.75rem;
+}
+
+.leadership-cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+}
+
+.leadership-card {
+background: linear-gradient(90deg, #2A0308 0%, #90091D 58.18%);
+  border-radius: 1.25rem;
+  overflow: hidden;
+  display: grid;
+  color: #FFFFFF;
+  box-shadow: 0 0.625rem 1.75rem rgba(112, 20, 38, 0.24);
+  transition: transform 0.3s ease;
+}
+
+.leadership-card:hover {
+  transform: translateY(-0.25rem);
+}
+
+.leadership-card.image-right {
+  grid-template-columns: 1.45fr 0.85fr;
+}
+
+.leadership-card.image-left {
+  grid-template-columns: 0.85fr 1.45fr;
+  background: linear-gradient(90deg, #90091D 41.35%, #2A0308 100%);
+}
+
+.leadership-card-content {
+  padding: clamp(2rem, 4vw, 3rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.leadership-card.image-left .leadership-card-content {
+  order: 2;
+}
+
+.leadership-card.image-left .leadership-card-image-wrap {
+  order: 1;
+}
+
+.leadership-card-title {
+  font-family: var(--font-heading, 'Outfit', 'Poppins', sans-serif);
+  font-size: max(min(var(--leadership-card-title-fs), var(--fs-min)), calc(var(--leadership-card-title-fs) * var(--fs-scale)));
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #FFFFFF;
+}
+
+.leadership-card-author {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.375rem;
+}
+
+.leadership-author-name {
+  font-size: max(min(var(--leadership-author-name-fs), var(--fs-min)), calc(var(--leadership-author-name-fs) * var(--fs-scale)));
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.leadership-author-role {
+  font-size: max(min(var(--leadership-author-role-fs), var(--fs-min)), calc(var(--leadership-author-role-fs) * var(--fs-scale)));
+  color: #FFFFFF;
+  font-weight: 400;
+}
+
+.leadership-role-keyword {
+  font-weight: 700;
+}
+
+.leadership-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.leadership-card-body p {
+  font-size: max(min(var(--leadership-body-p-fs), var(--fs-min)), calc(var(--leadership-body-p-fs) * var(--fs-scale)));
+  line-height: 1.68;
+  color: #FFFFFF;
+}
+
+.leadership-card-image-wrap {
+  width: 100%;
+  height: 100%;
+  min-height: 20rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  /* background: radial-gradient(circle at center, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.12) 100%); */
+}
+
+.leadership-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+/* Responsive Breakpoints for Leadership */
+@media (max-width: 1024px) {
+  .leadership-card.image-right,
+  .leadership-card.image-left {
+    grid-template-columns: 1fr;
+  }
+
+  .leadership-card.image-left .leadership-card-content {
+    order: 1;
+  }
+
+  .leadership-card.image-left .leadership-card-image-wrap {
+    order: 2;
+  }
+
+  .leadership-card-image-wrap {
+    min-height: 17.5rem;
+    max-height: 21.25rem;
+  }
+}
+
+/* ── Mobile (Figma 375px) ── */
+@media (max-width: 768px) {
+  :root {
+    --about-leadership-main-title-mobile-fs: 1.25rem;
+    --leadership-card-title-mobile-fs: 1.25rem;
+    --leadership-author-name-mobile-fs: 1rem;
+    --leadership-card-body-p-mobile-fs: 1rem;
+  }
+
+  .about-leadership-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .about-leadership-main-title {
+    font-size: max(min(var(--about-leadership-main-title-mobile-fs), var(--fs-min)), calc(var(--about-leadership-main-title-mobile-fs) * var(--fs-scale)));
+    font-weight: 700;
+    line-height: normal;
+    color: #000000;
+    margin-bottom: 1.25rem;
+  }
+
+  .leadership-cards-list {
+    gap: 1.25rem;
+  }
+
+  .leadership-card,
+  .leadership-card.image-left,
+  .leadership-card.image-right {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 1rem;
+    border: 1px solid #EEEEEE;
+    background: linear-gradient(90deg, #90091D 0%, #2A0308 100%);
+    box-shadow: none;
+  }
+
+  .leadership-card .leadership-card-image-wrap,
+  .leadership-card.image-left .leadership-card-image-wrap {
+    order: 1;
+    aspect-ratio: 1 / 1;
+    min-height: 0;
+    max-height: none;
+    height: auto;
+  }
+
+  .leadership-card .leadership-card-content,
+  .leadership-card.image-left .leadership-card-content {
+    order: 2;
+    padding: 0;
+  }
+
+  .leadership-card-title {
+    font-size: max(min(var(--leadership-card-title-mobile-fs), var(--fs-min)), calc(var(--leadership-card-title-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    margin-bottom: 1.5rem;
+  }
+
+  .leadership-card-author {
+    margin-bottom: 1.25rem;
+  }
+
+  .leadership-author-name,
+  .leadership-author-role {
+    font-size: max(min(var(--leadership-author-name-mobile-fs), var(--fs-min)), calc(var(--leadership-author-name-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+  }
+
+  .leadership-card-body {
+    gap: 1.25rem;
+  }
+
+  .leadership-card-body p {
+    font-size: max(min(var(--leadership-card-body-p-mobile-fs), var(--fs-min)), calc(var(--leadership-card-body-p-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    color: #FFFFFF;
+  }
+}
+
+/* ── Desktop: match the design (Frame 1536) — 540px photo, 40px inset, 680px text column,
+   blank 20px lines between title, author and paragraphs ── */
+@media (min-width: 1025px) {
+  .about-leadership-section {
+    padding: 5rem var(--global-padding-x);
+  }
+
+  .about-leadership-main-title {
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 3.375rem;
+  }
+
+  .leadership-cards-list {
+    gap: 2.5rem;
+  }
+
+  .leadership-card {
+    min-height: 34.75rem;
+    box-shadow: none;
+  }
+
+  .leadership-card.image-right {
+    grid-template-columns: 1fr 33.75rem;
+  }
+
+  .leadership-card.image-left {
+    grid-template-columns: 33.75rem 1fr;
+  }
+
+  /* Text fills its column, keeping only a small gap (20–40px, scaling
+     with the screen) on the side next to the photo */
+  .leadership-card {
+    --leadership-photo-gap: clamp(1.25rem, 1.75vw, 2.5rem);
+  }
+
+  .leadership-card-content {
+    padding: 2.5rem;
+  }
+
+  .leadership-card.image-right .leadership-card-content {
+    padding-right: var(--leadership-photo-gap);
+  }
+
+  .leadership-card.image-left .leadership-card-content {
+    padding-left: var(--leadership-photo-gap);
+  }
+
+  .leadership-card-title {
+    line-height: normal;
+    margin-bottom: 1.875rem;
+  }
+
+  .leadership-card-author {
+    line-height: normal;
+    margin-bottom: 1.875rem;
+  }
+
+  .leadership-card-body {
+    gap: 1.875rem;
+  }
+
+  .leadership-card-body p {
+    line-height: normal;
+    color: #FFFFFF;
+  }
+
+  .leadership-card-image-wrap {
+    align-self: end;
+    height: 33.75rem;
+    min-height: 0;
+  }
+}
+
+/* ── Scroll stacking: each card pins below the header and the next card
+   slides up over it, one by one. Every card pins a little lower so the
+   edges of the earlier cards stay visible. A card taller than the screen
+   pins by its bottom edge instead, so it is fully read before being covered
+   (--leadership-card-h is measured in LeadershipMessages.jsx). ── */
+.leadership-card {
+  --stack-top: calc(var(--about-header-height, 5.25rem) + 1.25rem + var(--stack-index, 0) * 1.25rem);
+  position: sticky;
+  top: min(
+    var(--stack-top),
+    calc(var(--app-vh, 100vh) - var(--leadership-card-h, 0px) - 1.25rem)
+  );
+}
+
+/* Soft shadow so each card reads as stacked on top of the previous one */
+.leadership-card + .leadership-card {
+  box-shadow: 0 -0.5rem 1.5rem rgba(42, 3, 8, 0.18);
+}

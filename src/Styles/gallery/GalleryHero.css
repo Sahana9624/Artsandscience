@@ -1,0 +1,125 @@
+/* ==========================================================================
+   Gallery Hero Section Styles - Mother Terasa College of Arts & Science
+   Strictly uses var(--global-padding-x) for side padding
+   ========================================================================== */
+
+:root {
+  --gallery-hero-title-fs: clamp(1.85rem, 2rem, 3.25rem);
+  --gallery-hero-desc-fs: clamp(0.95rem, 1rem, 1.25rem);
+  --about-header-height: 5.25rem;
+}
+
+.gallery-hero-section {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center 25%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+
+  /* Fill the visible screen (browser toolbars excluded) below the header */
+  min-height: var(--hero-h);
+}
+
+.gallery-hero-overlay {
+  position: absolute;
+  inset: 0;
+background: linear-gradient(180deg, rgba(46, 3, 10, 0) 27.93%, #2E030A 100%);
+  z-index: 1;
+}
+
+.gallery-hero-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin: 0 auto;
+  padding: 4.5rem var(--global-padding-x);
+}
+
+.gallery-hero-content {
+  max-width: 46rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.gallery-hero-title {
+  font-family: var(--font-heading, 'Outfit', 'Poppins', sans-serif);
+  font-size: max(min(var(--gallery-hero-title-fs), var(--fs-min)), calc(var(--gallery-hero-title-fs) * var(--fs-scale)));
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 1.22;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.025rem;
+}
+
+.gallery-hero-desc {
+  font-family: var(--font-body, 'Outfit', sans-serif);
+  font-size: max(min(var(--gallery-hero-desc-fs), var(--fs-min)), calc(var(--gallery-hero-desc-fs) * var(--fs-scale)));
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 1.68;
+  max-width: 44rem;
+  margin: 0;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  .gallery-hero-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(42, 3, 8, 0.85) 0%,
+      rgba(42, 3, 8, 0.95) 100%
+    );
+  }
+
+  .gallery-hero-content {
+    max-width: 100%;
+  }
+}
+
+/* ── Mobile (Figma 375px) ── */
+@media (max-width: 768px) {
+  :root {
+    --gallery-hero-title-mobile-fs: 1.25rem;
+    --gallery-hero-desc-mobile-fs: 1rem;
+  }
+
+  .gallery-hero-section {
+    /* Fill the visible screen (browser toolbars excluded) below the header */
+    min-height: var(--hero-h);
+    align-items: flex-end;
+  }
+
+  .gallery-hero-container {
+    padding: 2.5rem 1rem;
+  }
+
+  .gallery-hero-content {
+    max-width: none;
+    margin-top: 0;
+  }
+
+  .gallery-hero-title {
+    font-size: max(min(var(--gallery-hero-title-mobile-fs), var(--fs-min)), calc(var(--gallery-hero-title-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    letter-spacing: 0;
+    margin-bottom: 1.25rem;
+  }
+
+  .gallery-hero-desc {
+    font-size: max(min(var(--gallery-hero-desc-mobile-fs), var(--fs-min)), calc(var(--gallery-hero-desc-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+  }
+}
+
+/* ── Tablet & desktop: anchor hero content with the design's bottom gap (107px) ── */
+@media (min-width: 769px) {
+  .gallery-hero-section {
+    align-items: flex-end;
+    padding-bottom: 2.1875rem;
+  }
+}

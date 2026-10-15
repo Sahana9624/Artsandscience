@@ -1,0 +1,130 @@
+/* ==========================================================================
+   Home Page Styles - Mother Terasa College of Arts & Science
+   ========================================================================== */
+
+/* Component Style Imports */
+@import "./Header.css";
+@import "./Hero.css";
+@import "./Welcome.css";
+@import "./CoursesOffered.css";
+@import "./Achievements.css";
+@import "./CampusLife.css";
+@import "./SuccessStories.css";
+@import "./FAQSection.css";
+@import "./Footer.css";
+@import "./ApplyModal.css";
+
+:root {
+  --home-section-title-fs: clamp(1.85rem, 2rem, 2.4rem);
+  --home-section-subtitle-fs: 1rem;
+}
+
+/* ── Highlight Color Class ── */
+.highlight-maroon {
+  color: #90091D;
+  font-weight: 700;
+}
+
+.home-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #FFFFFF;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.home-main-content {
+  flex: 1;
+  width: 100%;
+  padding-top: 5.25rem; /* Space for fixed header (84px) */
+}
+
+/* Common Section Headers used across Home */
+.home-section-header {
+  text-align: center;
+  margin-bottom: 2.75rem;
+}
+
+.home-section-title {
+  font-family: var(--font-heading);
+  font-size: max(min(var(--home-section-title-fs), var(--fs-min)), calc(var(--home-section-title-fs) * var(--fs-scale)));
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.25;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.01875rem;
+}
+
+.home-section-subtitle {
+  font-size: max(min(var(--home-section-subtitle-fs), var(--fs-min)), calc(var(--home-section-subtitle-fs) * var(--fs-scale)));
+  color: #000000;
+  /* max-width: 720px; */
+  margin: 0.75rem auto 0;
+  line-height: 1.6;
+}
+
+/* ── Mobile (Figma 375px) ── */
+@media (max-width: 768px) {
+  :root {
+    --home-section-title-mobile-fs: 1.25rem;
+    --home-section-subtitle-mobile-fs: 1rem;
+  }
+
+  .home-main-content {
+    padding-top: 6.25rem; /* 100px mobile header */
+  }
+
+  .home-section-header {
+    margin-bottom: 1.25rem;
+  }
+
+  .home-section-title {
+    font-size: max(min(var(--home-section-title-mobile-fs), var(--fs-min)), calc(var(--home-section-title-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    letter-spacing: 0;
+    margin-bottom: 0.75rem;
+  }
+
+  .home-section-subtitle {
+    font-size: max(min(var(--home-section-subtitle-mobile-fs), var(--fs-min)), calc(var(--home-section-subtitle-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    margin-top: 0.75rem;
+  }
+}
+
+/* ── Desktop section rhythm from the design: 80px section padding, 32px bold titles,
+   16px title → subtitle, 40px header → content ── */
+@media (min-width: 769px) {
+  .home-section-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .home-section-title {
+    line-height: normal;
+    letter-spacing: normal;
+    margin-bottom: 0;
+  }
+
+  .home-section-subtitle {
+    margin-top: 1rem;
+    line-height: normal;
+  }
+
+  .home-welcome-section,
+  .home-courses-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  /* Welcome: 20px title → text, 40px text → button */
+  .home-welcome-section .home-section-title {
+    margin-bottom: 1.25rem;
+  }
+
+  .home-welcome-description {
+    line-height: normal;
+    margin-bottom: 2.5rem;
+  }
+}

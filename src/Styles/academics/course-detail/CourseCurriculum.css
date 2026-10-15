@@ -1,0 +1,228 @@
+/* ==========================================================================
+   Curriculum Structure Section Styles - Mother Terasa College of Arts & Science
+   ========================================================================== */
+
+:root {
+  --course-curriculum-title-fs: clamp(1.85rem, 2rem, 2.4rem);
+  --course-semester-heading-fs: 1.25rem;
+  --course-subject-item-fs: 1rem;
+}
+
+.course-curriculum-section {
+  padding: clamp(3.5rem, 4vw, 5rem) var(--global-padding-x);
+  background-color: #FFFFFF;
+  width: 100%;
+}
+
+.course-curriculum-wrapper {
+  width: 100%;
+}
+
+.course-curriculum-card {
+  background: #90091D;
+  border-radius: 1.5rem;
+  padding: clamp(2rem, 3vw, 2.5rem) clamp(1.25rem, 2.5vw, 2rem);
+  box-shadow: 0 1rem 2.75rem rgba(104, 12, 31, 0.18);
+  width: 100%;
+}
+
+.course-curriculum-title {
+  font-family: var(--font-heading);
+  font-size: max(min(var(--course-curriculum-title-fs), var(--fs-min)), calc(var(--course-curriculum-title-fs) * var(--fs-scale)));
+  font-weight: 700;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: -0.025rem;
+}
+
+.course-curriculum-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+.course-curriculum-grid.curriculum-grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  width: 100%;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+.course-semester-box {
+  /* Body tint lives on the subject list, so the glass title sits on the card colour */
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0.75rem;
+  backdrop-filter: blur(0.25rem);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+}
+
+/* Title bar: Figma Glass effect (shared .glass-effect class — fill #FFF 10%,
+   frost 4, light -45° @ 0.8, refraction 0.8, depth 20), 60px tall, no stroke */
+.course-semester-heading {
+  font-family: var(--font-heading);
+  font-size: max(min(var(--course-semester-heading-fs), var(--fs-min)), calc(var(--course-semester-heading-fs) * var(--fs-scale)));
+  font-weight: 400;
+  line-height: normal;
+  --glass-fill: rgba(255, 255, 255, 0.1);
+  border-radius: 0.75rem 0.75rem 0 0;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 0;
+  min-height: 3.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9375rem 1rem;
+}
+
+/* Glass on the title only (Figma Glass: frost 4, light -45° @ 0.8, refraction 0.8,
+   depth 20). Scoped to the card because GlassEffect.css loads after this file. */
+.course-semester-box .glass-effect {
+  /* Frost only — no saturation boost, so the red shows through true to the design */
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  /* Depth: soft shading just inside the side edges, plus a faint top highlight */
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.18),
+    inset 0.75rem 0 1rem -0.75rem rgba(0, 0, 0, 0.18),
+    inset -0.75rem 0 1rem -0.75rem rgba(0, 0, 0, 0.18);
+}
+
+/* Light rim on every edge, brightest toward the light (top-left) */
+.course-semester-box .glass-effect::before {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.45) 0%,
+    rgba(255, 255, 255, 0.26) 30%,
+    rgba(255, 255, 255, 0.22) 70%,
+    rgba(255, 255, 255, 0.34) 100%
+  );
+}
+
+.course-subject-list {
+  flex: 1;
+  background: rgba(0, 0, 0, 0.2);
+  list-style: none;
+  padding: 1.25rem 0.85rem 1.75rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.course-subject-item {
+  color: #ffffff;
+  font-size: max(min(0.9375rem, var(--fs-min)), calc(0.9375rem * var(--fs-scale)));
+  line-height: 1.45;
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.course-subject-dot {
+  width: 0.375rem;
+  height: 0.375rem;
+  border-radius: 50%;
+  background-color: #EDA73B; /* Golden Amber bullet */
+  margin-top: 0;
+  flex-shrink: 0;
+}
+
+.course-subject-name {
+  flex: 1;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .course-curriculum-grid:not(.curriculum-grid-4) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 860px) {
+  .course-curriculum-grid.curriculum-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 680px) {
+  .course-curriculum-grid,
+  .course-curriculum-grid:not(.curriculum-grid-4),
+  .course-curriculum-grid.curriculum-grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Mobile (Figma 375px) ── */
+@media (max-width: 768px) {
+  :root {
+    --course-curriculum-title-mobile-fs: 1.25rem;
+    --course-semester-heading-mobile-fs: 1.25rem;
+  }
+
+  .course-curriculum-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .course-curriculum-card {
+    padding: 1.25rem 1rem;
+    border-radius: 1.25rem;
+    box-shadow: none;
+  }
+
+  .course-curriculum-title {
+    font-size: max(min(var(--course-curriculum-title-mobile-fs), var(--fs-min)), calc(var(--course-curriculum-title-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    letter-spacing: 0;
+    margin-bottom: 1.25rem;
+  }
+
+  .course-curriculum-grid,
+  .course-curriculum-grid:not(.curriculum-grid-4),
+  .course-curriculum-grid.curriculum-grid-4 {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .course-semester-box {
+    border: none;
+    backdrop-filter: none;
+  }
+
+  .course-semester-heading {
+    height: 3.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    margin-bottom: 0;
+    font-size: max(min(var(--course-semester-heading-mobile-fs), var(--fs-min)), calc(var(--course-semester-heading-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    letter-spacing: 0;
+    border: none;
+  }
+
+  .course-subject-list {
+    padding: 1.25rem 0.75rem;
+    gap: 1rem;
+  }
+
+  .course-subject-item {
+    align-items: center;
+    gap: 0.75rem;
+    line-height: normal;
+  }
+
+  .course-subject-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-top: 0;
+  }
+}

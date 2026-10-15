@@ -1,0 +1,133 @@
+/* ==========================================================================
+   Our Achievements Section Styles - Mother Terasa College of Arts & Science
+   ========================================================================== */
+
+:root {
+  --achievement-val-fs: 2.5rem;
+  --achievement-title-fs: 1.25rem;
+  --achievement-desc-fs: 1rem;
+}
+
+.home-achievements-section {
+  padding: 5rem var(--global-padding-x, 5%);
+  background-color: #E9CED2; /* Reference pink blush tone */
+  width: 100%;
+}
+
+.home-achievements-container {
+  /* max-width: 1160px; */
+  margin: 0 auto;
+}
+
+.home-achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+}
+
+.achievement-card {
+  background-color: #FFFFFF;
+  border-radius: 1.125rem;
+  padding: 2.375rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-0.3125rem);
+  box-shadow: 0 0.625rem 1.75rem rgba(0, 0, 0, 0.07);
+}
+
+.achievement-icon-wrap {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #FDECEC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 2rem;
+}
+
+.achievement-icon-img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.achievement-value {
+  font-family: var(--font-heading);
+  font-size: max(min(var(--achievement-val-fs), var(--fs-min)), calc(var(--achievement-val-fs) * var(--fs-scale)));
+  font-weight: 700;
+  color: #90091D;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+
+.achievement-title {
+  font-family: var(--font-heading);
+  font-size: max(min(var(--achievement-title-fs), var(--fs-min)), calc(var(--achievement-title-fs) * var(--fs-scale)));
+  font-weight: 700;
+  color: #1A1A1A;
+  margin-bottom: 1rem;
+}
+
+.achievement-desc {
+  font-size: max(min(var(--achievement-desc-fs), var(--fs-min)), calc(var(--achievement-desc-fs) * var(--fs-scale)));
+  color: #000000;
+  line-height: 1.5;
+}
+
+/* Responsive Breakpoints for Achievements */
+@media (max-width: 768px) {
+  .home-achievements-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Mobile (Figma 375px) ── */
+@media (max-width: 768px) {
+  :root {
+    --achievement-value-mobile-fs: 2.5rem;
+    --achievement-title-mobile-fs: 1.25rem;
+    --achievement-desc-mobile-fs: 1rem;
+  }
+
+  .home-achievements-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .home-achievements-grid {
+    gap: 1.25rem;
+  }
+
+  .achievement-card {
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+  }
+
+  .achievement-icon-wrap {
+    background-color: #F4E7E9;
+    margin-bottom: 1.5rem;
+  }
+
+  .achievement-value {
+    font-size: max(min(var(--achievement-value-mobile-fs), var(--fs-min)), calc(var(--achievement-value-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    margin-bottom: 0;
+  }
+
+  .achievement-title {
+    font-size: max(min(var(--achievement-title-mobile-fs), var(--fs-min)), calc(var(--achievement-title-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    color: #000000;
+    margin-bottom: 0.25rem;
+  }
+
+  .achievement-desc {
+    font-size: max(min(var(--achievement-desc-mobile-fs), var(--fs-min)), calc(var(--achievement-desc-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+  }
+}

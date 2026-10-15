@@ -1,0 +1,365 @@
+:root {
+  --about-header-height: 5.25rem;
+  --contact-hero-title-fs: 2rem;
+  --contact-hero-sub-fs: 1.25rem;
+  --contact-btn-call-fs: 1rem;
+  --contact-btn-dir-fs: 1rem;
+  --contact-info-label-fs: 1.25rem;
+  --contact-info-value-fs: 1rem;
+  --contact-hero-title-tablet-fs: 2.25rem;
+}
+
+/* ── Contact Hero Section ── */
+.contact-hero {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  /* Fill the visible screen (browser toolbars excluded) below the header */
+  min-height: var(--hero-h);
+}
+
+.contact-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.75) 45%, rgba(0, 0, 0, 0.15) 100%);
+  z-index: 1;
+}
+
+.contact-hero-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: auto;
+  padding: 4.5rem var(--global-padding-x);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 3.5rem;
+}
+
+/* ── Hero Left Content ── */
+.contact-hero-left {
+  max-width: 580px;
+  flex: 1;
+}
+
+.contact-hero-title {
+  font-family: inherit;
+  font-size: max(min(var(--contact-hero-title-fs), var(--fs-min)), calc(var(--contact-hero-title-fs) * var(--fs-scale)));
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+  margin: 0 0 1.25rem 0;
+  letter-spacing: -0.02em;
+}
+
+.contact-hero-subtitle {
+  font-family: inherit;
+  font-size: max(min(var(--contact-hero-sub-fs), var(--fs-min)), calc(var(--contact-hero-sub-fs) * var(--fs-scale)));
+  font-weight: 400;
+  line-height: 1.65;
+  color: #FFFFFF;
+  margin: 0 0 2.5rem 0;
+}
+
+.contact-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.contact-btn-call {
+  background: #90091D;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.625rem 2.5rem;
+  font-family: inherit;
+  font-size: max(min(var(--contact-btn-call-fs), var(--fs-min)), calc(var(--contact-btn-call-fs) * var(--fs-scale)));
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.contact-btn-call:hover {
+  background: #630c1f;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(128, 14, 38, 0.45);
+}
+
+.contact-btn-directions {
+
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 0.625rem 2.5rem;
+  font-family: inherit;
+  font-size: max(min(var(--contact-btn-dir-fs), var(--fs-min)), calc(var(--contact-btn-dir-fs) * var(--fs-scale)));
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.contact-btn-directions:hover {
+  background: rgba(255, 255, 255, 0.24);
+  border-color: rgba(255, 255, 255, 0.45);
+  transform: translateY(-2px);
+}
+
+/* ── Hero Right Glass Card ── */
+.contact-glass-card {
+  width: 100%;
+  max-width: 26.625rem;
+  flex-shrink: 0;
+  border-radius: 40px;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  box-sizing: border-box;
+  --glass-fill: rgba(255, 255, 255, 0.3);
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.15rem;
+}
+
+.contact-info-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.contact-info-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.contact-info-label {
+  font-family: inherit;
+  font-size: max(min(var(--contact-info-label-fs), var(--fs-min)), calc(var(--contact-info-label-fs) * var(--fs-scale)));
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.25;
+}
+
+.contact-info-value {
+  font-family: inherit;
+  font-size: max(min(var(--contact-info-value-fs), var(--fs-min)), calc(var(--contact-info-value-fs) * var(--fs-scale)));
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  margin-bottom: 1rem;
+}
+
+a.contact-info-value:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 992px) {
+  .contact-hero-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.75rem;
+    padding: 3.5rem var(--global-padding-x);
+  }
+
+  .contact-hero-title {
+    font-size: max(min(var(--contact-hero-title-tablet-fs), var(--fs-min)), calc(var(--contact-hero-title-tablet-fs) * var(--fs-scale)));
+  }
+
+  .contact-glass-card {
+    max-width: 100%;
+    width: 100%;
+    padding: 2rem 1.75rem;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --contact-hero-title-mobile-fs: 1.85rem;
+    --contact-hero-sub-mobile-fs: 0.92rem;
+  }
+
+  .contact-hero-container {
+    padding: 2.5rem var(--global-padding-x);
+    gap: 2.25rem;
+  }
+
+  .contact-hero-title {
+    font-size: max(min(var(--contact-hero-title-mobile-fs), var(--fs-min)), calc(var(--contact-hero-title-mobile-fs) * var(--fs-scale)));
+    margin-bottom: 0.75rem;
+  }
+
+  .contact-hero-subtitle {
+    font-size: max(min(var(--contact-hero-sub-mobile-fs), var(--fs-min)), calc(var(--contact-hero-sub-mobile-fs) * var(--fs-scale)));
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contact-btn-call,
+  .contact-btn-directions {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contact-glass-card {
+    padding: 1.75rem 1.25rem;
+  }
+}
+
+/* ── Height-based Responsive Rules (Laptops, short screens, split screens) ── */
+@media (max-height: 700px) {
+  .contact-hero-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-height: 550px) {
+  .contact-hero {
+    min-height: auto;
+  }
+
+  .contact-hero-container {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+/* ── Mobile (Figma 375px) ── */
+@media (max-width: 768px) {
+  :root {
+    --contact-hero-title-mobile-375-fs: 2rem;
+    --contact-hero-subtitle-mobile-fs: 1.25rem;
+    --contact-btn-call-mobile-fs: 1rem;
+    --contact-info-label-mobile-fs: 1.25rem;
+    --contact-info-value-mobile-fs: 1rem;
+  }
+
+  .contact-hero {
+    /* Fill the visible screen (browser toolbars excluded) below the header */
+    min-height: var(--hero-h);
+  }
+
+  .contact-hero-overlay {
+    background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  }
+
+  .contact-hero-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2.5rem;
+    padding: 2.5rem 1rem;
+  }
+
+  .contact-hero-title {
+    font-size: max(min(var(--contact-hero-title-mobile-375-fs), var(--fs-min)), calc(var(--contact-hero-title-mobile-375-fs) * var(--fs-scale)));
+    line-height: normal;
+    letter-spacing: 0;
+    margin-bottom: 1.25rem;
+  }
+
+  .contact-hero-subtitle {
+    font-size: max(min(var(--contact-hero-subtitle-mobile-fs), var(--fs-min)), calc(var(--contact-hero-subtitle-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    margin-bottom: 1.25rem;
+  }
+
+  .contact-hero-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 1.25rem;
+  }
+
+  .contact-btn-call,
+  .contact-btn-directions {
+    width: 100%;
+    justify-content: center;
+    gap: 0.625rem;
+    padding: 0.625rem 2.5rem;
+    font-size: max(min(var(--contact-btn-call-mobile-fs), var(--fs-min)), calc(var(--contact-btn-call-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+  }
+
+  .contact-btn-directions {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+  }
+
+  .contact-glass-card {
+    width: 100%;
+    max-width: none;
+    padding: 1.25rem 0.75rem;
+    gap: 1.25rem;
+    border-radius: 1.25rem;
+    border: none;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+
+  .contact-info-item {
+    gap: 0.75rem;
+  }
+
+  .contact-info-icon-wrapper {
+    margin-top: 0.25rem;
+  }
+
+  .contact-info-label {
+    font-size: max(min(var(--contact-info-label-mobile-fs), var(--fs-min)), calc(var(--contact-info-label-mobile-fs) * var(--fs-scale)));
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .contact-info-value {
+    font-size: max(min(var(--contact-info-value-mobile-fs), var(--fs-min)), calc(var(--contact-info-value-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    word-break: break-word;
+  }
+}
+
+/* ── Tablet & desktop: anchor hero content with the design's bottom gap (72px) ── */
+@media (min-width: 769px) {
+  .contact-hero {
+    align-items: flex-end;
+    padding-bottom: 0;
+  }
+
+  /* Keep the bottom gap constant on short screens too */
+  .contact-hero-container {
+    padding-bottom: 4.5rem;
+  }
+}

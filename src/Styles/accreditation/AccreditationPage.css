@@ -1,0 +1,44 @@
+/* ── Accreditation Page Layout ── */
+.accreditation-page-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding-top: var(--about-header-height, 5.25rem);
+  box-sizing: border-box;
+}
+
+.accreditation-page-main {
+  flex: 1 0 auto;
+  width: 100%;
+}
+
+.accreditation-page-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 3.5rem var(--global-padding-x) 2.5rem var(--global-padding-x);
+  box-sizing: border-box;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 992px) {
+  .accreditation-page-container {
+    padding: 2.75rem var(--global-padding-x) 2rem var(--global-padding-x);
+  }
+}
+
+@media (max-width: 600px) {
+  .accreditation-page-container {
+    padding: 2rem var(--global-padding-x) 1.5rem var(--global-padding-x);
+  }
+}
+
+
+/* ── Mobile (Figma 375px) ── */
+@media (max-width: 768px) {
+  .accreditation-page-container {
+    padding: 2.5rem 1rem;
+  }
+}

@@ -1,0 +1,184 @@
+/* ==========================================================================
+   Vision & Mission Section Styles - Mother Terasa College of Arts & Science
+   ========================================================================== */
+
+:root {
+  --vm-card-title-fs: 1.65rem;
+  --vm-card-desc-fs: 1.02rem;
+}
+
+.about-vm-section {
+  padding: 4.5rem var(--global-padding-x);
+  background-color: #E9CED2; /* Blush pink tone */
+  width: 100%;
+}
+
+.about-vm-container {
+  /* max-width: 70rem; */
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.vm-card {
+  /* border-radius: 1.125rem; */
+  padding: 8.125rem 2.5rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vm-card:hover {
+  transform: translateY(-0.3125rem);
+}
+
+/* Vision Card: Dark Burgundy */
+.vm-card-vision {
+background: linear-gradient(360deg, #90091D 0%, #2A0308 100%);
+  color: #FFFFFF;
+  box-shadow: 0 0.5rem 1.5rem rgba(92, 14, 30, 0.22);
+}
+
+.vm-card-decorative-circle {
+  position: absolute;
+  top: -5.875rem;
+  right: -5.875rem;
+  width: 15.375rem;
+  height: 15.375rem;
+  border-radius: 50%;
+  background: #FFFFFF1A;
+  border: 0.125rem solid rgba(255, 255, 255, 0.15);
+  pointer-events: none;
+}
+
+.vm-card-vision .vm-card-title {
+  color: #FFFFFF;
+}
+
+.vm-card-vision .vm-card-desc {
+  color: #FFFFFF;
+}
+
+/* Mission Card: White */
+.vm-card-mission {
+  background-color: #FFFFFF;
+  color: #000000;
+  box-shadow: 0 0.25rem 1.375rem rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.vm-card-mission .vm-card-title {
+  color: #000000;
+}
+
+.vm-card-mission .vm-card-desc {
+  color: #000000;
+}
+
+.vm-card-title {
+  font-family: var(--font-heading, 'Outfit', 'Poppins', sans-serif);
+  font-size: max(min(var(--vm-card-title-fs), var(--fs-min)), calc(var(--vm-card-title-fs) * var(--fs-scale)));
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.vm-card-desc {
+  font-size: max(min(var(--vm-card-desc-fs), var(--fs-min)), calc(var(--vm-card-desc-fs) * var(--fs-scale)));
+  line-height: 1.72;
+}
+
+/* Responsive Breakpoints for Vision & Mission */
+@media (max-width: 1024px) {
+  .about-vm-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+/* ── Mobile (Figma 375px) ── */
+@media (max-width: 768px) {
+  :root {
+    --vm-card-title-mobile-fs: 2rem;
+    --vm-card-desc-mobile-fs: 1.25rem;
+  }
+
+  .about-vm-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .about-vm-container {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .vm-card {
+    padding: 3.75rem 1rem;
+    box-shadow: none;
+    border: none;
+  }
+
+  .vm-card-mission {
+    padding: 2.5rem 1rem;
+  }
+
+  .vm-card-decorative-circle {
+    top: -3rem;
+    right: -3rem;
+    width: 8rem;
+    height: 8rem;
+    border-width: 1px;
+  }
+
+  .vm-card-title {
+    font-size: max(min(var(--vm-card-title-mobile-fs), var(--fs-min)), calc(var(--vm-card-title-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    margin-bottom: 1.25rem;
+  }
+
+  .vm-card-desc {
+    font-size: max(min(var(--vm-card-desc-mobile-fs), var(--fs-min)), calc(var(--vm-card-desc-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+  }
+}
+
+/* ── Desktop: match the design (Frame 875) — two 600×420 cards, 80px apart ── */
+@media (min-width: 1025px) {
+  .about-vm-section {
+    padding: 5rem var(--global-padding-x);
+  }
+
+  .about-vm-container {
+    gap: 5rem;
+  }
+
+  .vm-card {
+    height: 26.25rem;
+    padding: 0 2.5rem;
+    box-shadow: none;
+    border: none;
+  }
+
+  .vm-card-title {
+    font-size: max(min(2rem, var(--fs-min)), calc(2rem * var(--fs-scale)));
+    line-height: normal;
+    margin-bottom: 1.5rem;
+  }
+
+  .vm-card-desc {
+    font-size: max(min(1.25rem, var(--fs-min)), calc(1.25rem * var(--fs-scale)));
+    line-height: normal;
+  }
+
+  /* Quarter circle (150px radius) tucked into the top-right corner */
+  .vm-card-decorative-circle {
+    top: -9.375rem;
+    right: -9.375rem;
+    width: 18.75rem;
+    height: 18.75rem;
+    border: none;
+  }
+}

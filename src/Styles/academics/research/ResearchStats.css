@@ -1,0 +1,151 @@
+ /* ========================================================================== 
+   Research Stats Bar Styles (5 columns)
+   Strictly uses var(--global-padding-x) for all side padding
+   ========================================================================== */
+
+:root {
+  --research-stat-number-fs: clamp(2rem, 2.5rem, 2.75rem);
+  --research-stat-label-fs: 1rem;
+}
+
+.research-stats-section {
+  padding: 5rem var(--global-padding-x) 0;
+  /* margin-top: -2.25rem; */
+  position: relative;
+  /* z-index: 10; */
+  width: 100%;
+}
+
+.research-stats-container {
+  width: 100%;
+}
+
+.research-stats-bar {
+  background-color: #90091D;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* box-shadow: 0 0.625rem 1.875rem rgba(112, 20, 38, 0.28); */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.research-stat-col {
+  /* padding: 1.75rem 1rem; */
+    padding: 2.5rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.research-stat-col:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 25%;
+  height: 50%;
+  width: 1px;
+  background-color: #ffffff;
+}
+
+.research-stat-number {
+  font-family: var(--font-heading);
+  font-size: max(min(var(--research-stat-number-fs), var(--fs-min)), calc(var(--research-stat-number-fs) * var(--fs-scale)));
+  font-weight: 600;
+  color: #FFFFFF;
+  line-height: 1.1;
+  margin-bottom: 0.8rem;
+  letter-spacing: -0.03125rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.research-stat-label {
+  font-size: max(min(var(--research-stat-label-fs), var(--fs-min)), calc(var(--research-stat-label-fs) * var(--fs-scale)));
+  color: #FFFFFF;
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+@media (max-width: 1150px) {
+  .research-stats-bar {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .research-stat-col:nth-child(3)::after {
+    display: none;
+  }
+}
+
+@media (max-width: 850px) {
+  .research-stats-bar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .research-stat-col::after {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .research-stats-bar {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Mobile (Figma 375px) ── */
+@media (max-width: 768px) {
+  :root {
+    --research-stat-number-mobile-fs: 2.5rem;
+  }
+
+  .research-stats-section {
+    padding: 2.5rem 1rem 0;
+  }
+
+  .research-stats-bar {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 1.0625rem;
+    padding: 1.25rem 1rem;
+    border-radius: 1.25rem;
+    border: none;
+  }
+
+  .research-stat-col {
+    padding: 0;
+  }
+
+  .research-stat-col:not(:last-child) {
+    padding-bottom: 1.0625rem;
+  }
+
+  .research-stat-col:not(:last-child)::after,
+  .research-stat-col::after {
+    display: block;
+    top: auto;
+    bottom: 0;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6rem;
+    height: 1px;
+  }
+
+  .research-stat-col:last-child::after {
+    display: none;
+  }
+
+  .research-stat-number {
+    font-size: max(min(var(--research-stat-number-mobile-fs), var(--fs-min)), calc(var(--research-stat-number-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    letter-spacing: 0;
+    margin-bottom: -0.25rem;
+  }
+
+  .research-stat-label {
+    line-height: normal;
+  }
+}

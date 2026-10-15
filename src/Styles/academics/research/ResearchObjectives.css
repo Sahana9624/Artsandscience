@@ -1,0 +1,239 @@
+/* ==========================================================================
+   Research Objectives Section Styles (4 columns with 2 centered in Row 3)
+   Strictly uses var(--global-padding-x) for all side padding
+   ========================================================================== */
+
+:root {
+  --research-section-title-fs: clamp(1.2rem, 2rem, 2.75rem);
+  --research-objective-title-fs: 1.25rem;
+  --research-objective-desc-fs: 1rem;
+}
+
+.research-objectives-section {
+  padding: 5rem var(--global-padding-x) 5rem;
+  background-color: #FFFFFF;
+  width: 100%;
+}
+
+.research-objectives-container {
+  width: 100%;
+  /* max-width: 1360px; */
+  margin: 0 auto;
+}
+
+.research-section-title {
+  font-family: var(--font-heading, 'Outfit', 'Poppins', sans-serif);
+  font-size: max(min(var(--research-section-title-fs), var(--fs-min)), calc(var(--research-section-title-fs) * var(--fs-scale)));
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 3.5rem;
+  letter-spacing: -0.025rem;
+}
+
+.research-objectives-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.research-objective-card {
+  background-color: #FFFFFF;
+  border-radius: 1.25rem;
+  border: 1px solid #dddddd;
+  box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.02);
+  padding: 1.15rem 1.5rem 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+/* .research-objective-card:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 0.75rem 1.75rem rgba(144, 9, 29, 0.08);
+  border-color: #90091D;
+} */
+
+.research-objective-icon-wrap {
+  min-width: 3.25rem;
+  min-height: 3.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  background: transparent;
+  transition: transform 0.25s ease;
+}
+
+/* .research-objective-card:hover .research-objective-icon-wrap {
+  transform: scale(1.08);
+} */
+
+.research-objective-img {
+  width: 2.75rem;
+  height: 2.75rem;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   Individual Objective Icon Sizes (Customize width & height for each icon independently)
+   ========================================================================== */
+.research-objective-card .icon-create {
+  width: 2.438rem;
+  height: 2.75rem;
+}
+
+.research-objective-card .icon-research {
+   width: 2.438rem;
+  height: 2.75rem;
+}
+
+.research-objective-card .icon-ethics {
+   width: 2.25rem;
+  height: 2.75rem;
+}
+
+.research-objective-card .icon-publications {
+   width: 3.25rem;
+  height: 2.75rem;
+}
+
+.research-objective-card .icon-conference {
+  width: 2.938rem;
+  height: 2.75rem;
+}
+
+.research-objective-card .icon-higher-studies {
+  width: 3.438rem;
+  height: 2.75rem;
+}
+
+.research-objective-card .icon-industry {
+  width: 4.25rem;
+  height: 2.75rem;
+}
+
+.research-objective-card .icon-resource {
+  width: 3.313rem;
+  height: 2.75rem;
+}
+
+.research-objective-card .icon-project {
+  width: 2.563rem;
+  height: 2.75rem;
+}
+
+.research-objective-card .icon-collaboration {
+  width:2.938rem;
+  height: 2.75rem;
+}
+
+.research-objective-title {
+  font-family: var(--font-heading, 'Outfit', 'Poppins', sans-serif);
+  font-size: max(min(var(--research-objective-title-fs), var(--fs-min)), calc(var(--research-objective-title-fs) * var(--fs-scale)));
+  font-weight: 600;
+  color: #000000;
+  line-height: 1.35;
+  margin: 0 0 1rem;
+  /* max-width: 14rem; */
+}
+
+.research-objective-desc {
+  font-family: var(--font-body, 'Outfit', sans-serif);
+  font-size: max(min(var(--research-objective-desc-fs), var(--fs-min)), calc(var(--research-objective-desc-fs) * var(--fs-scale)));
+  color: #000000;
+  line-height: 1.55;
+  margin: 0;
+  /* max-width: 15rem; */
+}
+
+/* Center 2 cards in Row 3 (Cards 9 and 10 directly under columns 2 and 3) */
+.research-objectives-grid .research-objective-card:nth-child(9) {
+  grid-column: 2 / span 1;
+}
+
+.research-objectives-grid .research-objective-card:nth-child(10) {
+  grid-column: 3 / span 1;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1120px) {
+  .research-objectives-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .research-objectives-grid .research-objective-card:nth-child(9),
+  .research-objectives-grid .research-objective-card:nth-child(10) {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .research-objectives-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .research-objectives-section {
+    padding: 3.5rem var(--global-padding-x) 3.5rem;
+  }
+
+  .research-section-title {
+    margin-bottom: 2.25rem;
+  }
+
+  .research-objective-card {
+    padding: 2rem 1.25rem;
+  }
+}
+
+/* ── Mobile (Figma 375px) ── */
+@media (max-width: 768px) {
+  :root {
+    --research-section-title-mobile-fs: 1.25rem;
+  }
+
+  .research-objectives-section {
+    padding: 5rem 1rem 0;
+  }
+
+  .research-section-title {
+    font-size: max(min(var(--research-section-title-mobile-fs), var(--fs-min)), calc(var(--research-section-title-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    letter-spacing: 0;
+    margin-bottom: 1.25rem;
+  }
+
+  .research-objectives-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .research-objective-card {
+    padding: 1.25rem 1rem;
+    box-shadow: none;
+    gap: 1.25rem;
+  }
+
+  .research-objective-icon-wrap {
+    min-width: 0;
+    min-height: 0;
+    margin-bottom: 0;
+  }
+
+  .research-objective-title {
+    line-height: normal;
+    margin: 0;
+  }
+
+  .research-objective-desc {
+    line-height: normal;
+  }
+}

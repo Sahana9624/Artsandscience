@@ -1,0 +1,424 @@
+/* ==========================================================================
+   Footer Section Styles - Mother Terasa College of Arts & Science
+   Faithful to Referral Design
+   ========================================================================== */
+
+:root {
+  --footer-brand-title-fs: 2.063rem;
+  --footer-brand-sub-fs: 1.25rem;
+  --footer-brand-desc-fs: 1rem;
+  --footer-col-title-fs: 1rem;
+  --footer-link-fs: 1rem;
+  --footer-copy-fs: 1rem;
+  --footer-sub-credit-fs: 1rem;
+}
+
+.home-footer {
+  background-color: #90091D; /* Deep crimson maroon matching referral */
+  color: #FFFFFF;
+  padding: 4.5rem var(--global-padding-x, 5%) 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: var(--font-heading, "Poppins", sans-serif);
+}
+
+.home-footer-container {
+  /* max-width: 1400px; */
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ── Top Main Layout: Brand Left, Menu Columns Right ── */
+.home-footer-main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: clamp(2rem, 4vw, 5rem);
+}
+
+/* ── Column 1: Brand Info ── */
+.footer-col-brand {
+  /* max-width: 380px; */
+  flex-shrink: 0;
+}
+
+.footer-brand-header {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  text-decoration: none;
+  margin-bottom: 2.5rem;
+}
+
+.footer-brand-logo {
+  width: 6.25rem;
+  height: 6.35rem;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.footer-brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-brand-title {
+  display: block;
+  font-family: "Playfair Display SC", "Playfair Display", Georgia, serif;
+  font-size: max(min(var(--footer-brand-title-fs), var(--fs-min)), calc(var(--footer-brand-title-fs) * var(--fs-scale)));
+  font-weight: 900;
+  /* letter-spacing: 0.02rem; */
+  color: #FFFFFF;
+  line-height: 1.1;
+}
+
+.footer-brand-subtitle {
+  display: block;
+  font-family: var(--font-body, "Poppins", sans-serif);
+  font-size: max(min(var(--footer-brand-sub-fs), var(--fs-min)), calc(var(--footer-brand-sub-fs) * var(--fs-scale)));
+  font-weight: 400;
+  color: #FFFFFF;
+  margin-top: 0.35rem;
+  letter-spacing: 0.01rem;
+}
+
+.footer-brand-desc {
+  font-family: var(--font-body, "Poppins", sans-serif);
+  font-size: max(min(var(--footer-brand-desc-fs), var(--fs-min)), calc(var(--footer-brand-desc-fs) * var(--fs-scale)));
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 1.55;
+  /* max-width: 22rem; */
+}
+
+/* ── Right Navigation Columns Group ── */
+.footer-links-group {
+  display: flex;
+  gap: clamp(3rem, 6vw, 6.5rem);
+  align-items: flex-start;
+}
+
+.footer-col {
+  min-width: 140px;
+}
+
+.footer-col-title {
+  font-family: var(--font-heading, "Poppins", sans-serif);
+  font-size: max(min(var(--footer-col-title-fs), var(--fs-min)), calc(var(--footer-col-title-fs) * var(--fs-scale)));
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 1.35rem;
+  letter-spacing: 0.01rem;
+}
+
+.footer-links-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+  margin-left: 0.8rem;
+}
+
+.footer-link {
+  font-family: var(--font-body, "Poppins", sans-serif);
+  font-size: max(min(var(--footer-link-fs), var(--fs-min)), calc(var(--footer-link-fs) * var(--fs-scale)));
+  font-weight: 400;
+  color: #FFFFFF;
+  text-decoration: none;
+  display: inline-block;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.footer-link:hover {
+  opacity: 0.82;
+  transform: translateX(3px);
+}
+
+/* ── Divider Line ── */
+.footer-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #FFFFFF;
+  margin: 3.5rem 0 2rem;
+}
+
+/* ── Bottom Bar: Copyright & Socials ── */
+.home-footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-copyright-text p {
+  font-family: var(--font-body, "Poppins", sans-serif);
+  font-size: max(min(var(--footer-copy-fs), var(--fs-min)), calc(var(--footer-copy-fs) * var(--fs-scale)));
+  color: #FFFFFF;
+  line-height: 1.55;
+  font-weight: 400;
+}
+
+.footer-sub-credit {
+  font-size: max(min(var(--footer-sub-credit-fs), var(--fs-min)), calc(var(--footer-sub-credit-fs) * var(--fs-scale))) !important;
+  color: #FFFFFF !important;
+  opacity: 0.95;
+}
+
+.footer-social-icons {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.social-icon-btn {
+  width: 2.375rem; /* 38px */
+  height: 2.375rem;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  flex-shrink: 0;
+}
+
+.social-icon-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.social-icon-btn img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+/* ── Responsive Breakpoints ── */
+@media (max-width: 1024px) {
+  .home-footer-main {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .footer-col-brand {
+    max-width: 100%;
+  }
+
+  .footer-links-group {
+    width: 100%;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .home-footer {
+    padding: 3rem 1.5rem 1.5rem;
+  }
+
+  .footer-links-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 1.5rem;
+  }
+
+  .footer-divider {
+    margin: 2.5rem 0 1.5rem;
+  }
+
+  .home-footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .footer-brand-desc .desc-break {
+    display: none;
+  }
+}
+
+/* ── Mobile (Figma 375px) ── */
+@media (max-width: 768px) {
+  :root {
+    --footer-brand-title-mobile-fs: 1.6875rem;
+    --footer-brand-subtitle-mobile-fs: 1rem;
+    --footer-brand-desc-mobile-fs: 0.875rem;
+    --footer-col-title-mobile-fs: 1rem;
+    --footer-link-mobile-fs: 1rem;
+    --footer-copyright-text-p-mobile-fs: 1rem;
+  }
+
+  .home-footer {
+    padding: 2.5rem 1rem;
+  }
+
+  .home-footer-main {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .footer-brand-header {
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .footer-brand-logo {
+    width: 5.0625rem;
+    height: 5.22rem;
+  }
+
+  .footer-brand-title {
+    font-size: max(min(var(--footer-brand-title-mobile-fs), var(--fs-min)), calc(var(--footer-brand-title-mobile-fs) * var(--fs-scale)));
+    color: #F5F5F5;
+  }
+
+  .footer-brand-subtitle {
+    font-size: max(min(var(--footer-brand-subtitle-mobile-fs), var(--fs-min)), calc(var(--footer-brand-subtitle-mobile-fs) * var(--fs-scale)));
+    font-weight: 500;
+    color: #F5F5F5;
+    margin-top: 0.8rem;
+    letter-spacing: 0;
+  }
+
+  .footer-brand-desc {
+    font-size: max(min(var(--footer-brand-desc-mobile-fs), var(--fs-min)), calc(var(--footer-brand-desc-mobile-fs) * var(--fs-scale)));
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .footer-brand-desc .desc-break {
+    display: inline;
+  }
+
+  .footer-links-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .footer-col {
+    min-width: 0;
+  }
+
+  .footer-col-title {
+    font-size: max(min(var(--footer-col-title-mobile-fs), var(--fs-min)), calc(var(--footer-col-title-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    padding: 0.625rem 0;
+    margin-bottom: 0;
+    letter-spacing: 0;
+  }
+
+  .footer-links-list {
+    gap: 0;
+    margin-left: 0;
+  }
+
+  .footer-link {
+    font-size: max(min(var(--footer-link-mobile-fs), var(--fs-min)), calc(var(--footer-link-mobile-fs) * var(--fs-scale)));
+    font-weight: 500;
+    line-height: normal;
+    padding: 0.625rem;
+  }
+
+  .footer-divider {
+    margin: 1.25rem 0;
+  }
+
+  .home-footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+
+  .footer-copyright-text p,
+  .footer-sub-credit {
+    font-size: max(min(var(--footer-copyright-text-p-mobile-fs), var(--fs-min)), calc(var(--footer-copyright-text-p-mobile-fs) * var(--fs-scale))) !important;
+    font-weight: 500;
+    line-height: normal;
+    display: inline;
+  }
+
+  .footer-social-icons {
+    gap: 0.625rem;
+  }
+
+  .social-icon-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-sub-credit::before {
+    content: " ";
+  }
+}
+
+/* ── Desktop: match the design (Frame 1563) — 40px/80px padding, 60px between link columns,
+   44px link rows (16px Medium + 10px padding), 40px vertical rhythm ── */
+@media (min-width: 1025px) {
+  .home-footer {
+    padding: 2.5rem var(--global-padding-x);
+  }
+
+  .home-footer-container {
+    max-width: none;
+  }
+
+  .footer-brand-header {
+    margin-bottom: 1.25rem;
+  }
+
+  .footer-brand-subtitle {
+    font-weight: 500;
+  }
+
+  .footer-brand-desc {
+    font-weight: 500;
+    line-height: normal;
+    max-width: 23.875rem;
+    padding: 0.625rem;
+  }
+
+  .footer-links-group {
+    gap: 3.75rem;
+  }
+
+  .footer-col {
+    min-width: 0;
+  }
+
+  .footer-col-title {
+    line-height: normal;
+    padding: 0.625rem 0;
+    margin-bottom: 0;
+  }
+
+  .footer-links-list {
+    gap: 0;
+    margin-left: 0;
+  }
+
+  .footer-link {
+    font-weight: 500;
+    line-height: normal;
+    padding: 0.625rem;
+  }
+
+  .footer-divider {
+    margin: 2.5rem 0;
+  }
+
+  .footer-copyright-text p {
+    font-size: max(min(1rem, var(--fs-min)), calc(1rem * var(--fs-scale)));
+    font-weight: 500;
+    line-height: normal;
+  }
+}

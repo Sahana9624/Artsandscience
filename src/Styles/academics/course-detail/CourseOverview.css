@@ -1,0 +1,79 @@
+/* ==========================================================================
+   Program Overview Section Styles - Mother Terasa College of Arts & Science
+   ========================================================================== */
+
+:root {
+  --course-eyebrow-fs: 1rem;
+  --course-overview-heading-fs: clamp(1.85rem, 2rem, 2.5rem);
+  --course-overview-para-fs: 1rem;
+}
+
+.course-overview-section {
+  padding: clamp(3.5rem, 5.5vw, 5.5rem) var(--global-padding-x);
+  background-color: #FFFFFF;
+  width: 100%;
+}
+
+.course-overview-container {
+  width: 100%;
+}
+
+.course-section-eyebrow {
+  display: inline-block;
+  color: #90091D;
+  font-size: max(min(var(--course-eyebrow-fs), var(--fs-min)), calc(var(--course-eyebrow-fs) * var(--fs-scale)));
+  font-weight: 400;
+  /* text-transform: uppercase; */
+  /* letter-spacing: 0.05rem; */
+  margin-bottom: 1rem;
+}
+
+.course-overview-heading {
+  font-family: var(--font-heading);
+  font-size: max(min(var(--course-overview-heading-fs), var(--fs-min)), calc(var(--course-overview-heading-fs) * var(--fs-scale)));
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.28;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.025rem;
+}
+
+.course-overview-para {
+  font-family: var(--font-body);
+  font-size: max(min(var(--course-overview-para-fs), var(--fs-min)), calc(var(--course-overview-para-fs) * var(--fs-scale)));
+  line-height: 1.78;
+  color: #000000;
+  margin-bottom: 1.125rem;
+}
+
+.course-overview-para:last-child {
+  margin-bottom: 0;
+}
+
+/* ── Mobile (Figma 375px) ── */
+@media (max-width: 768px) {
+  :root {
+    --course-overview-heading-mobile-fs: 1.25rem;
+  }
+
+  .course-overview-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .course-section-eyebrow {
+    line-height: normal;
+    margin-bottom: 0.75rem;
+  }
+
+  .course-overview-heading {
+    font-size: max(min(var(--course-overview-heading-mobile-fs), var(--fs-min)), calc(var(--course-overview-heading-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    letter-spacing: 0;
+    margin-bottom: 0.75rem;
+  }
+
+  .course-overview-para {
+    line-height: normal;
+    margin-bottom: 1.5rem;
+  }
+}

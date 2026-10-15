@@ -1,0 +1,230 @@
+/* ==========================================================================
+   Legal Pages Styles (Terms, Privacy, Refund, Cancellation)
+   Mother Terasa College of Arts & Science
+   ========================================================================== */
+
+:root {
+  --legal-hero-eyebrow-fs: 1.25rem;
+  --legal-hero-title-fs: 2rem;
+  --legal-hero-desc-fs: 1.25rem;
+  --legal-overview-title-fs: 1.25rem;
+  --legal-text-fs: 1.25rem;
+  --legal-section-num-fs: 2.5rem;
+  --legal-section-title-fs: 1.5rem;
+  --legal-list-fs: 1.25rem;
+}
+
+.legal-page-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  padding-top: var(--about-header-height, 5.25rem); /* Space for fixed header */
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.legal-page-main {
+  flex: 1 0 auto;
+  width: 100%;
+}
+
+/* ── Hero ── */
+.legal-hero {
+  width: 100%;
+  padding: 7.5rem var(--global-padding-x) 5rem;
+  background:
+    linear-gradient(180deg, #90091D -47.7%, rgba(255, 255, 255, 0) 70.46%),
+    #FFFFFF;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.legal-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.legal-hero-eyebrow {
+  font-size: max(min(var(--legal-hero-eyebrow-fs), var(--fs-min)), calc(var(--legal-hero-eyebrow-fs) * var(--fs-scale)));
+  font-weight: 400;
+  line-height: normal;
+  color: #90091D;
+}
+
+/* Refund & Cancellation: 12px between eyebrow and title */
+.legal-hero-compact .legal-hero-eyebrow {
+  margin-bottom: -0.25rem;
+}
+
+.legal-hero-title {
+  font-family: var(--font-heading);
+  font-size: max(min(var(--legal-hero-title-fs), var(--fs-min)), calc(var(--legal-hero-title-fs) * var(--fs-scale)));
+  font-weight: 700;
+  line-height: normal;
+  color: #000000;
+  margin: 0;
+}
+
+.legal-hero-desc {
+  font-size: max(min(var(--legal-hero-desc-fs), var(--fs-min)), calc(var(--legal-hero-desc-fs) * var(--fs-scale)));
+  font-weight: 400;
+  line-height: normal;
+  color: #000000;
+  margin: 0;
+}
+
+/* ── Content ── */
+.legal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 5rem var(--global-padding-x);
+  box-sizing: border-box;
+  color: #000000;
+  word-break: break-word;
+}
+
+.legal-overview {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.legal-overview-title {
+  font-size: max(min(var(--legal-overview-title-fs), var(--fs-min)), calc(var(--legal-overview-title-fs) * var(--fs-scale)));
+  font-weight: 600;
+  line-height: normal;
+  color: #90091D;
+  margin: 0;
+}
+
+.legal-overview-body .legal-text {
+  font-size: max(min(var(--legal-text-fs), var(--fs-min)), calc(var(--legal-text-fs) * var(--fs-scale)));
+}
+
+.legal-sections {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.legal-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+
+.legal-section-num {
+  flex-shrink: 0;
+  width: 3.75rem;
+  font-size: max(min(var(--legal-section-num-fs), var(--fs-min)), calc(var(--legal-section-num-fs) * var(--fs-scale)));
+  font-weight: 700;
+  line-height: normal;
+  color: #90091D;
+}
+
+.legal-section-content {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-top: 0.75rem;
+}
+
+.legal-section-title {
+  font-size: max(min(var(--legal-section-title-fs), var(--fs-min)), calc(var(--legal-section-title-fs) * var(--fs-scale)));
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+
+.legal-text {
+  font-size: max(min(var(--legal-text-fs), var(--fs-min)), calc(var(--legal-text-fs) * var(--fs-scale)));
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.legal-text strong,
+.legal-list strong {
+  font-weight: 700;
+}
+
+.legal-list {
+  list-style: disc;
+  margin: 0;
+  padding-left: 3.75rem;
+  font-size: max(min(var(--legal-list-fs), var(--fs-min)), calc(var(--legal-list-fs) * var(--fs-scale)));
+  line-height: normal;
+}
+
+/* ── Mobile (Figma 375px) ── */
+@media (max-width: 768px) {
+  :root {
+    --legal-hero-eyebrow-mobile-fs: 1rem;
+    --legal-hero-title-mobile-fs: 1.5rem;
+    --legal-hero-desc-mobile-fs: 1rem;
+    --legal-section-num-mobile-fs: 1.5rem;
+    --legal-section-title-mobile-fs: 1.25rem;
+    --legal-text-mobile-fs: 1rem;
+  }
+
+  .legal-hero {
+    padding: 5rem 1rem 2.5rem;
+  }
+
+  .legal-hero-eyebrow {
+    font-size: max(min(var(--legal-hero-eyebrow-mobile-fs), var(--fs-min)), calc(var(--legal-hero-eyebrow-mobile-fs) * var(--fs-scale)));
+  }
+
+  .legal-hero-title {
+    font-size: max(min(var(--legal-hero-title-mobile-fs), var(--fs-min)), calc(var(--legal-hero-title-mobile-fs) * var(--fs-scale)));
+  }
+
+  .legal-hero-desc {
+    font-size: max(min(var(--legal-hero-desc-mobile-fs), var(--fs-min)), calc(var(--legal-hero-desc-mobile-fs) * var(--fs-scale)));
+  }
+
+  .legal-content {
+    padding: 2.5rem 1rem;
+  }
+
+  .legal-sections {
+    gap: 1.25rem;
+  }
+
+  .legal-section {
+    gap: 0.5rem;
+  }
+
+  .legal-section-num {
+    width: 2.25rem;
+    font-size: max(min(var(--legal-section-num-mobile-fs), var(--fs-min)), calc(var(--legal-section-num-mobile-fs) * var(--fs-scale)));
+  }
+
+  .legal-section-content {
+    padding-top: 0;
+  }
+
+  .legal-section-title {
+    font-size: max(min(var(--legal-section-title-mobile-fs), var(--fs-min)), calc(var(--legal-section-title-mobile-fs) * var(--fs-scale)));
+  }
+
+  .legal-section-body .legal-text,
+  .legal-list {
+    font-size: max(min(var(--legal-text-mobile-fs), var(--fs-min)), calc(var(--legal-text-mobile-fs) * var(--fs-scale)));
+  }
+
+  .legal-list {
+    padding-left: 3rem;
+  }
+}

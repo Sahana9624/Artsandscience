@@ -1,0 +1,119 @@
+:root {
+  --no-data-title-fs: 1.65rem;
+  --no-data-sub-fs: 0.96rem;
+}
+
+/* ── Accreditation No Data Card ── */
+.no-data-card {
+  background: #ffffff;
+  border: 1px solid #e7e7e7;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.04);
+  padding: 4.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.no-data-media {
+  max-width: 380px;
+  width: 100%;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.no-data-illustration {
+  width: 100%;
+  max-height: 280px;
+  object-fit: contain;
+  display: block;
+}
+
+.no-data-title {
+  font-family: inherit;
+  font-size: max(min(var(--no-data-title-fs), var(--fs-min)), calc(var(--no-data-title-fs) * var(--fs-scale)));
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 0.65rem 0;
+  line-height: 1.25;
+}
+
+.no-data-subtitle {
+  font-family: inherit;
+  font-size: max(min(var(--no-data-sub-fs), var(--fs-min)), calc(var(--no-data-sub-fs) * var(--fs-scale)));
+  color: #4b5563;
+  margin: 0;
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .no-data-card {
+    padding: 3rem 1.5rem;
+    margin: 2rem auto 3rem;
+  }
+
+  .no-data-media {
+    max-width: 280px;
+    margin-bottom: 1.5rem;
+  }
+
+  .no-data-illustration {
+    max-height: 200px;
+  }
+
+  .no-data-title {
+    font-size: max(min(var(--no-data-title-mobile-fs), var(--fs-min)), calc(var(--no-data-title-mobile-fs) * var(--fs-scale)));
+  }
+
+  .no-data-subtitle {
+    font-size: max(min(var(--no-data-sub-mobile-fs), var(--fs-min)), calc(var(--no-data-sub-mobile-fs) * var(--fs-scale)));
+  }
+}
+
+/* ── Mobile (Figma 375px) ── */
+@media (max-width: 768px) {
+  :root {
+    --no-data-title-mobile-fs: 1.4rem;
+    --no-data-sub-mobile-fs: 0.88rem;
+    --no-data-title-mobile-375-fs: 1.25rem;
+    --no-data-subtitle-mobile-fs: 1rem;
+  }
+
+  .no-data-card {
+    padding: 2.5rem 1rem;
+    margin: 0;
+    border-color: #EEEEEE;
+    box-shadow: none;
+  }
+
+  .no-data-media {
+    max-width: 19.4375rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .no-data-illustration {
+    height: 10.75rem;
+    max-height: none;
+  }
+
+  .no-data-title {
+    font-size: max(min(var(--no-data-title-mobile-375-fs), var(--fs-min)), calc(var(--no-data-title-mobile-375-fs) * var(--fs-scale)));
+    line-height: normal;
+    color: #000000;
+    margin-bottom: 0.75rem;
+  }
+
+  .no-data-subtitle {
+    font-size: max(min(var(--no-data-subtitle-mobile-fs), var(--fs-min)), calc(var(--no-data-subtitle-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    color: #000000;
+  }
+}

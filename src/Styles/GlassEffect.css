@@ -1,0 +1,57 @@
+/*
+ * Glass effect — CSS recreation of the Figma "Glass" effect used on the design's
+ * secondary buttons and the Contact info card:
+ *   fill #FFFFFF @ 10%, frost 4 (≈ blur 2px), light angle -45° (top-left),
+ *   light intensity 0.8, refraction 0.8, depth 20, no stroke.
+ * The rim is drawn with a masked gradient pseudo-element (not a border), so
+ * the element keeps its own box size and existing hover/transform behaviour.
+ */
+.glass-effect {
+  position: relative;
+  isolation: isolate;
+  background-color: var(--glass-fill, rgba(255, 255, 255, 0.1));
+  border: none;
+  -webkit-backdrop-filter: blur(2px) saturate(160%);
+  backdrop-filter: blur(2px) saturate(160%);
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, 0.12),
+    inset 0 -1px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* Light-catching rim: brightest toward the light (top-left), soft glint opposite */
+.glass-effect::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(255, 255, 255, 0.28) 22%,
+    rgba(255, 255, 255, 0.06) 48%,
+    rgba(255, 255, 255, 0.2) 78%,
+    rgba(255, 255, 255, 0.55) 100%
+  );
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Outline-only variant (design has Glass with no fill, e.g. Departments / Facilities heroes) */
+.glass-effect.glass-effect--clear {
+  --glass-fill: transparent;
+}
+
+/* Larger surfaces (cards): stronger frost from the design's background blur (12 ≈ 6px) */
+.glass-effect.glass-effect--card {
+  -webkit-backdrop-filter: blur(6px) saturate(160%);
+  backdrop-filter: blur(6px) saturate(160%);
+}

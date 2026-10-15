@@ -1,0 +1,25 @@
+/* ==========================================================================
+   Departments Page Overall Layout Styles
+   Strictly uses var(--global-padding-x) for all side padding
+   ========================================================================== */
+
+:root {
+  --about-header-height: 5.25rem;
+}
+
+.departments-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+  width: 100%;
+  background-color: #FFFFFF;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.departments-main-content {
+  flex: 1;
+  width: 100%;
+  padding-top: var(--about-header-height, 5.25rem); /* Space for fixed navigation bar */
+}

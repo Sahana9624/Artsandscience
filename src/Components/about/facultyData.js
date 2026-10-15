@@ -1,0 +1,71 @@
+// Faculty & staff shown under "View More" in the About page Administration
+// section, in the order of the design (Figma "Component 4", expanded state).
+// Photos live in assets/images/about/faculty/<photo>.webp, exported as framed
+// in the design (gradient background and rounded corners included).
+const photos = import.meta.glob("../../assets/images/about/faculty/*.webp", {
+  eager: true,
+  import: "default",
+});
+
+const photoUrl = (slug) => photos[`../../assets/images/about/faculty/${slug}.webp`];
+
+const faculty = [
+  { photo: "s-ieswarya", name: "Ms.S .Ieswarya", role: "Assistant professor/ Department of Management studies" },
+  { photo: "n-jothika", name: "Mrs.N.Jothika", role: "Assistant professor/ Department of Management studies" },
+  { photo: "i-mahalaxmi", name: "Ms.I.Mahalaxmi", role: "Assistant professor/ Department of Management studies" },
+  { photo: "m-uthaya", name: "Ms.M.uthaya", role: "Assistant professor/ Department of Management studies" },
+  { photo: "n-dharshini", name: "Ms.N.Dharshini", role: "Assistant professor/ Department of Management studies" },
+  { photo: "a-kavitha", name: "Mrs.A.kavitha", role: "HOD/ Department of chemistry" },
+  { photo: "r-rengasamy", name: "Dr. R. Rengasamy", role: "Assistant professor/ Department of Chemistry" },
+  { photo: "n-nandhini", name: "Ms.N.Nandhini", role: "Assistant professor/ Department of Chemistry" },
+  { photo: "s-balamani", name: "Mrs.S. BalaMani", role: "Assistant professor/ Department of Chemistry" },
+  { photo: "c-sangkari", name: "Ms.C.Sangkari", role: "Assistant professor/ Department of Chemistry" },
+  { photo: "p-senthilvadivu", name: "Mrs.P. Senthilvadivu", role: "HOD / Department of commerce with Computer Application" },
+  { photo: "s-divya", name: "Ms.S.Divya", role: "Assistant professor / Dept of commerce with Computer Application" },
+  { photo: "g-prabhakaran", name: "Dr.G.Prabhakaran", role: "Assistant professor / Dept of commerce with Computer Application" },
+  { photo: "a-kalaivani", name: "Mrs.A.Kalaivani", role: "Assistant professor / Dept of commerce with Computer Application" },
+  { photo: "a-siva-kumar", name: "Mr.A.Siva kumar", role: "HOD Department of Commerce" },
+  { photo: "k-murugesan", name: "Mr.K.Murugesan", role: "Assistant professor/ Department of commerce" },
+  { photo: "r-suryakala", name: "Mrs. R.Suryakala", role: "Assistant professor/ Department of commerce" },
+  { photo: "k-jenita", name: "Ms.K. Jenita", role: "Assistant professor/ Department of commerce" },
+  { photo: "s-vijaya-lakshmi", name: "Mrs.S.Vijaya lakshmi", role: "Assistant professor/ Department of commerce" },
+  { photo: "r-keerthiga", name: "Mrs. R. Keerthiga", role: "HOD Department of computer science" },
+  { photo: "k-malathi", name: "Mrs.K.Malathi", role: "Assistant professor/ Department of Computer science" },
+  { photo: "p-sarathamani", name: "Ms.P. Sarathamani", role: "Assistant professor/ Department of Computer science" },
+  { photo: "c-banumathi", name: "Mrs. C. Banumathi", role: "Assistant professor/ Department of Computer science" },
+  { photo: "r-revathi", name: "Mrs.R.Revathi", role: "HOD Department of Computer Application's" },
+  { photo: "v-bellsita-sagaya-rani", name: "Ms.V.Bellsita sagaya rani", role: "Assistant professor/ Department of Computer Application's" },
+  { photo: "p-manikandan", name: "Mr.P.Manikandan", role: "Assistant professor/ Department of Computer Application's" },
+  { photo: "a-vinitha", name: "Mrs.A.Vinitha", role: "Assistant professor Department of Computer Application's" },
+  { photo: "v-chandrasekar", name: "Prof. V. Chandrasekar", role: "HOD Department of English" },
+  { photo: "g-alexander", name: "Prof. G. Alexander", role: "Assistant professor department of English" },
+  { photo: "v-hemalatha", name: "Ms.V.Hemalatha", role: "Assistant professor department of English" },
+  { photo: "j-azulu-banu", name: "Mrs.J. Azulu Banu", role: "Assistant professor department of English" },
+  { photo: "g-adin-bino", name: "Mr.G.Adin Bino", role: "Assistant professor department of English" },
+  { photo: "a-mohana", name: "Ms.A.Mohana", role: "Assistant professor department of English" },
+  { photo: "r-sindhu", name: "Mrs.R.Sindhu", role: "Assistant professor department of English" },
+  { photo: "d-premdas", name: "Mr.D.Premdas", role: "Assistant professor department of English" },
+  { photo: "m-hariprabhu", name: "Prof. M. Hariprabhu", role: "HOD Department of Mathematics" },
+  { photo: "s-selvakumar", name: "Mr.S.Selvakumar", role: "Assistant Professor Department of Mathematics" },
+  { photo: "r-radhika", name: "Ms.R.Radhika", role: "Assistant Professor Department of Mathematics" },
+  { photo: "s-uthayalakshmi", name: "Mrs. S.Uthayalakshmi", role: "Assistant Professor Department of Mathematics" },
+  { photo: "m-a-suryamoorthi", name: "Mr.M.A.Suryamoorthi", role: "Assistant Professor Department of Mathematics" },
+  { photo: "c-chittu", name: "Mrs.C.Chittu", role: "HOD Department of Tamil" },
+  { photo: "a-angulakshmi", name: "Dr.A.Angulakshmi", role: "Assistant professor Department of Tamil" },
+  { photo: "g-ranjani", name: "Ms.G.Ranjani", role: "Assistant professor Department of Tamil" },
+  { photo: "r-periyammal", name: "Mrs.R.Periyammal", role: "Assistant professor Department of Tamil" },
+  { photo: "j-sundaresan", name: "Mr.J.Sundaresan", role: "Assistant professor Department of Tamil" },
+  { photo: "c-sangeetha", name: "Ms.C.Sangeetha", role: "Assistant professor Department of Tamil" },
+  { photo: "s-maheswari", name: "Prof. S. Maheswari", role: "HOD Department of Physics" },
+  { photo: "s-alagumathi", name: "Ms.S.Alagumathi", role: "Assistant Professor Department of Physics" },
+  { photo: "m-lakshmi", name: "Mrs.M.Lakshmi", role: "HOD Department of Data science and Department of Artificial intelligence & Machine Learning" },
+  { photo: "m-ratha", name: "Mrs. M.Ratha", role: "Assistant professor Department of Data science and Department of Artificial intelligence & Machine Learning" },
+  { photo: "a-sheeba", name: "Mrs.A.Sheeba", role: "Assistant professor Department of Data science and Department of Artificial intelligence & Machine Learning" },
+  { photo: "m-sindhu", name: "Ms.M.Sindhu", role: "Assistant professor Department of Data science and Department of Artificial intelligence & Machine Learning" },
+  { photo: "r-kalaiarasi", name: "Mrs.R. Kalaiarasi", role: "Librarian" },
+  { photo: "r-priya-dharshini", name: "Mrs.R. Priya dharshini", role: "Office Staff" },
+  { photo: "a-dony-jerlin", name: "Ms.A. Dony Jerlin", role: "Office Staff" },
+  { photo: "k-dhana-lakshmi", name: "Mrs.K. Dhana Lakshmi", role: "Office Staff" },
+];
+
+export default faculty.map((person) => ({ ...person, image: photoUrl(person.photo) }));

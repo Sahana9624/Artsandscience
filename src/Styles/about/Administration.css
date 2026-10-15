@@ -1,0 +1,244 @@
+/* ==========================================================================
+   Administration Section Styles - Mother Terasa College of Arts & Science
+   ========================================================================== */
+
+:root {
+  --admin-title-fs: clamp(1.85rem, 2rem, 2.4rem);
+  --admin-member-name-fs: 1.25rem;
+  --admin-member-role-fs: 1.25rem;
+  --admin-view-more-fs: 1.125rem;
+}
+
+.about-admin-section {
+  padding: 3.5rem var(--global-padding-x) 5rem;
+  background-color: #FFFFFF;
+  /* "View less" scrolls back here; keep the title clear of the fixed header */
+  scroll-margin-top: var(--about-header-height, 5.25rem);
+}
+
+.about-admin-container {
+  /* max-width: 70rem; */
+  margin: 0 auto;
+}
+
+.about-admin-title {
+  font-family: var(--font-heading, 'Outfit', 'Poppins', sans-serif);
+  font-size: max(min(var(--admin-title-fs), var(--fs-min)), calc(var(--admin-title-fs) * var(--fs-scale)));
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.about-admin-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+.admin-member-card {
+  background-color: #F5F5F5;
+  border-radius: 1.25rem;
+  padding: 0.9375rem 0.9375rem 2.375rem;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-member-card:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.06);
+}
+
+.admin-member-photo-frame {
+  width: 100%;
+  aspect-ratio: 1 / 0.9;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: linear-gradient(180deg, #7A0A1C 0%, #4D030F 100%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.admin-member-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.admin-member-details {
+  padding-top: 2.125rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.admin-member-name {
+  font-family: var(--font-heading, 'Outfit', 'Poppins', sans-serif);
+  font-size: max(min(var(--admin-member-name-fs), var(--fs-min)), calc(var(--admin-member-name-fs) * var(--fs-scale)));
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.admin-member-role {
+  font-size: max(min(var(--admin-member-role-fs), var(--fs-min)), calc(var(--admin-member-role-fs) * var(--fs-scale)));
+  font-weight: 400;
+  color: #000000;
+  line-height: 1.4;
+}
+
+.about-admin-view-more {
+  text-align: center;
+  margin-top: 2.25rem;
+}
+
+.admin-view-more-link {
+  font-size: max(min(var(--admin-view-more-fs), var(--fs-min)), calc(var(--admin-view-more-fs) * var(--fs-scale)));
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+  /* It's a toggle button now: keep the original text-link look */
+  background: none;
+  padding: 0;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.admin-view-more-link:hover {
+  color: #5C0E1E;
+  transform: translateY(0.125rem);
+}
+
+/* Responsive Breakpoints for Administration */
+@media (max-width: 1024px) {
+  .about-admin-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-admin-grid {
+    grid-template-columns: 1fr;
+    max-width: 20rem;
+    margin: 0 auto;
+  }
+}
+
+/* ── Mobile (Figma 375px) ── */
+@media (max-width: 768px) {
+  :root {
+    --about-admin-title-mobile-fs: 1.25rem;
+    --admin-member-name-mobile-fs: 1.25rem;
+    --admin-member-role-mobile-fs: 1.25rem;
+    --admin-view-more-link-mobile-fs: 1.25rem;
+  }
+
+  .about-admin-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .about-admin-title {
+    font-size: max(min(var(--about-admin-title-mobile-fs), var(--fs-min)), calc(var(--about-admin-title-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    margin-bottom: 1.25rem;
+  }
+
+  .about-admin-grid {
+    grid-template-columns: 1fr;
+    max-width: 19.0625rem;
+    margin: 0 auto;
+    gap: 1.25rem;
+  }
+
+  .admin-member-card {
+    padding: 1.25rem;
+  }
+
+  .admin-member-photo-frame {
+    aspect-ratio: 1 / 1;
+    border-radius: 1.1rem;
+    background: linear-gradient(180deg, #90091D 0%, #2A0308 100%);
+  }
+
+  .admin-member-details {
+    padding-top: 1.25rem;
+  }
+
+  .admin-member-name {
+    font-size: max(min(var(--admin-member-name-mobile-fs), var(--fs-min)), calc(var(--admin-member-name-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    margin-bottom: 0.75rem;
+  }
+
+  .admin-member-role {
+    font-size: max(min(var(--admin-member-role-mobile-fs), var(--fs-min)), calc(var(--admin-member-role-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+  }
+
+  .about-admin-view-more {
+    margin-top: 1.25rem;
+  }
+
+  .admin-view-more-link {
+    font-size: max(min(var(--admin-view-more-link-mobile-fs), var(--fs-min)), calc(var(--admin-view-more-link-mobile-fs) * var(--fs-scale)));
+  }
+}
+
+/* ── Desktop: match the design (Component 4) — 20px card padding, 265px square photo,
+   20px photo → text, 12px name → role, 46px grid → "View More" (24px) ── */
+@media (min-width: 1025px) {
+  .about-admin-section {
+    padding: 5rem var(--global-padding-x);
+  }
+
+  .about-admin-title {
+    line-height: normal;
+    margin-bottom: 2.5rem;
+  }
+
+  .admin-member-card {
+    padding: 1.25rem;
+    gap: 1.25rem;
+  }
+
+  .admin-member-photo-frame {
+    aspect-ratio: 1 / 1;
+    border-radius: 1.104rem;
+    background: linear-gradient(180deg, #90091D 0%, #2A0308 100%);
+  }
+
+  .admin-member-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .admin-member-name,
+  .admin-member-role {
+    line-height: normal;
+    margin: 0;
+  }
+
+  .about-admin-view-more {
+    margin-top: 2.875rem;
+  }
+
+  .admin-view-more-link {
+    font-size: max(min(1.5rem, var(--fs-min)), calc(1.5rem * var(--fs-scale)));
+    line-height: normal;
+  }
+}

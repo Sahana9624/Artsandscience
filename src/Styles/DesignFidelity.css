@@ -1,0 +1,28 @@
+/*
+ * Desktop design-fidelity overrides (loaded last from App.jsx).
+ * The design's header is 100px tall. Page heroes fill the visible screen below
+ * it (browser toolbars excluded) via --hero-h, and grow if content needs more.
+ */
+@media (min-width: 1025px) {
+  :root {
+    /* Fixed header is 100px (20px padding + 60px logo); pages reserve this space */
+    --about-header-height: 6.25rem;
+  }
+
+  .academic-hero-section,
+  .research-hero-section,
+  .about-hero-section,
+  .facilities-hero-section,
+  .news-hero-section,
+  .gallery-hero-section,
+  .club-hero,
+  .committee-hero,
+  .accreditation-hero,
+  .contact-hero,
+  .course-hero-section,
+  .departments-hero {
+    min-height: var(--hero-h) !important;
+    height: auto;
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,197 @@
+/* ==========================================================================
+   Postgraduate Programs Section Styles - Mother Terasa College of Arts & Science
+   Strictly uses var(--global-padding-x) for side padding
+   ========================================================================== */
+
+:root {
+  --academic-program-btn-arrow-fs: 1.15rem;
+}
+
+.pg-programs-section {
+  padding: 5rem var(--global-padding-x) 6rem;
+  background-color: #FFFFFF;
+}
+
+.pg-programs-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  /* max-width: 75rem; */
+  margin: 0 auto;
+}
+
+/* 9th Card Centering (M.Com CA in Row 3) in 4-column grid */
+.pg-item-centered {
+  grid-column: 1 / -1;
+  width: calc((100% - 3 * 1.5rem) / 4);
+  margin: 0 auto;
+}
+
+/* View Program Button - Ultra Smooth Hover Transition */
+.academic-program-btn {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: #90091D;
+  font-size: max(min(var(--ug-item-btn-fs, 1rem), var(--fs-min)), calc(var(--ug-item-btn-fs, 1rem) * var(--fs-scale)));
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  text-decoration: none;
+  font-family: inherit;
+  padding: 0.625rem 2.5rem;
+  white-space: nowrap;
+  box-sizing: border-box;
+  transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.academic-program-btn-arrow {
+  display: inline-block;
+  font-size: max(min(var(--academic-program-btn-arrow-fs), var(--fs-min)), calc(var(--academic-program-btn-arrow-fs) * var(--fs-scale)));
+  line-height: 1;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.academic-program-btn:hover {
+  color: #FFFFFF;
+  background-color: #90091D;
+  border-color: #90091D;
+  padding: 0.625rem 2.5rem;
+  border-radius: 8px;
+  transform: translateY(0.125rem);
+  box-shadow: 0 4px 14px rgba(144, 9, 29, 0.25);
+}
+
+.academic-program-btn:hover .academic-program-btn-arrow {
+  transform: translateX(0.25rem);
+}
+
+.academic-program-btn:active {
+  transform: translateY(0.2rem);
+  box-shadow: 0 2px 8px rgba(144, 9, 29, 0.3);
+}
+
+/* Responsive Breakpoints for PG Programs Grid */
+@media (max-width: 1100px) {
+  .pg-programs-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+
+  .pg-item-centered {
+    grid-column: 2;
+    width: 100%;
+  }
+}
+
+@media (max-width: 820px) {
+  .pg-programs-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .pg-item-centered {
+    grid-column: 1 / span 2;
+    max-width: calc(50% - 0.625rem);
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 580px) {
+  .pg-programs-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .pg-item-centered {
+    grid-column: 1;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+/* ── Mobile (Figma 375px) ── */
+@media (max-width: 768px) {
+  .pg-programs-section {
+    padding: 0 1rem 2.5rem;
+  }
+
+  .pg-programs-section .academic-programs-title {
+    margin-bottom: 1.25rem;
+  }
+
+  .pg-programs-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .pg-item-centered {
+    grid-column: 1;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+/* ── Desktop: match the design (Frame 889) — 305px cards, 20px gaps/radius, 20px internal rhythm,
+   18px SemiBold title, 40px section title → grid ── */
+@media (min-width: 1025px) {
+  .academic-programs-section,
+  .pg-programs-section {
+    padding: 5rem var(--global-padding-x);
+  }
+
+  .academic-programs-title {
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: normal;
+    margin-bottom: 2.5rem;
+  }
+
+  .academic-programs-grid,
+  .pg-programs-grid {
+    gap: 1.25rem;
+  }
+
+  .academic-program-card {
+    border-radius: 1.25rem;
+    border-color: #DDDDDD;
+    box-shadow: none;
+    padding: 1.25rem 0.75rem;
+    gap: 1.25rem;
+    justify-content: flex-start;
+    min-height: 12.625rem;
+  }
+
+  .academic-program-body {
+    gap: 1.25rem;
+    flex: 0 0 auto;
+  }
+
+  .academic-program-name {
+    font-size: max(min(1.125rem, var(--fs-min)), calc(1.125rem * var(--fs-scale)));
+    line-height: normal;
+    gap: 0;
+    min-height: 0;
+    margin: 0;
+  }
+
+  .academic-program-duration {
+    font-size: max(min(1rem, var(--fs-min)), calc(1rem * var(--fs-scale)));
+    line-height: normal;
+    margin: 0;
+  }
+
+  .academic-program-btn {
+    gap: 0.625rem;
+    font-size: max(min(1rem, var(--fs-min)), calc(1rem * var(--fs-scale)));
+    line-height: normal;
+  }
+}

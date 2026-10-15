@@ -1,0 +1,234 @@
+/* ==========================================================================
+   Research Hero Section Styles
+   Strictly uses var(--global-padding-x) for all side padding
+   ========================================================================== */
+
+:root {
+  --research-hero-title-fs: clamp(1.2rem, 2rem, 3.2rem);
+  --research-hero-desc-fs: clamp(0.96rem, 1rem, 1.28rem);
+  --research-hero-btn-fs: 1rem;
+  --about-header-height: 5.25rem;
+}
+
+.research-hero-section {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center 30%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  /* Fill the visible screen (browser toolbars excluded) below the header */
+  min-height: var(--hero-h);
+
+  /* Fluid padding responsive to screen height and device safe-areas matching AboutHero */
+  padding: clamp(1.5rem, 4vh, 3.5rem) var(--global-padding-x, 5%);
+  padding-top: max(clamp(1.5rem, 4vh, 3.5rem), env(safe-area-inset-top));
+  padding-bottom: max(clamp(1.5rem, 4vh, 3.5rem), env(safe-area-inset-bottom));
+}
+
+.research-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(360deg, #2A0308 0%, rgba(42, 3, 8, 0) 70%);
+  z-index: 1;
+}
+
+.research-hero-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+}
+
+.research-hero-content {
+  max-width: 38.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.research-hero-title {
+  font-family: var(--font-heading);
+  font-size: max(min(var(--research-hero-title-fs), var(--fs-min)), calc(var(--research-hero-title-fs) * var(--fs-scale)));
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 1.25;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.03125rem;
+}
+
+.research-hero-desc {
+  font-family: var(--font-body);
+  font-size: max(min(var(--research-hero-desc-fs), var(--fs-min)), calc(var(--research-hero-desc-fs) * var(--fs-scale)));
+  color: #FFFFFF;
+  line-height: 1.68;
+  margin-bottom: 2.125rem;
+}
+
+.research-hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.research-btn-primary {
+  background-color: #90091D;
+  color: #FFFFFF;
+  font-family: inherit;
+  font-size: max(min(var(--research-hero-btn-fs), var(--fs-min)), calc(var(--research-hero-btn-fs) * var(--fs-scale)));
+  font-weight: 500;
+  padding: 0.625rem 2.5rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  /*
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.25); */
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 0.625rem;
+}
+
+/* .research-btn-primary:hover {
+  background-color: #690F22;
+  transform: translateY(-0.125rem);
+  box-shadow: 0 0.375rem 1.125rem rgba(0, 0, 0, 0.4);
+} */
+
+.research-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  color: #FFFFFF;
+  font-family: inherit;
+  font-size: max(min(var(--research-hero-btn-fs), var(--fs-min)), calc(var(--research-hero-btn-fs) * var(--fs-scale)));
+  font-weight: 500;
+  padding: 0.625rem 2.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  gap: 0.625rem;
+}
+
+.research-btn-outline:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: #FFFFFF;
+  transform: translateY(-0.125rem);
+}
+
+@media (max-width: 600px) {
+  .research-hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .research-btn-primary,
+  .research-btn-outline {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ── Height-based Responsive Rules (Laptops, short screens, split screens) matching AboutHero ── */
+@media (max-height: 700px) {
+  .research-hero-section {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .research-hero-desc {
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media (max-height: 550px) {
+  .research-hero-section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    min-height: auto; /* Natural scrolling on ultra-short screen heights */
+  }
+
+  .research-hero-title {
+    margin-bottom: 0.375rem;
+  }
+
+  .research-hero-desc {
+    margin-bottom: 1rem;
+    line-height: 1.45;
+  }
+}
+
+/* ── Mobile (Figma 375px) ── */
+@media (max-width: 768px) {
+  :root {
+    --research-hero-title-mobile-fs: 1.25rem;
+    --research-hero-desc-mobile-fs: 1rem;
+  }
+
+  .research-hero-section {
+    /* Fill the visible screen (browser toolbars excluded) below the header */
+    min-height: var(--hero-h);
+    justify-content: flex-end;
+    padding: 2.5rem 1rem;
+  }
+
+  .research-hero-content {
+    max-width: none;
+    margin-top: 0;
+  }
+
+  .research-hero-title {
+    font-size: max(min(var(--research-hero-title-mobile-fs), var(--fs-min)), calc(var(--research-hero-title-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    letter-spacing: 0;
+    margin-bottom: 0.75rem;
+  }
+
+  .research-hero-desc {
+    font-size: max(min(var(--research-hero-desc-mobile-fs), var(--fs-min)), calc(var(--research-hero-desc-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    margin-bottom: 1.25rem;
+  }
+
+  .research-hero-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 1.25rem;
+  }
+
+  .research-btn-primary,
+  .research-btn-outline {
+    width: 100%;
+    justify-content: center;
+    gap: 0.625rem;
+    padding: 0.625rem 2.5rem;
+    line-height: normal;
+  }
+
+  .research-btn-primary {
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.25);
+  }
+
+  .research-btn-outline {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* ── Tablet & desktop: anchor hero content with the design's bottom gap (103px) ── */
+@media (min-width: 769px) {
+  .research-hero-section {
+    justify-content: flex-end;
+    padding-bottom: 6.4375rem;
+  }
+}

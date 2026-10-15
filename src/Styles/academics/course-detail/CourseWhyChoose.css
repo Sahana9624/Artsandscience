@@ -1,0 +1,139 @@
+/* ==========================================================================
+   Why Choose This Program Section Styles - Mother Terasa College of Arts & Science
+   ========================================================================== */
+
+:root {
+  --course-why-title-fs: clamp(1.85rem, 2rem, 2.4rem);
+  --course-why-subtitle-fs: 1rem;
+  --course-why-card-title-fs: 1.25rem;
+  --course-why-card-desc-fs: 1rem;
+}
+
+.course-why-section {
+  padding: clamp(4rem, 5vw, 5.5rem) var(--global-padding-x);
+  background-color: #E9CED2; /* Subtle blush pink */
+  width: 100%;
+}
+
+.course-why-container {
+  width: 100%;
+  text-align: center;
+}
+
+.course-why-title {
+  font-family: var(--font-heading);
+  font-size: max(min(var(--course-why-title-fs), var(--fs-min)), calc(var(--course-why-title-fs) * var(--fs-scale)));
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 1rem;
+  letter-spacing: -0.01875rem;
+}
+
+.course-why-subtitle {
+  font-size: max(min(var(--course-why-subtitle-fs), var(--fs-min)), calc(var(--course-why-subtitle-fs) * var(--fs-scale)));
+  color: #000000;
+  /* max-width: 51.25rem; */
+  margin: 0 auto 2.75rem;
+  line-height: 1.65;
+}
+
+.course-why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.course-why-card {
+  background-color: #FFFFFF;
+  border-radius: 0.875rem;
+  padding: 1.75rem 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0.25rem 1.125rem rgba(0, 0, 0, 0.03);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.course-why-card:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 0.625rem 1.625rem rgba(128, 20, 42, 0.08);
+}
+
+.course-why-card-title {
+  font-family: var(--font-heading);
+  font-size: max(min(var(--course-why-card-title-fs), var(--fs-min)), calc(var(--course-why-card-title-fs) * var(--fs-scale)));
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 0.625rem;
+  letter-spacing: -0.0125rem;
+    text-align: center;
+}
+
+.course-why-card-desc {
+  font-size: max(min(var(--course-why-card-desc-fs), var(--fs-min)), calc(var(--course-why-card-desc-fs) * var(--fs-scale)));
+  color: #000000E5;
+  text-align: center;
+  line-height: 1.6;
+  flex: 1;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .course-why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 680px) {
+  .course-why-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Mobile (Figma 375px) ── */
+@media (max-width: 768px) {
+  :root {
+    --course-why-title-mobile-fs: 1.25rem;
+    --course-why-card-title-mobile-fs: 1.25rem;
+  }
+
+  .course-why-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .course-why-title {
+    font-size: max(min(var(--course-why-title-mobile-fs), var(--fs-min)), calc(var(--course-why-title-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    letter-spacing: 0;
+    margin-bottom: 0.75rem;
+  }
+
+  .course-why-subtitle {
+    line-height: normal;
+    margin-bottom: 1.25rem;
+  }
+
+  .course-why-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .course-why-card {
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+    border: none;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  }
+
+  .course-why-card-title {
+    font-size: max(min(var(--course-why-card-title-mobile-fs), var(--fs-min)), calc(var(--course-why-card-title-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    letter-spacing: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .course-why-card-desc {
+    line-height: normal;
+  }
+}

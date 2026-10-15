@@ -1,0 +1,617 @@
+/* ==========================================================================
+   Header / Navbar Styles - Mother Terasa College of Arts & Science
+   Strictly uses var(--global-padding-x) for side padding
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --header-brand-title-fs: 1.25rem;
+  --header-brand-sub-fs: 0.75rem;
+  --header-nav-link-fs: 1rem;
+  --header-dropdown-item-fs: 0.95rem;
+  --header-flyout-item-fs: 0.9rem;
+  --header-apply-btn-fs: 0.95rem;
+  --header-mobile-link-fs: 1.05rem;
+  --header-mobile-chevron-fs: 0.85rem;
+  --header-mobile-sublink-fs: 0.95rem;
+  --header-mobile-subitem-fs: 0.88rem;
+  --header-mobile-apply-fs: 1rem;
+}
+
+.home-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  /* height: 5.25rem; */
+  padding: 1.25rem 0;
+  background-color: #FFFFFF;
+  z-index: 1000;
+  box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: pan-y;
+}
+
+/* .home-header.scrolled {
+  box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.09);
+  height: 4.75rem;
+} */
+
+.home-header-container {
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 var(--global-padding-x);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+
+/* ── Brand Logo ── */
+.home-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.home-brand-logo {
+  width: 3.82rem;
+  height: 3.75rem;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0.125rem 0.375rem rgba(0, 0, 0, 0.12);
+}
+
+.home-brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-title {
+  font-family: "Playfair Display SC", serif;
+  font-size: max(min(var(--header-brand-title-fs), var(--fs-min)), calc(var(--header-brand-title-fs) * var(--fs-scale)));
+  font-weight: 900;
+  color: #90091D;
+  /* letter-spacing: 0.03125rem; */
+  line-height: 1.1;
+}
+
+.brand-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: max(min(var(--header-brand-sub-fs), var(--fs-min)), calc(var(--header-brand-sub-fs) * var(--fs-scale)));
+  font-weight: 400;
+  color: #90091D;
+  /* letter-spacing: 0.0125rem; */
+}
+
+/* ── Desktop Nav ── */
+.home-nav-desktop {
+  display: flex;
+  align-items: center;
+  /* gap: 0.5rem; */
+  height: 100%;
+}
+
+.home-nav-link {
+  font-size: max(min(var(--header-nav-link-fs), var(--fs-min)), calc(var(--header-nav-link-fs) * var(--fs-scale)));
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  position: relative;
+  padding: 0.625rem;
+}
+
+.home-nav-link:hover {
+  color: #90091D;
+}
+
+.home-nav-link.active {
+  color: #90091D;
+  font-weight: 700;
+}
+
+/* Design marks the active page with bold maroon text only (no underline) */
+.home-nav-link.active::after {
+  display: none;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.125rem;
+  background-color: #90091D;
+  border-radius: 0.125rem;
+}
+
+/* ── Academics / Life Dropdown ── */
+.home-nav-dropdown-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: auto;
+}
+
+.home-dropdown-trigger {
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Dropdown Menu Container */
+.home-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  min-width: 15rem;
+  background: #FFFFFF;
+  border-radius: 0.875rem;
+  box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.12), 0 0.125rem 0.5rem rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1875rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(0.375rem);
+  transition: opacity 0.18s ease 0.12s, transform 0.18s ease 0.12s, visibility 0.18s ease 0.12s;
+  pointer-events: none;
+  z-index: 1001;
+}
+
+/* Bridge to maintain hover continuity when moving cursor from text into menu */
+.home-dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -0.75rem;
+  left: 0;
+  right: 0;
+  height: 0.75rem;
+}
+
+/* Bottom buffer so moving cursor downward towards flyout doesn't close main dropdown */
+.home-dropdown-menu::after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  right: 0;
+  height: 1rem;
+  pointer-events: auto;
+}
+
+/* Dropdown shows strictly while hovering to the text / dropdown wrapper */
+.home-nav-dropdown-wrapper:hover > .home-dropdown-menu,
+.home-dropdown-menu:hover {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+  transition: opacity 0.15s ease 0s, transform 0.15s ease 0s, visibility 0.15s ease 0s;
+}
+
+/* Dropdown Item Link */
+.home-dropdown-item {
+  padding: 0.625rem 0.875rem;
+  border-radius: 0.5625rem;
+  font-family: var(--font-body);
+  font-size: max(min(var(--header-dropdown-item-fs), var(--fs-min)), calc(var(--header-dropdown-item-fs) * var(--fs-scale)));
+  font-weight: 500;
+  color: #111827;
+  text-decoration: none;
+  transition: background-color 0.15s ease, color 0.15s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  white-space: nowrap;
+  box-sizing: border-box;
+  width: 100%;
+  cursor: pointer;
+}
+
+.home-dropdown-item:hover,
+.home-dropdown-item.active {
+  background-color: #ebd7dc;
+  color: #111827;
+  font-weight: 500;
+}
+
+.home-dropdown-flyout-wrapper:hover > .home-dropdown-item {
+  background-color: #ebd7dc;
+  color: #111827;
+  font-weight: 500;
+}
+
+.home-dropdown-item-arrow {
+  flex-shrink: 0;
+  color: #111827;
+  transition: transform 0.15s ease;
+}
+
+/* ── Nested Flyout Submenu ── */
+.home-dropdown-flyout-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* Invisible safe-hover bridge so moving cursor diagonally into flyout keeps hover active */
+.home-dropdown-flyout-wrapper::after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  bottom: -25px;
+  right: -32px;
+  width: 40px;
+  z-index: 1004;
+  pointer-events: auto;
+}
+
+.home-flyout-menu {
+  position: absolute;
+  top: -0.25rem;
+  left: calc(100% + 0.5rem);
+  min-width: 17rem;
+  max-height: calc(100vh - 8rem);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  background: #FFFFFF;
+  border-radius: 0.875rem;
+  box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.12), 0 0.125rem 0.5rem rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1875rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-0.25rem);
+  transition: opacity 0.18s ease 0.12s, transform 0.18s ease 0.12s, visibility 0.18s ease 0.12s;
+  pointer-events: none;
+  z-index: 1005;
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
+}
+
+/* Position higher for the last flyout item (Committees & Cells) so all 12 items fit on screen cleanly */
+.home-dropdown-flyout-wrapper:last-child .home-flyout-menu {
+  top: -5.5rem;
+}
+
+.home-flyout-menu::-webkit-scrollbar {
+  width: 5px;
+}
+
+.home-flyout-menu::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.home-flyout-menu::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+/* Show flyout strictly while hovering that specific flyout item or flyout itself */
+.home-dropdown-flyout-wrapper:hover > .home-flyout-menu,
+.home-flyout-menu:hover {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  pointer-events: auto;
+  transition: opacity 0.15s ease 0s, transform 0.15s ease 0s, visibility 0.15s ease 0s;
+}
+
+.home-dropdown-flyout-wrapper:hover > .home-dropdown-item .home-dropdown-item-arrow {
+  transform: translateX(4px);
+}
+
+.home-flyout-item {
+  padding: 0.5625rem 0.75rem;
+  font-size: max(min(var(--header-flyout-item-fs), var(--fs-min)), calc(var(--header-flyout-item-fs) * var(--fs-scale)));
+}
+
+@media (max-width: 1080px) {
+  .home-flyout-menu {
+    left: auto;
+    right: calc(100% + 0.5rem);
+    transform: translateX(0.25rem);
+  }
+  .home-dropdown-flyout-wrapper::after {
+    left: -32px;
+    right: auto;
+  }
+  .home-dropdown-flyout-wrapper .home-dropdown-item-arrow {
+    transform: rotate(180deg);
+  }
+  .home-dropdown-flyout-wrapper:hover > .home-dropdown-item .home-dropdown-item-arrow {
+    transform: rotate(180deg) translateX(4px);
+  }
+}
+
+/* ── Header Actions ── */
+.home-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.home-apply-btn {
+  background-color: #90091D;
+  color: #FFFFFF;
+  font-size: max(min(var(--header-apply-btn-fs), var(--fs-min)), calc(var(--header-apply-btn-fs) * var(--fs-scale)));
+  font-weight: 500;
+  padding: 0.625rem 1.25rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+  white-space: nowrap;
+}
+
+.home-apply-btn:hover {
+  background-color: #690F22;
+  transform: translateY(-0.0625rem);
+}
+
+.home-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1.75rem;
+  height: 1.25rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.home-hamburger span {
+  width: 100%;
+  height: 0.15625rem;
+  background-color: #80142A;
+  border-radius: 0.125rem;
+  transition: all 0.3s ease;
+}
+
+/* ── Mobile Drawer ── */
+.home-mobile-drawer {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #FFFFFF;
+  box-shadow: 0 0.625rem 1.5625rem rgba(0, 0, 0, 0.1);
+  padding: 1.5rem var(--global-padding-x);
+  transform: translateY(-0.625rem);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  max-height: calc(100vh - 5.25rem);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+.home-mobile-drawer.open {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.home-nav-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.home-mobile-link {
+  font-size: max(min(var(--header-mobile-link-fs), var(--fs-min)), calc(var(--header-mobile-link-fs) * var(--fs-scale)));
+  font-weight: 500;
+  color: #333333;
+  text-decoration: none;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #F0F0F0;
+}
+
+.home-mobile-link.active {
+  color: #80142A;
+  font-weight: 700;
+}
+
+.home-mobile-dropdown-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-mobile-dropdown-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #F0F0F0;
+  text-align: left;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.home-mobile-chevron {
+  font-size: max(min(var(--header-mobile-chevron-fs), var(--fs-min)), calc(var(--header-mobile-chevron-fs) * var(--fs-scale)));
+  transition: transform 0.2s ease;
+}
+
+.home-mobile-chevron.open {
+  transform: rotate(180deg);
+}
+
+.home-mobile-sublinks {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0.75rem;
+  margin-top: 0.5rem;
+  gap: 0.25rem;
+  border-left: 0.1875rem solid #ebd7dc;
+}
+
+.home-mobile-sublink {
+  font-size: max(min(var(--header-mobile-sublink-fs), var(--fs-min)), calc(var(--header-mobile-sublink-fs) * var(--fs-scale)));
+  color: #333333;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  transition: all 0.15s ease;
+}
+
+.home-mobile-sublink:hover,
+.home-mobile-sublink.active {
+  background-color: #ebd7dc;
+  color: #111827;
+  font-weight: 600;
+}
+
+.home-mobile-nested-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-mobile-sublink-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.home-mobile-nested-sublinks {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.625rem;
+  padding-left: 0.875rem;
+  margin-top: 0.375rem;
+  gap: 0.1875rem;
+  border-left: 0.125rem dashed #ebd7dc;
+}
+
+.home-mobile-sub-item {
+  font-size: max(min(var(--header-mobile-subitem-fs), var(--fs-min)), calc(var(--header-mobile-subitem-fs) * var(--fs-scale)));
+  padding: 0.375rem 0.625rem;
+  color: #4b5563;
+}
+
+.home-mobile-sub-item:hover,
+.home-mobile-sub-item.active {
+  color: #80142A;
+  background-color: #ebd7dc;
+  font-weight: 600;
+}
+
+.home-apply-btn-mobile {
+  background-color: #80142A;
+  color: #FFFFFF;
+  font-size: max(min(var(--header-mobile-apply-fs), var(--fs-min)), calc(var(--header-mobile-apply-fs) * var(--fs-scale)));
+  font-weight: 600;
+  padding: 0.75rem;
+  border-radius: 624.9375rem;
+  border: none;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+/* ── Responsive Header ── */
+@media (max-width: 1024px) {
+  .home-nav-desktop {
+    display: none;
+  }
+
+  .home-hamburger {
+    display: flex;
+  }
+
+  .home-mobile-drawer {
+    display: block;
+  }
+}
+
+/* ── Mobile (Figma 375px) ── */
+@media (max-width: 768px) {
+  :root {
+    --brand-title-mobile-fs: 1.25rem;
+    --brand-subtitle-mobile-fs: 0.75rem;
+  }
+
+  .home-header {
+    padding: 1.25rem 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .home-header.mobile-open,
+  .home-header:has(.home-mobile-drawer.open) {
+    background-color: #FFFFFF;
+  }
+
+  .home-header-container {
+    padding: 0 1rem;
+  }
+
+  .home-brand {
+    gap: 1rem;
+  }
+
+  .home-brand-logo {
+    width: 3.75rem;
+    height: 3.75rem;
+  }
+
+  .home-brand-text {
+    gap: 0.25rem;
+  }
+
+  .brand-title {
+    font-size: max(min(var(--brand-title-mobile-fs), var(--fs-min)), calc(var(--brand-title-mobile-fs) * var(--fs-scale)));
+  }
+
+  .brand-subtitle {
+    font-size: max(min(var(--brand-subtitle-mobile-fs), var(--fs-min)), calc(var(--brand-subtitle-mobile-fs) * var(--fs-scale)));
+  }
+
+  .home-header-actions .home-apply-btn {
+    display: none;
+  }
+
+  .home-hamburger {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.375rem 0.1875rem;
+  }
+
+  .home-hamburger span {
+    height: 0.125rem;
+    background-color: #000000;
+  }
+
+  .home-mobile-drawer {
+    padding: 1.25rem 1rem;
+    max-height: calc(100vh - 6.25rem);
+  }
+
+  .home-apply-btn-mobile {
+    border-radius: 0.5rem;
+    background-color: #90091D;
+    padding: 0.625rem 1.25rem;
+  }
+}

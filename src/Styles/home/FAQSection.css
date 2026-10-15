@@ -1,0 +1,161 @@
+/* ==========================================================================
+   Frequently Asked Questions Section Styles - Mother Terasa College of Arts & Science
+   ========================================================================== */
+
+:root {
+  --faq-question-fs: 1rem;
+  --faq-icon-fs: 1.5rem;
+  --faq-answer-fs: 1rem;
+}
+
+.home-faq-section {
+  padding: 5rem var(--global-padding-x, 5%);
+  background-color: #FFFFFF;
+}
+
+.home-faq-container {
+  /* max-width: 860px; */
+  margin: 0 auto;
+}
+
+.home-faq-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+/* .home-faq-item {
+  border-bottom: 1px solid #EAEAEA;
+} */
+
+.home-faq-question-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 0;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  gap: 1rem;
+}
+
+.home-faq-question-text {
+  font-family: var(--font-heading);
+  font-size: max(min(var(--faq-question-fs), var(--fs-min)), calc(var(--faq-question-fs) * var(--fs-scale)));
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.4;
+  transition: color 0.2s ease;
+}
+
+/* .home-faq-item:hover .home-faq-question-text {
+  color: #80142A;
+} */
+
+.home-faq-icon {
+  display: inline-flex;
+  color: #000000;
+  font-size: max(min(var(--faq-icon-fs), var(--fs-min)), calc(var(--faq-icon-fs) * var(--fs-scale)));
+  font-weight: 600;
+  /* color: #80142A; */
+  flex-shrink: 0;
+}
+
+.home-faq-answer {
+  padding: 0 0 1.25rem;
+  color: #000000;
+  font-size: max(min(var(--faq-answer-fs), var(--fs-min)), calc(var(--faq-answer-fs) * var(--fs-scale)));
+  line-height: 1.65;
+  animation: faqFadeIn 0.25s ease;
+}
+
+@keyframes faqFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-0.25rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Mobile (Figma 375px) ── */
+@media (max-width: 768px) {
+  :root {
+    --home-faq-question-text-mobile-fs: 1rem;
+    --home-faq-answer-mobile-fs: 1rem;
+  }
+
+  .home-faq-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .home-faq-section .home-section-header {
+    margin-bottom: 1.25rem;
+  }
+
+  .home-faq-section .home-section-subtitle {
+    margin-top: 1rem;
+  }
+
+  .home-faq-list {
+    margin-top: 0;
+    gap: 1.5rem;
+  }
+
+  .home-faq-question-btn {
+    align-items: flex-start;
+    padding: 0;
+    gap: 1.25rem;
+  }
+
+  .home-faq-question-text {
+    font-size: max(min(var(--home-faq-question-text-mobile-fs), var(--fs-min)), calc(var(--home-faq-question-text-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+  }
+
+  .home-faq-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    line-height: 1;
+  }
+
+  .home-faq-answer {
+    padding: 0.75rem 2.75rem 0 0;
+    font-size: max(min(var(--home-faq-answer-mobile-fs), var(--fs-min)), calc(var(--home-faq-answer-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+  }
+}
+
+/* ── Desktop spacing from the design (Frame 1527): 60px header gap, 24px item gap, 12px Q→A gap ── */
+@media (min-width: 769px) {
+  .home-faq-section .home-section-header {
+    margin-bottom: 3.75rem;
+  }
+
+  .home-faq-list {
+    margin-top: 0;
+    gap: 1.5rem;
+  }
+
+  .home-faq-question-btn {
+    padding: 0;
+    align-items: flex-start;
+  }
+
+  .home-faq-question-text {
+    line-height: normal;
+  }
+
+  .home-faq-answer {
+    padding: 0.75rem 2.75rem 0 0;
+    line-height: normal;
+  }
+}

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700;900&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --about-header-height: 5.25rem;
+  --primary: #80142A;
+  --primary-hover: #690F22;
+  --primary-light: #FBF0F2;
+  --primary-tint: #F8E7EA;
+  --accent: #9A1C36;
+  --dark-burgundy: #661024;
+  --deepest-burgundy: #500B1A;
+  --bg-pink: #F9EAEA;
+  --text-dark: #1E1E1E;
+  --text-body: #4A4A4A;
+  --text-muted: #6E6E6E;
+  --border-color: #E6D5D8;
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Poppins", sans-serif;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --shadow-sm: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 0.875rem 2.25rem rgba(0, 0, 0, 0.09);
+  --radius-sm: 0.5rem;
+  --radius-md: 0.875rem;
+  --radius-lg: 1.25rem;
+  --radius-pill: 624.9375rem;
+  /* Global alignment: 5% side padding across entire webpage */
+  --global-padding-x: 5%;
+  --page-padding-x: 5%;
+  --side-padding: 5%;
+
+  /* Inner-page hero height: the visible screen (browser toolbars excluded)
+     minus the fixed header. --app-vh is measured in Hooks/viewportHeight.js. */
+  --hero-h: calc(var(--app-vh, 100vh) - var(--about-header-height));
+
+  /* Small-screen font scaling: every font-size is multiplied by --fs-scale
+     (set in Hooks/viewportHeight.js; 1 at and above the design widths) and
+     never drops below --fs-min, so small text stays readable. */
+  --fs-scale: 1;
+  --fs-min: 0.75rem;
+}
+
+@supports (height: 100svh) {
+  :root {
+    --hero-h: calc(var(--app-vh, 100svh) - var(--about-header-height));
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE / Edge */
+}
+
+*::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+  width: 0;
+  height: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overscroll-behavior-y: none;
+  overscroll-behavior: none;
+  touch-action: pan-y;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-dark);
+  background-color: #FFFFFF;
+  line-height: 1.6;
+  overflow-x: hidden;
+  width: 100%;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overscroll-behavior-y: none;
+  overscroll-behavior: none;
+  touch-action: pan-y;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
+/* ==========================================================================
+   Mobile (Figma 375px frames) – global spacing tokens
+   ========================================================================== */
+@media (max-width: 768px) {
+  :root {
+    --global-padding-x: 1rem;
+    --page-padding-x: 1rem;
+    --side-padding: 1rem;
+  }
+
+  /* Mobile header is 100px tall (20px padding + 60px logo) */
+  html:root {
+    --about-header-height: 6.25rem;
+  }
+}

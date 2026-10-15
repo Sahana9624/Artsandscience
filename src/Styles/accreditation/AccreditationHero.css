@@ -1,0 +1,172 @@
+:root {
+  --about-header-height: 5.25rem;
+  --accreditation-hero-eyebrow-fs: 1.25rem;
+  --accreditation-hero-title-fs: 2rem;
+  --accreditation-hero-sub-fs: 1.25rem;
+}
+
+/* ── Accreditation Hero Banner ── */
+.accreditation-hero {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  /* Fill the visible screen (browser toolbars excluded) below the header */
+  min-height: var(--hero-h);
+}
+
+.accreditation-hero-overlay {
+  position: absolute;
+  inset: 0;
+ background: linear-gradient(0deg, #2E030A 0%, rgba(46, 3, 10, 0) 100%);
+  z-index: 1;
+}
+
+.accreditation-hero-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin: 0 auto;
+  padding: 4rem var(--global-padding-x);
+  box-sizing: border-box;
+}
+
+.accreditation-hero-content {
+  /* max-width: 780px; */
+}
+
+.accreditation-hero-eyebrow {
+  display: inline-block;
+  font-family: inherit;
+  font-size: max(min(var(--accreditation-hero-eyebrow-fs), var(--fs-min)), calc(var(--accreditation-hero-eyebrow-fs) * var(--fs-scale)));
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 0.85rem;
+  letter-spacing: 0.02em;
+}
+
+.accreditation-hero-title {
+  font-family: inherit;
+  font-size: max(min(var(--accreditation-hero-title-fs), var(--fs-min)), calc(var(--accreditation-hero-title-fs) * var(--fs-scale)));
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.25;
+  margin: 0 0 1rem 0;
+  letter-spacing: -0.02em;
+}
+
+.accreditation-hero-subtitle {
+  font-family: inherit;
+  font-size: max(min(var(--accreditation-hero-sub-fs), var(--fs-min)), calc(var(--accreditation-hero-sub-fs) * var(--fs-scale)));
+  font-weight: 400;
+  line-height: 1.6;
+  color: #ffffff;
+  margin: 0;
+  max-width: 55rem;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  .accreditation-hero-container {
+    padding: 2.5rem var(--global-padding-x);
+  }
+
+  .accreditation-hero-title {
+    font-size: max(min(var(--accreditation-hero-title-mobile-fs), var(--fs-min)), calc(var(--accreditation-hero-title-mobile-fs) * var(--fs-scale)));
+    margin-bottom: 0.75rem;
+  }
+
+  .accreditation-hero-subtitle {
+    font-size: max(min(var(--accreditation-hero-sub-mobile-fs), var(--fs-min)), calc(var(--accreditation-hero-sub-mobile-fs) * var(--fs-scale)));
+    line-height: 1.5;
+  }
+}
+
+/* ── Height-based Responsive Rules (Laptops, short screens, split screens) ── */
+@media (max-height: 700px) {
+  .accreditation-hero-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-height: 550px) {
+  .accreditation-hero {
+    min-height: auto;
+  }
+
+  .accreditation-hero-container {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+
+/* ── Mobile (Figma 375px) ── */
+@media (max-width: 768px) {
+  :root {
+    --accreditation-hero-title-mobile-fs: 1.75rem;
+    --accreditation-hero-sub-mobile-fs: 0.92rem;
+    --accreditation-hero-eyebrow-mobile-fs: 1rem;
+    --accreditation-hero-title-mobile-375-fs: 1.25rem;
+    --accreditation-hero-subtitle-mobile-fs: 1rem;
+  }
+
+  .accreditation-hero {
+    /* Fill the visible screen (browser toolbars excluded) below the header */
+    min-height: var(--hero-h);
+    align-items: flex-end;
+  }
+
+  .accreditation-hero-overlay {
+    background: linear-gradient(90deg, #2E030A 0%, rgba(46, 3, 10, 0) 100%);
+  }
+
+  .accreditation-hero-container {
+    padding: 2.5rem 1rem;
+  }
+
+  .accreditation-hero-content {
+    max-width: none;
+    margin-top: 0;
+  }
+
+  .accreditation-hero-eyebrow {
+    font-size: max(min(var(--accreditation-hero-eyebrow-mobile-fs), var(--fs-min)), calc(var(--accreditation-hero-eyebrow-mobile-fs) * var(--fs-scale)));
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0;
+    margin-bottom: 1rem;
+  }
+
+  .accreditation-hero-title {
+    font-size: max(min(var(--accreditation-hero-title-mobile-375-fs), var(--fs-min)), calc(var(--accreditation-hero-title-mobile-375-fs) * var(--fs-scale)));
+    line-height: normal;
+    letter-spacing: 0;
+    margin-bottom: 1rem;
+  }
+
+  .accreditation-hero-subtitle {
+    font-size: max(min(var(--accreditation-hero-subtitle-mobile-fs), var(--fs-min)), calc(var(--accreditation-hero-subtitle-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+  }
+}
+
+/* ── Tablet & desktop: anchor hero content with the design's bottom gap (101px) ── */
+@media (min-width: 769px) {
+  .accreditation-hero {
+    align-items: flex-end;
+    padding-bottom: 2.3125rem;
+  }
+
+  /* Keep the bottom gap constant on short screens too */
+  .accreditation-hero-container {
+    padding-bottom: 4rem;
+  }
+}

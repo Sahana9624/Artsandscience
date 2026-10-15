@@ -1,0 +1,327 @@
+/* ==========================================================================
+   Apply / Admission Modal Styles - Mother Terasa College of Arts & Science
+   Matches Figma: desktop "Frame 2149" (680 × 734) and mobile "Frame 2227" (343 × 511).
+   The modal is scaled down to fit short / zoomed screens by Hooks/useFitToViewport.js.
+   ========================================================================== */
+
+:root {
+  --modal-title-fs: 1.75rem;
+  --modal-subtitle-fs: 1.5rem;
+  --modal-input-fs: 1.25rem;
+  --modal-checkbox-fs: 1.125rem;
+  --modal-submit-btn-fs: 1.25rem;
+}
+
+.home-apply-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(0.25rem);
+  z-index: 2000;
+  display: flex;
+  padding: 1.25rem;
+  /* Fallback for extreme sizes: scroll rather than cut the modal off */
+  overflow-y: auto;
+  animation: modalFadeIn 0.2s ease;
+  overscroll-behavior: contain;
+}
+
+@keyframes modalFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.home-apply-modal {
+  background-color: #FFFFFF;
+  border-radius: 2.5rem;
+  width: 100%;
+  max-width: 42.5rem;
+  /* auto margins centre it, and keep the top reachable if it ever overflows */
+  margin: auto;
+  padding: 2.5rem 1.25rem;
+  position: relative;
+  box-shadow: 0 1.25rem 3.125rem rgba(0, 0, 0, 0.25);
+  animation: modalSlideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modalSlideUp {
+  from { transform: translateY(1.25rem); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.home-apply-close-btn {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+  border-radius: 1.25rem;
+  background-color: #F5F5F5;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.home-apply-close-btn:hover {
+  background-color: #EAEAEA;
+}
+
+.home-apply-close-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.home-apply-title {
+  font-family: var(--font-heading);
+  font-size: max(min(var(--modal-title-fs), var(--fs-min)), calc(var(--modal-title-fs) * var(--fs-scale)));
+  font-weight: 700;
+  line-height: normal;
+  color: #000000;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.home-apply-subtitle {
+  font-size: max(min(var(--modal-subtitle-fs), var(--fs-min)), calc(var(--modal-subtitle-fs) * var(--fs-scale)));
+  line-height: normal;
+  color: #000000;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.home-apply-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* ── Fields: 50px grey pills, black text (placeholders included, as designed) ── */
+.home-apply-field input,
+.home-apply-field select,
+.home-apply-phone-input,
+.home-apply-country-code {
+  width: 100%;
+  height: 3.125rem;
+  padding: 0 1.25rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #F5F5F5;
+  font-family: inherit;
+  font-size: var(--modal-input-fs);
+  color: #000000;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.home-apply-field select {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.home-apply-field input::placeholder,
+.home-apply-phone-input::placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+.home-apply-field input:focus,
+.home-apply-field select:focus,
+.home-apply-phone-input:focus {
+  outline: none;
+  background-color: #FFFFFF;
+  box-shadow: inset 0 0 0 1px #90091D;
+}
+
+/* +91 code and the mobile number are separate pills, 20px apart */
+.home-apply-phone-row {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.home-apply-country-code {
+  width: auto;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0 0.75rem;
+}
+
+.home-apply-country-chevron {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+}
+
+.home-apply-phone-input {
+  flex: 1;
+  min-width: 0;
+}
+
+.home-apply-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+/* ── Consent: 32px outlined box, 20px from the text ── */
+.home-apply-checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  font-size: max(min(var(--modal-checkbox-fs), var(--fs-min)), calc(var(--modal-checkbox-fs) * var(--fs-scale)));
+  line-height: normal;
+  color: #000000;
+  cursor: pointer;
+}
+
+.home-apply-checkbox-label input {
+  appearance: none;
+  -webkit-appearance: none;
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  margin: 0;
+  border: 1px solid #DDDDDD;
+  border-radius: 0.25rem;
+  background-color: #FFFFFF;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Checked: burgundy box with a white tick (scales with the box size) */
+.home-apply-checkbox-label input:checked {
+  background-color: #90091D;
+  border-color: #90091D;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFFFFF%27 stroke-width=%273%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27%3E%3Cpath d=%27M5 12.5l4.5 4.5L19 7%27/%3E%3C/svg%3E");
+}
+
+.home-apply-checkbox-label input:focus-visible {
+  outline: 2px solid #90091D;
+  outline-offset: 2px;
+}
+
+.home-apply-submit-btn {
+  background-color: #90091D;
+  color: #FFFFFF;
+  font-family: inherit;
+  font-size: max(min(var(--modal-submit-btn-fs), var(--fs-min)), calc(var(--modal-submit-btn-fs) * var(--fs-scale)));
+  font-weight: 600;
+  line-height: normal;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.home-apply-submit-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  filter: grayscale(40%);
+}
+
+.home-apply-submit-btn:not(:disabled):hover {
+  background-color: #690F22;
+}
+
+/* ── Mobile (Figma 375px, "Frame 2227"); also used on short landscape screens,
+   where the compact layout fits far better than the 680px desktop form ── */
+@media (max-width: 768px), (max-height: 500px) {
+  :root {
+    --home-apply-title-mobile-fs: 1.25rem;
+    --home-apply-subtitle-mobile-fs: 0.875rem;
+    --home-apply-field-input-mobile-fs: 0.75rem;
+    --home-apply-checkbox-label-mobile-fs: 0.75rem;
+    --home-apply-submit-mobile-fs: 1rem;
+  }
+
+  .home-apply-overlay {
+    padding: 1rem;
+  }
+
+  .home-apply-modal {
+    max-width: 21.4375rem;
+    border-radius: 1.25rem;
+    padding: 1.25rem 1rem;
+  }
+
+  .home-apply-close-btn {
+    top: 1.25rem;
+    right: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.3rem;
+    border-radius: 0.75rem;
+  }
+
+  .home-apply-close-icon {
+    width: 0.9rem;
+    height: 0.9rem;
+  }
+
+  /* Title block is left-aligned on mobile */
+  .home-apply-title {
+    font-size: max(min(var(--home-apply-title-mobile-fs), var(--fs-min)), calc(var(--home-apply-title-mobile-fs) * var(--fs-scale)));
+    margin-bottom: 0.25rem;
+    padding-right: 2rem;
+    text-align: left;
+  }
+
+  .home-apply-subtitle {
+    font-size: max(min(var(--home-apply-subtitle-mobile-fs), var(--fs-min)), calc(var(--home-apply-subtitle-mobile-fs) * var(--fs-scale)));
+    margin-bottom: 1.25rem;
+    text-align: left;
+  }
+
+  .home-apply-form {
+    gap: 0.75rem;
+  }
+
+  .home-apply-field input,
+  .home-apply-field select,
+  .home-apply-phone-input,
+  .home-apply-country-code {
+    height: 2.375rem;
+    padding: 0 0.75rem;
+    font-size: var(--home-apply-field-input-mobile-fs);
+  }
+
+  .home-apply-phone-row {
+    gap: 0.75rem;
+  }
+
+  .home-apply-country-code {
+    gap: 0.25rem;
+  }
+
+  .home-apply-country-chevron {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .home-apply-row {
+    gap: 0.6875rem;
+  }
+
+  .home-apply-checkbox-label {
+    gap: 0.75rem;
+    font-size: max(min(var(--home-apply-checkbox-label-mobile-fs), var(--fs-min)), calc(var(--home-apply-checkbox-label-mobile-fs) * var(--fs-scale)));
+  }
+
+  .home-apply-checkbox-label input {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .home-apply-submit-btn {
+    font-size: max(min(var(--home-apply-submit-mobile-fs), var(--fs-min)), calc(var(--home-apply-submit-mobile-fs) * var(--fs-scale)));
+  }
+}

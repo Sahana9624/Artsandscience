@@ -1,0 +1,163 @@
+/* ==========================================================================
+   Student Success Stories Section Styles - Mother Terasa College of Arts & Science
+   ========================================================================== */
+
+:root {
+  --testimonial-quote-fs: 1rem;
+  --testimonial-name-fs: 1.25rem;
+  --testimonial-degree-fs: 1rem;
+}
+
+.home-testimonials-section {
+  padding: 5rem var(--global-padding-x, 5%);
+  background-color: #E9CED2; /* Matching soft pink */
+}
+
+.home-testimonials-container {
+  /* max-width: 1160px; */
+  margin: 0 auto;
+}
+
+.home-testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.testimonial-card {
+  background-color: #90091D; /* Deep dark burgundy from picture */
+  color: #FFFFFF;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-0.3125rem);
+}
+
+.testimonial-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.testimonial-title {
+  font-size: max(min(var(--testimonial-quote-fs), var(--fs-min)), calc(var(--testimonial-quote-fs) * var(--fs-scale)));
+  font-weight: 700;
+  line-height: normal;
+  color: #ffffff;
+  margin: 0;
+}
+
+.testimonial-quote {
+  font-size: max(min(var(--testimonial-quote-fs), var(--fs-min)), calc(var(--testimonial-quote-fs) * var(--fs-scale)));
+  line-height: normal;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.testimonial-avatar {
+  position: relative;
+  flex-shrink: 0;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background-color: #EEEEEE;
+}
+
+.testimonial-avatar-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-avatar-img.is-cropped {
+  position: absolute;
+  max-width: none;
+  object-fit: fill;
+}
+
+.testimonial-author-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-name {
+  font-family: var(--font-heading);
+  font-size: max(min(var(--testimonial-name-fs), var(--fs-min)), calc(var(--testimonial-name-fs) * var(--fs-scale)));
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.testimonial-degree {
+  font-size: max(min(var(--testimonial-degree-fs), var(--fs-min)), calc(var(--testimonial-degree-fs) * var(--fs-scale)));
+  color: #FFFFFF;
+}
+
+/* Responsive Breakpoints for Testimonials */
+@media (max-width: 768px) {
+  .home-testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Mobile (Figma 375px) ── */
+@media (max-width: 768px) {
+  :root {
+    --testimonial-quote-mobile-fs: 1rem;
+    --testimonial-name-mobile-fs: 1.25rem;
+    --testimonial-degree-mobile-fs: 1rem;
+  }
+
+  .home-testimonials-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .home-testimonials-grid {
+    gap: 1.25rem;
+  }
+
+  .testimonial-card {
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+    gap: 1.5rem;
+    box-shadow: none;
+  }
+
+  .testimonial-quote {
+    font-size: max(min(var(--testimonial-quote-mobile-fs), var(--fs-min)), calc(var(--testimonial-quote-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    margin-bottom: 0;
+  }
+
+  .testimonial-author {
+    gap: 1.5rem;
+  }
+
+  .testimonial-author-details {
+    gap: 0.5rem;
+  }
+
+  .testimonial-name {
+    font-size: max(min(var(--testimonial-name-mobile-fs), var(--fs-min)), calc(var(--testimonial-name-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+  }
+
+  .testimonial-degree {
+    font-size: max(min(var(--testimonial-degree-mobile-fs), var(--fs-min)), calc(var(--testimonial-degree-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+  }
+}

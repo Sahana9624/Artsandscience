@@ -1,0 +1,50 @@
+/* ==========================================================================
+   Research Ecosystem Section Styles
+   Strictly uses var(--global-padding-x) for all side padding
+   ========================================================================== */
+
+.research-ecosystem-section {
+  padding: 1rem var(--global-padding-x);
+  background-color: #FFFFFF;
+  width: 100%;
+}
+
+.research-ecosystem-container {
+  width: 100%;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+}
+
+.research-ecosystem-image-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.research-ecosystem-img {
+  width: 100%;
+  max-width: 1080px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+  border-radius: 1rem;
+}
+
+@media (max-width: 768px) {
+  .research-ecosystem-section {
+    padding: 3rem var(--global-padding-x) 4rem;
+  }
+
+  .research-ecosystem-img {
+    border-radius: 0.75rem;
+  }
+}
+
+/* ── Mobile (Figma 375px) ── */
+@media (max-width: 768px) {
+  .research-ecosystem-section {
+    padding: 5rem 1rem 2.5rem;
+  }
+}

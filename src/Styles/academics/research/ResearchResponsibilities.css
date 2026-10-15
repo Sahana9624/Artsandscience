@@ -1,0 +1,123 @@
+/* ==========================================================================
+   Responsibilities of R&D Cell Section Styles (4 Large White Pills)
+   Strictly uses var(--global-padding-x) for all side padding
+   ========================================================================== */
+
+:root {
+  --research-resp-title-fs: clamp(1.85rem, 2rem, 2.4rem);
+  --research-pill-fs: 1.25rem;
+}
+
+.research-responsibilities-section {
+  padding: 2rem var(--global-padding-x) 1rem;
+  width: 100%;
+  margin-bottom: 3.5rem;
+}
+
+.research-responsibilities-container {
+  width: 100%;
+  text-align: center;
+}
+
+.research-responsibilities-title {
+  font-family: var(--font-heading);
+  font-size: max(min(var(--research-resp-title-fs), var(--fs-min)), calc(var(--research-resp-title-fs) * var(--fs-scale)));
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 2.25rem;
+  letter-spacing: -0.01875rem;
+}
+
+.research-pills-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.research-pill-card {
+  background-color: #FFFFFF;
+  border-radius: 1.125rem;
+  border: 1px solid #E5E7EB;
+  padding: 2.25rem 1.25rem;
+  min-height: 7.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.02);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  user-select: none;
+}
+
+/* .research-pill-card:hover {
+  transform: translateY(-0.1875rem);
+  box-shadow: 0 0.5rem 1.25rem rgba(128, 20, 42, 0.06);
+  border-color: #D1D5DB;
+} */
+
+.research-pill-text {
+  font-family: var(--font-heading);
+  font-size: max(min(var(--research-pill-fs), var(--fs-min)), calc(var(--research-pill-fs) * var(--fs-scale)));
+  font-weight: 600;
+  color: #000000;
+  line-height: 1.35;
+  text-align: center;
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .research-pills-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .research-pills-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .research-pill-card {
+    min-height: 5.5rem;
+    padding: 1.75rem 1rem;
+  }
+}
+
+/* ── Mobile (Figma 375px) ── */
+@media (max-width: 768px) {
+  :root {
+    --research-responsibilities-title-mobile-fs: 1.25rem;
+  }
+
+  .research-responsibilities-section {
+    padding: 5rem 1rem 0;
+    margin-bottom: 0;
+  }
+
+  .research-responsibilities-title {
+    font-size: max(min(var(--research-responsibilities-title-mobile-fs), var(--fs-min)), calc(var(--research-responsibilities-title-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    letter-spacing: 0;
+    margin-bottom: 1.25rem;
+  }
+
+  .research-pills-row {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .research-pill-card {
+    min-height: 0;
+    padding: 2.5rem 1rem;
+    border-radius: 1.25rem;
+    border-color: #DDDDDD;
+    box-shadow: none;
+  }
+
+  .research-pill-text {
+    line-height: normal;
+  }
+}

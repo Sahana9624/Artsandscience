@@ -1,0 +1,76 @@
+/* ==========================================================================
+   Welcome Section Styles - Mother Terasa College of Arts & Science
+   ========================================================================== */
+
+:root {
+  --welcome-desc-fs: 1rem;
+  --welcome-btn-fs: 1rem;
+}
+
+.home-welcome-section {
+  padding: 3rem var(--global-padding-x);
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+.home-welcome-container {
+  /* max-width: 900px; */
+  margin: 0 auto;
+}
+
+.home-welcome-description {
+  font-size: max(min(var(--welcome-desc-fs), var(--fs-min)), calc(var(--welcome-desc-fs) * var(--fs-scale)));
+  color: #000000;
+  line-height: 1.75;
+  margin-bottom: 2rem;
+}
+
+.welcome-learn-more-btn {
+  display: inline-block;
+  background-color: transparent;
+  color: #90091D;
+  font-size: max(min(var(--welcome-btn-fs), var(--fs-min)), calc(var(--welcome-btn-fs) * var(--fs-scale)));
+  font-weight: 500;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.5rem;
+  border: 1px solid #90091D;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  min-width: 11.25rem;
+  text-align: center;
+}
+
+.welcome-learn-more-btn:hover {
+  background-color: #FBF0F2;
+  transform: translateY(-0.125rem);
+}
+
+/* ── Mobile (Figma 375px) ── */
+@media (max-width: 768px) {
+  :root {
+    --home-welcome-description-mobile-fs: 1rem;
+  }
+
+  .home-welcome-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .home-welcome-section .home-section-title {
+    margin-bottom: 0.75rem;
+  }
+
+  .home-welcome-description {
+    font-size: max(min(var(--home-welcome-description-mobile-fs), var(--fs-min)), calc(var(--home-welcome-description-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    margin-bottom: 1.25rem;
+  }
+
+  .welcome-learn-more-btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0.625rem 1.25rem;
+    border-width: 1px;
+    border-color: #90091D;
+  }
+}

@@ -1,0 +1,239 @@
+/* ==========================================================================
+   Departments Hero Section Styles
+   Strictly uses var(--global-padding-x) for all side padding
+   Auto-adjustable full screen viewport coverage matching About Us & Facilities
+   ========================================================================== */
+
+:root {
+  --dept-hero-title-fs: clamp(1.2rem, 2rem, 3.2rem);
+  --dept-hero-desc-fs: clamp(0.98rem, 1.25rem, 1.3rem);
+  --dept-hero-btn-fs: 1rem;
+  --about-header-height: 5.25rem;
+}
+
+.departments-hero,
+.departments-hero-section {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+
+  /* Fill the visible screen (browser toolbars excluded) below the header */
+  min-height: var(--hero-h);
+}
+
+.departments-hero-overlay {
+  position: absolute;
+  inset: 0;
+ background: linear-gradient(90deg, #2E030A 0%, rgba(46, 3, 10, 0) 100%);
+  z-index: 1;
+}
+
+.departments-hero-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin: 0 auto;
+  padding: 4rem var(--global-padding-x);
+}
+
+.departments-hero-content {
+  max-width: 42.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.departments-hero-title {
+  font-family: var(--font-heading);
+  font-size: max(min(var(--dept-hero-title-fs), var(--fs-min)), calc(var(--dept-hero-title-fs) * var(--fs-scale)));
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+  letter-spacing: -0.03125rem;
+}
+
+.departments-hero-desc {
+  font-family: var(--font-body);
+  font-size: max(min(var(--dept-hero-desc-fs), var(--fs-min)), calc(var(--dept-hero-desc-fs) * var(--fs-scale)));
+  color: #FFFFFF;
+  line-height: 1.65;
+  margin-bottom: 1.75rem;
+  max-width: 40rem;
+}
+
+.departments-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.dept-hero-btn-primary {
+  background-color: #90091D;
+  color: #FFFFFF;
+  font-family: var(--font-body);
+  font-size: max(min(var(--dept-hero-btn-fs), var(--fs-min)), calc(var(--dept-hero-btn-fs) * var(--fs-scale)));
+  font-weight: 500;
+  padding: 0.625rem 3.125rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.dept-hero-btn-primary:hover {
+  background-color: #690F22;
+  border-color: #690F22;
+  transform: translateY(-0.125rem);
+  box-shadow: 0 0.375rem 1.125rem rgba(128, 20, 42, 0.4);
+}
+
+.dept-hero-btn-secondary {
+
+  color: #FFFFFF;
+  font-family: var(--font-body);
+  font-size: max(min(var(--dept-hero-btn-fs), var(--fs-min)), calc(var(--dept-hero-btn-fs) * var(--fs-scale)));
+  font-weight: 500;
+  padding: 0.625rem 3.125rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.dept-hero-btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: #FFFFFF;
+  transform: translateY(-0.125rem);
+}
+
+.dept-hero-btn-secondary svg {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+@media (max-width: 640px) {
+  .departments-hero,
+  .departments-hero-section {
+    /* Fill the visible screen (browser toolbars excluded) below the header */
+    min-height: var(--hero-h);
+  }
+
+  .departments-hero-container {
+    padding: 2.5rem var(--global-padding-x);
+  }
+
+  .departments-hero-actions {
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
+  }
+
+  .dept-hero-btn-primary,
+  .dept-hero-btn-secondary {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+/* ── Mobile (Figma 375px) ── */
+@media (max-width: 768px) {
+  :root {
+    --departments-hero-title-mobile-fs: 1.25rem;
+    --departments-hero-desc-mobile-fs: 1rem;
+    --dept-hero-btn-primary-mobile-fs: 1rem;
+  }
+
+  .departments-hero,
+  .departments-hero-section {
+    /* Fill the visible screen (browser toolbars excluded) below the header */
+    min-height: var(--hero-h);
+    align-items: flex-end;
+  }
+
+  .departments-hero-container {
+    padding: 2.5rem 1rem;
+  }
+
+  .departments-hero-content {
+    max-width: none;
+    margin-top: 0;
+  }
+
+  .departments-hero-title {
+    font-size: max(min(var(--departments-hero-title-mobile-fs), var(--fs-min)), calc(var(--departments-hero-title-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    letter-spacing: 0;
+    margin-bottom: 0.75rem;
+  }
+
+  .departments-hero-desc {
+    font-size: max(min(var(--departments-hero-desc-mobile-fs), var(--fs-min)), calc(var(--departments-hero-desc-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    margin-bottom: 1.25rem;
+  }
+
+  .departments-hero-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 1.25rem;
+  }
+
+  .dept-hero-btn-primary,
+  .dept-hero-btn-secondary {
+    width: 100%;
+    justify-content: center;
+    gap: 0.625rem;
+    padding: 0.625rem 3.125rem;
+    font-size: max(min(var(--dept-hero-btn-primary-mobile-fs), var(--fs-min)), calc(var(--dept-hero-btn-primary-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+  }
+
+  .dept-hero-btn-secondary {
+    border-width: 1px;
+  }
+
+  .dept-hero-btn-secondary svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .dept-hero-btn-primary {
+    border-radius: 0.5rem;
+    background-color: #90091D;
+    border-color: #90091D;
+  }
+
+  .dept-hero-btn-secondary {
+    border-radius: 0.5rem;
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+/* ── Tablet & desktop: anchor hero content with the design's bottom gap (62px) ── */
+@media (min-width: 769px) {
+  .departments-hero {
+    align-items: flex-end;
+    padding-bottom: 0;
+  }
+}

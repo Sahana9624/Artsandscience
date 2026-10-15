@@ -1,0 +1,29 @@
+/* ==========================================================================
+   About Us Page Styles - Mother Terasa College of Arts & Science
+   ========================================================================== */
+
+/* Component Style Imports */
+@import "./AboutHero.css";
+@import "./CampusExcellence.css";
+@import "./VisionMission.css";
+@import "./LeadershipMessages.css";
+@import "./Administration.css";
+
+.about-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+  width: 100%;
+  background-color: #FFFFFF;
+  position: relative;
+  overflow-x: hidden;
+  /* clip (unlike hidden) keeps position: sticky working inside the page */
+  overflow-x: clip;
+}
+
+.about-main-content {
+  flex: 1;
+  width: 100%;
+  padding-top: var(--about-header-height, 5.25rem); /* Space for fixed header (84px) */
+}

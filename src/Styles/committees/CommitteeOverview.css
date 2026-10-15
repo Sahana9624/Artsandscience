@@ -1,0 +1,178 @@
+:root {
+  --committee-overview-title-fs: 1.5rem;
+  --committee-overview-desc-fs: 1.25rem;
+  --committee-overview-title-tablet-fs: 1.45rem;
+}
+
+/* ── Committee & Cells Overview Card ── */
+.committee-overview-card {
+  background: #ffffff;
+  border: 1px solid #EEEEEE;
+  border-radius: 20px;
+  /* box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.04); */
+  padding: 3rem 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 3rem; */
+  box-sizing: border-box;
+  margin-bottom: 3.5rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* .committee-overview-card:hover {
+  box-shadow: 0 8px 30px -4px rgba(0, 0, 0, 0.07);
+} */
+
+.committee-overview-info {
+  flex: 1;
+  /* max-width: 520px; */
+}
+
+.committee-overview-badge {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  border: 2px solid #f1f5f9;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+.committee-overview-badge-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.committee-overview-title {
+  font-family: inherit;
+  font-size: max(min(var(--committee-overview-title-fs), var(--fs-min)), calc(var(--committee-overview-title-fs) * var(--fs-scale)));
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.25;
+  margin: 0 0 1.5rem 0;
+  letter-spacing: -0.01em;
+}
+
+.committee-overview-desc {
+  font-family: inherit;
+  font-size: max(min(var(--committee-overview-desc-fs), var(--fs-min)), calc(var(--committee-overview-desc-fs) * var(--fs-scale)));
+  line-height: 1.45;
+  color: #000000;
+  margin: 0;
+}
+
+.committee-overview-media {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 590px;
+}
+
+.committee-overview-illustration {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.04));
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 992px) {
+  .committee-overview-card {
+    padding: 2.25rem 2rem;
+    gap: 2rem;
+  }
+
+  .committee-overview-title {
+    font-size: max(min(var(--committee-overview-title-tablet-fs), var(--fs-min)), calc(var(--committee-overview-title-tablet-fs) * var(--fs-scale)));
+  }
+}
+
+@media (max-width: 768px) {
+  .committee-overview-card {
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    gap: 2rem;
+    text-align: left;
+    margin-bottom: 2.5rem;
+  }
+
+  .committee-overview-info {
+    max-width: 100%;
+  }
+
+  .committee-overview-media {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .committee-overview-illustration {
+    max-height: 220px;
+  }
+}
+
+/* ── Mobile (Figma 375px) ── */
+@media (max-width: 768px) {
+  :root {
+    --committee-overview-title-mobile-fs: 1.25rem;
+    --committee-overview-desc-mobile-fs: 1rem;
+  }
+
+  .committee-overview-card {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.25rem;
+    padding: 1.25rem 1rem;
+    margin-bottom: 5rem;
+    border-color: #EEEEEE;
+  }
+
+  .committee-overview-info {
+    max-width: none;
+  }
+
+  .committee-overview-badge {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+    margin-bottom: 1.25rem;
+    border: none;
+    box-shadow: none;
+  }
+
+  .committee-overview-title {
+    font-size: max(min(var(--committee-overview-title-mobile-fs), var(--fs-min)), calc(var(--committee-overview-title-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    margin-bottom: 0.75rem;
+  }
+
+  .committee-overview-desc {
+    font-size: max(min(var(--committee-overview-desc-mobile-fs), var(--fs-min)), calc(var(--committee-overview-desc-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+  }
+
+  .committee-overview-media {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+  }
+
+  .committee-overview-illustration {
+    width: 100%;
+    height: 12.9375rem;
+    max-width: none;
+    object-fit: contain;
+    box-shadow: none;
+    border-radius: 0;
+  }
+}

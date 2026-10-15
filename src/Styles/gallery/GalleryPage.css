@@ -1,0 +1,25 @@
+/* ==========================================================================
+   Gallery Page Styles - Mother Terasa College of Arts & Science
+   ========================================================================== */
+
+/* Component Style Imports */
+@import "./GalleryHero.css";
+@import "./GalleryGrid.css";
+@import "./GalleryDetail.css";
+
+.gallery-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+  width: 100%;
+  background-color: #FFFFFF;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.gallery-main-content {
+  flex: 1;
+  width: 100%;
+  padding-top: var(--about-header-height, 5.25rem); /* Space for fixed navigation bar */
+}

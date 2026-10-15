@@ -1,0 +1,299 @@
+/* ==========================================================================
+   Common CTA Banner Component Styles
+   Used across Home and all inner pages
+   ========================================================================== */
+
+:root {
+  --cta-title-fs: clamp(1.2rem, 1.5rem, 2.1rem);
+  --cta-desc-fs: clamp(0.9rem, 1rem, 1.2rem);
+  --cta-btn-fs: 1rem;
+}
+
+.common-cta-section {
+  /* background-color: var(--dark-burgundy, #701426); */
+  background: linear-gradient(270deg, #90091D 0%, #2A0308 100%);
+  padding: 3.75rem var(--global-padding-x);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.common-cta-container {
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: clamp(1.5rem, 4vw, 3rem);
+}
+
+.common-cta-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.common-cta-title {
+  font-family: var(--font-heading, 'Outfit', 'Poppins', sans-serif);
+  color: #FFFFFF;
+  font-size: max(min(var(--cta-title-fs), var(--fs-min)), calc(var(--cta-title-fs) * var(--fs-scale)));
+  font-weight: 400;
+  line-height: 1.35;
+  margin-bottom: 1.125rem;
+}
+
+.common-cta-desc {
+  color: #FFFFFF;
+  font-size: max(min(var(--cta-desc-fs), var(--fs-min)), calc(var(--cta-desc-fs) * var(--fs-scale)));
+  line-height: 1.65;
+  margin-bottom: 1.75rem;
+}
+
+.common-cta-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.common-cta-btn-apply {
+  background-color: #90091D;
+  color: #FFFFFF;
+  font-size: max(min(var(--cta-btn-fs), var(--fs-min)), calc(var(--cta-btn-fs) * var(--fs-scale)));
+  font-weight: 500;
+  padding: 0.625rem 2.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+}
+
+.common-cta-btn-apply:hover {
+  background-color: #9C1B36;
+  transform: translateY(-0.125rem);
+  box-shadow: 0 0.25rem 0.875rem rgba(0, 0, 0, 0.2);
+}
+
+.common-cta-btn-contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  color: #FFFFFF;
+  font-size: max(min(var(--cta-btn-fs), var(--fs-min)), calc(var(--cta-btn-fs) * var(--fs-scale)));
+  font-weight: 500;
+  padding: 0.625rem 2.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.common-cta-btn-contact:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #FFFFFF;
+  transform: translateY(-0.125rem);
+}
+
+.common-cta-phone-icon {
+  width: 1.125rem;
+  height: 1.125rem;
+  filter: brightness(0) invert(1);
+}
+
+/* 2x2 Asymmetric Photo Collage Grid (Distinct sizes per referral design) */
+.common-cta-right {
+  width: 100%;
+}
+
+.common-cta-collage-grid {
+  display: grid;
+  grid-template-columns: repeat(19, 1fr);
+  gap: 0.875rem;
+}
+
+.common-cta-collage-item {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0.25rem 0.875rem rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Card 1: Top-Left (~45% width, taller) */
+.common-cta-collage-item:nth-child(1),
+.common-cta-collage-item-1 {
+  grid-column: span 9;
+  height: clamp(8.5rem, 15rem, 16rem);
+}
+
+/* Card 2: Top-Right (~55% width, taller) */
+.common-cta-collage-item:nth-child(2),
+.common-cta-collage-item-2 {
+  grid-column: span 10;
+  height: clamp(8.5rem, 15rem, 16rem);
+}
+
+/* Card 3: Bottom-Left (~35% width, shorter) */
+.common-cta-collage-item:nth-child(3),
+.common-cta-collage-item-3 {
+  grid-column: span 7;
+  height: clamp(6rem, 10.5rem, 11.5rem);
+}
+
+/* Card 4: Bottom-Right (~65% width panoramic, shorter) */
+.common-cta-collage-item:nth-child(4),
+.common-cta-collage-item-4 {
+  grid-column: span 12;
+  height: clamp(6rem, 10.5rem, 11.5rem);
+}
+
+.common-cta-collage-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  display: block;
+}
+
+.common-cta-collage-item:hover img {
+  transform: scale(1.06);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .common-cta-container {
+    grid-template-columns: 1fr;
+    gap: 2.25rem;
+  }
+
+  .common-cta-collage-grid {
+    max-width: 34rem;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .common-cta-collage-item:nth-child(1),
+  .common-cta-collage-item-1,
+  .common-cta-collage-item:nth-child(2),
+  .common-cta-collage-item-2 {
+    height: clamp(6.5rem, 24vw, 10.5rem);
+  }
+
+  .common-cta-collage-item:nth-child(3),
+  .common-cta-collage-item-3,
+  .common-cta-collage-item:nth-child(4),
+  .common-cta-collage-item-4 {
+    height: clamp(4.75rem, 17vw, 7.5rem);
+  }
+
+  .common-cta-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .common-cta-btn-apply,
+  .common-cta-btn-contact {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ── Mobile (Figma 375px) ── */
+@media (max-width: 768px) {
+  :root {
+    --common-cta-title-mobile-fs: 1.25rem;
+    --common-cta-desc-mobile-fs: 1rem;
+    --common-cta-btn-apply-mobile-fs: 1rem;
+  }
+
+  .common-cta-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .common-cta-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .common-cta-right {
+    order: -1;
+  }
+
+  .common-cta-collage-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    max-width: none;
+    margin: 0;
+  }
+
+  .common-cta-collage-item {
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.3);
+  }
+
+  .common-cta-collage-item:nth-child(1),
+  .common-cta-collage-item-1 {
+    width: calc((100% - 0.75rem) * 191 / 331);
+    height: 7.5rem;
+  }
+
+  .common-cta-collage-item:nth-child(2),
+  .common-cta-collage-item-2 {
+    width: calc((100% - 0.75rem) * 140 / 331);
+    height: 7.5rem;
+  }
+
+  .common-cta-collage-item:nth-child(3),
+  .common-cta-collage-item-3 {
+    width: calc((100% - 0.75rem) * 146 / 331);
+    height: 8.75rem;
+  }
+
+  .common-cta-collage-item:nth-child(4),
+  .common-cta-collage-item-4 {
+    width: calc((100% - 0.75rem) * 185 / 331);
+    height: 8.75rem;
+  }
+
+  .common-cta-title {
+    font-size: max(min(var(--common-cta-title-mobile-fs), var(--fs-min)), calc(var(--common-cta-title-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    margin-bottom: 0.75rem;
+  }
+
+  .common-cta-desc {
+    font-size: max(min(var(--common-cta-desc-mobile-fs), var(--fs-min)), calc(var(--common-cta-desc-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    margin-bottom: 1.25rem;
+  }
+
+  .common-cta-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 1.25rem;
+  }
+
+  .common-cta-btn-apply,
+  .common-cta-btn-contact {
+    width: 100%;
+    justify-content: center;
+    gap: 0.625rem;
+    padding: 0.625rem 2.5rem;
+    font-size: max(min(var(--common-cta-btn-apply-mobile-fs), var(--fs-min)), calc(var(--common-cta-btn-apply-mobile-fs) * var(--fs-scale)));
+  }
+
+  .common-cta-btn-contact {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .common-cta-phone-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}

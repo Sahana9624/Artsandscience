@@ -1,0 +1,332 @@
+/* ==========================================================================
+   News & Events List Section Styles - Mother Terasa College of Arts & Science
+   Strictly uses var(--global-padding-x) for side padding
+   ========================================================================== */
+
+:root {
+  --news-card-tag-fs: 1.25rem;
+  --news-card-title-fs: clamp(1.25rem, 2rem, 2.5rem);
+  --news-card-desc-fs: 1.25rem;
+}
+
+.news-events-section {
+  padding: 5rem var(--global-padding-x) 6.5rem;
+  /* background-color: #FFFFFF; */
+  width: 100%;
+}
+
+.news-events-container {
+  /* max-width: 75rem; */
+  width: 100%;
+  margin: 0 auto;
+}
+
+.news-events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+/* Individual News/Event Card */
+.news-event-card {
+  background-color: #FFFFFF;
+  border-radius: 1.25rem;
+  /* border: 1px solid rgba(221, 221, 221, 0.85); */
+  /* box-shadow: 0 0.125rem 0.75rem rgba(0, 0, 0, 0.03); */
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 2rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  overflow: hidden;
+}
+
+/* .news-event-card:hover {
+  transform: translateY(-0.25rem);
+  border-color: #90091D;
+  box-shadow: 0 0.75rem 1.75rem rgba(144, 9, 29, 0.08);
+} */
+
+/* Poster Image Container */
+.news-event-poster-wrap {
+  width: 32.5rem;
+  min-width: 32.5rem;
+  height: 30rem;
+  border-radius: 0.875rem;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.news-event-poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.news-event-card:hover .news-event-poster {
+  transform: scale(1.03);
+}
+
+/* Card Content Body */
+.news-event-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.news-event-content-top {
+  width: 100%;
+}
+
+.news-event-tag {
+  font-family: var(--font-body, 'Outfit', sans-serif);
+  font-size: max(min(var(--news-card-tag-fs), var(--fs-min)), calc(var(--news-card-tag-fs) * var(--fs-scale)));
+  font-weight: 400;
+  color: #90091D;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  margin-bottom: 0.65rem;
+  display: inline-block;
+}
+
+.news-event-title {
+  font-family: var(--font-heading, 'Outfit', 'Poppins', sans-serif);
+  font-size: max(min(var(--news-card-title-fs), var(--fs-min)), calc(var(--news-card-title-fs) * var(--fs-scale)));
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.32;
+  margin: 0 0 0.85rem 0;
+  letter-spacing: -0.015rem;
+}
+
+.news-event-desc {
+  font-family: var(--font-body, 'Outfit', sans-serif);
+  font-size: max(min(var(--news-card-desc-fs), var(--fs-min)), calc(var(--news-card-desc-fs) * var(--fs-scale)));
+  font-weight: 400;
+  color: #000000;
+  line-height: 1.68;
+  white-space: pre-line;
+  margin: 0;
+}
+
+/* Small square red action/download button with rock-solid anchored icon */
+.news-event-action-btn {
+  height: 2.75rem;
+  min-width: 2.75rem;
+  max-width: 2.75rem;
+  border-radius: 0.5rem;
+  background-color: #90091D;
+  color: #FFFFFF;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  padding-left: 0.625rem;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  text-decoration: none;
+  box-shadow: none;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-top: 1.25rem;
+  transition: max-width 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              padding-right 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              background-color 0.25s ease,
+              box-shadow 0.25s ease;
+}
+
+.news-event-action-icon {
+  flex-shrink: 0;
+  width: 1rem;
+  height: 1rem;
+  display: block;
+}
+
+.news-event-action-text {
+  display: inline-block;
+  max-width: 0;
+  opacity: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: var(--font-heading, 'Outfit', 'Poppins', sans-serif);
+  font-size: max(min(0.875rem, var(--fs-min)), calc(0.875rem * var(--fs-scale)));
+  font-weight: 500;
+  color: #FFFFFF;
+  line-height: 1;
+  letter-spacing: 0.01rem;
+  padding-left: 0;
+  pointer-events: none;
+  transition: max-width 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              padding-left 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* On hovering the card section (or the button itself), expand smoothly without shifting icon */
+.news-event-card:hover .news-event-action-btn,
+.news-event-action-btn:hover,
+.news-event-action-btn:focus-visible {
+  max-width: 11rem;
+  padding-right: 0.95rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(128, 20, 42, 0.35);
+}
+
+.news-event-card:hover .news-event-action-text,
+.news-event-action-btn:hover .news-event-action-text,
+.news-event-action-btn:focus-visible .news-event-action-text {
+  max-width: 9rem;
+  padding-left: 0.5rem;
+  opacity: 1;
+}
+
+/* Hover directly on the button */
+.news-event-action-btn:hover {
+  background-color: #690F22;
+}
+
+.news-event-action-btn:active {
+  transform: none;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 880px) {
+  .news-event-card {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.35rem;
+  }
+
+  .news-event-poster-wrap {
+    width: 100%;
+    min-width: 100%;
+    height: 15.5rem;
+  }
+
+  .news-events-section {
+    padding: 3.5rem var(--global-padding-x) 4.5rem;
+  }
+}
+
+@media (max-width: 580px) {
+  :root {
+    --news-event-title-sm-fs: 1.2rem;
+    --news-event-desc-sm-fs: 0.9rem;
+  }
+
+  .news-event-card {
+    padding: 1.15rem;
+    border-radius: 1rem;
+  }
+
+  .news-event-poster-wrap {
+    height: 13rem;
+    border-radius: 0.75rem;
+  }
+
+  .news-event-title {
+    font-size: max(min(var(--news-event-title-sm-fs), var(--fs-min)), calc(var(--news-event-title-sm-fs) * var(--fs-scale)));
+  }
+
+  .news-event-desc {
+    font-size: max(min(var(--news-event-desc-sm-fs), var(--fs-min)), calc(var(--news-event-desc-sm-fs) * var(--fs-scale)));
+  }
+}
+
+/* ── Mobile (Figma 375px) ── */
+@media (max-width: 768px) {
+  :root {
+    --news-event-tag-mobile-fs: 1.25rem;
+    --news-event-title-mobile-fs: 1.25rem;
+    --news-event-desc-mobile-fs: 1rem;
+  }
+
+  .news-events-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .news-events-list {
+    gap: 2.5rem;
+  }
+
+  .news-event-card {
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 0 0 1.25rem;
+    border-radius: 0;
+    border-bottom: 1px solid #EEEEEE;
+  }
+
+  .news-event-card:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .news-event-poster-wrap {
+    width: 100%;
+    height: 19.8rem;
+    border: 1px solid #EEEEEE;
+    border-radius: 1.25rem;
+  }
+
+  .news-event-body {
+    gap: 1.25rem;
+  }
+
+  .news-event-tag {
+    font-size: max(min(var(--news-event-tag-mobile-fs), var(--fs-min)), calc(var(--news-event-tag-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    margin-bottom: 1.25rem;
+  }
+
+  .news-event-title {
+    font-size: max(min(var(--news-event-title-mobile-fs), var(--fs-min)), calc(var(--news-event-title-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    margin-bottom: 1.25rem;
+  }
+
+  .news-event-desc {
+    font-size: max(min(var(--news-event-desc-mobile-fs), var(--fs-min)), calc(var(--news-event-desc-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+  }
+
+  .news-event-action-btn {
+    min-width: 2.45rem;
+    max-width: 2.45rem;
+    height: 2.45rem;
+    padding: 0;
+    padding-left: 0.725rem;
+    border-radius: 0.375rem;
+    background-color: #80142A;
+    margin-top: 0;
+    box-shadow: none;
+  }
+
+  .news-event-card:active .news-event-action-btn,
+  .news-event-action-btn:active {
+    max-width: 11rem;
+    padding-right: 0.95rem;
+  }
+
+  .news-event-card:active .news-event-action-text,
+  .news-event-action-btn:active .news-event-action-text {
+    max-width: 9rem;
+    padding-left: 0.5rem;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .news-event-tag {
+    font-weight: 400;
+  }
+}

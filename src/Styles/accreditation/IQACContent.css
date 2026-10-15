@@ -1,0 +1,545 @@
+:root {
+  --iqac-main-heading-fs: 2rem;
+  --iqac-intro-fs: 1rem;
+  --iqac-card-title-fs: 1.25rem;
+  --iqac-card-list-fs: 1rem;
+  --iqac-bullet-fs: 1.35rem;
+  --iqac-member-name-fs: 1.25rem;
+  --iqac-member-desig-fs: 1rem;
+  --iqac-member-badge-fs: 1rem;
+  --iqac-report-year-title-fs: 1.25rem;
+  --iqac-report-item-num-fs: 1.5rem;
+  --iqac-report-item-name-fs: 1rem;
+}
+
+/* ── IQAC Content Sections ── */
+.iqac-content-wrapper {
+  width: 100%;
+}
+
+/* ── 1. Objective & Functions Section ── */
+.iqac-objective-section {
+  margin-bottom: 4rem;
+}
+
+.iqac-main-heading {
+  font-family: inherit;
+  font-size: max(min(var(--iqac-main-heading-fs), var(--fs-min)), calc(var(--iqac-main-heading-fs) * var(--fs-scale)));
+  font-weight: 700;
+  color: #000000;
+  text-align: left;
+  margin: 0 0 1.25rem 0;
+  letter-spacing: -0.01em;
+}
+
+.iqac-objective-intro {
+  font-family: inherit;
+  font-size: max(min(var(--iqac-intro-fs), var(--fs-min)), calc(var(--iqac-intro-fs) * var(--fs-scale)));
+  line-height: 1.7;
+  color: #000000;
+  text-align: left;
+  margin: 0 0 2.5rem 0;
+  width: 100%;
+}
+
+.iqac-objective-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: stretch;
+  width: 100%;
+}
+
+.iqac-objective-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.iqac-card-white {
+  background: #ffffff;
+  border: 1px solid #e7e7e7;
+  border-radius: 16px;
+  padding: 2.25rem 2.25rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.03);
+  box-sizing: border-box;
+}
+
+.iqac-card-pink {
+  background: #E9CED2;
+  border: 1px solid #f6dcdF;
+  border-radius: 16px;
+  padding: 2.25rem 2.25rem;
+  box-shadow: 0 2px 12px rgba(128, 20, 42, 0.04);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.iqac-card-title {
+  font-family: inherit;
+  font-size: max(min(var(--iqac-card-title-fs), var(--fs-min)), calc(var(--iqac-card-title-fs) * var(--fs-scale)));
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 1.25rem 0;
+  line-height: 1.3;
+}
+
+.iqac-card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.iqac-card-list li {
+  position: relative;
+  padding-left: 1.25rem;
+  font-size: max(min(var(--iqac-card-list-fs), var(--fs-min)), calc(var(--iqac-card-list-fs) * var(--fs-scale)));
+  line-height: 1.6;
+  color: #000000;
+}
+
+.iqac-card-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: -1px;
+  font-size: max(min(var(--iqac-bullet-fs), var(--fs-min)), calc(var(--iqac-bullet-fs) * var(--fs-scale)));
+  color: #000000;
+}
+
+/* ── 2. Committee Members Section ── */
+.iqac-members-section {
+  margin-bottom: 4.5rem;
+}
+
+.iqac-members-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.iqac-member-card {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #e7e7e7;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+  padding: 2.25rem 1.25rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.iqac-member-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px -4px rgba(0, 0, 0, 0.08);
+}
+
+.iqac-member-avatar-wrapper {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1.15rem;
+  background: #f3f4f6;
+  border: 2px solid #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+}
+
+.iqac-member-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.iqac-member-name {
+  font-family: inherit;
+  font-size: max(min(var(--iqac-member-name-fs), var(--fs-min)), calc(var(--iqac-member-name-fs) * var(--fs-scale)));
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 0.35rem 0;
+  min-height: 2.6em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iqac-member-designation {
+  font-family: inherit;
+  font-size: max(min(var(--iqac-member-desig-fs), var(--fs-min)), calc(var(--iqac-member-desig-fs) * var(--fs-scale)));
+  font-weight: 400;
+  color: #000000;
+  margin: 0 0 1.25rem 0;
+  line-height: 1.35;
+  min-height: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iqac-member-badge {
+  display: inline-block;
+  padding: 0.35rem 1.05rem;
+  border-radius: 8px;
+  font-size: max(min(var(--iqac-member-badge-fs), var(--fs-min)), calc(var(--iqac-member-badge-fs) * var(--fs-scale)));
+  font-weight: 400;
+  /* letter-spacing: 0.02em; */
+  /* text-transform: capitalize; */
+  margin-top: auto;
+}
+
+.iqac-badge-gold {
+  background: #FEF3DD;
+  color: #F9A825;
+}
+
+.iqac-badge-orange {
+  background: #FFEDDF;
+  color: #EA580C;
+}
+
+.iqac-badge-blue {
+  background: #E8EFFD;
+  color: #0C81F3;
+}
+
+/* ── 3. Year Reports Section ── */
+.iqac-reports-section {
+  margin-bottom: 4.5rem;
+}
+
+.iqac-reports-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.iqac-report-card {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #e7e7e7;
+  border-radius: 16px;
+  padding: 1.85rem 2.25rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+  box-sizing: border-box;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.iqac-report-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px -3px rgba(0, 0, 0, 0.06);
+}
+
+.iqac-report-card-centered {
+  grid-column: 1 / -1;
+  width: calc((100% - 2rem) / 2);
+  margin: 0 auto;
+}
+
+.iqac-report-year-title {
+  font-family: inherit;
+  font-size: max(min(var(--iqac-report-year-title-fs), var(--fs-min)), calc(var(--iqac-report-year-title-fs) * var(--fs-scale)));
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 1.25rem 0;
+  line-height: 1.3;
+}
+
+.iqac-report-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.iqac-report-item-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 0.65rem;
+  /* border-bottom: 1px solid #f3f4f6; */
+}
+
+.iqac-report-item-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.iqac-report-item-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.iqac-report-item-num {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: max(min(var(--iqac-report-item-num-fs), var(--fs-min)), calc(var(--iqac-report-item-num-fs) * var(--fs-scale)));
+  color: #000000;
+  min-width: 1.5rem;
+}
+
+.iqac-report-item-name {
+  font-family: inherit;
+  font-size: max(min(var(--iqac-report-item-name-fs), var(--fs-min)), calc(var(--iqac-report-item-name-fs) * var(--fs-scale)));
+  font-weight: 500;
+  color: #000000;
+}
+
+.iqac-download-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  background: #90091D;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  text-decoration: none;
+}
+
+.iqac-download-btn:hover {
+  background: #600d1e;
+  transform: translateY(-1px);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1100px) {
+  .iqac-members-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .iqac-objective-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .iqac-reports-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .iqac-report-card-centered {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 820px) {
+  .iqac-members-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --iqac-main-heading-mobile-fs: 1.55rem;
+  }
+
+  .iqac-main-heading {
+    font-size: max(min(var(--iqac-main-heading-mobile-fs), var(--fs-min)), calc(var(--iqac-main-heading-mobile-fs) * var(--fs-scale)));
+  }
+
+  .iqac-card-white,
+  .iqac-card-pink {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .iqac-members-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .iqac-report-card {
+    padding: 1.5rem 1.25rem;
+  }
+}
+
+/* ── Mobile (Figma 375px) ── */
+@media (max-width: 768px) {
+  :root {
+    --iqac-main-heading-mobile-375-fs: 1.25rem;
+    --iqac-objective-intro-mobile-fs: 1rem;
+    --iqac-card-title-mobile-fs: 1.25rem;
+    --iqac-card-list-li-mobile-fs: 1rem;
+    --iqac-member-name-mobile-fs: 1.25rem;
+    --iqac-member-designation-mobile-fs: 1rem;
+    --iqac-member-badge-mobile-fs: 1rem;
+    --iqac-report-year-title-mobile-fs: 1.25rem;
+    --iqac-report-item-num-mobile-fs: 1.5rem;
+    --iqac-report-item-name-mobile-fs: 1rem;
+  }
+
+  .iqac-objective-section,
+  .iqac-members-section,
+  .iqac-reports-section {
+    margin-bottom: 2.5rem;
+  }
+
+  .iqac-reports-section {
+    margin-bottom: 0;
+  }
+
+  .iqac-main-heading {
+    font-size: max(min(var(--iqac-main-heading-mobile-375-fs), var(--fs-min)), calc(var(--iqac-main-heading-mobile-375-fs) * var(--fs-scale)));
+    line-height: normal;
+    letter-spacing: 0;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .iqac-objective-intro {
+    font-size: max(min(var(--iqac-objective-intro-mobile-fs), var(--fs-min)), calc(var(--iqac-objective-intro-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+
+  .iqac-objective-grid,
+  .iqac-objective-left {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .iqac-objective-grid {
+    gap: 1.25rem;
+  }
+
+  .iqac-card-white,
+  .iqac-card-pink {
+    padding: 1.25rem;
+    border: none;
+    border-radius: 1.25rem;
+  }
+
+  .iqac-card-white {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.08);
+  }
+
+  .iqac-card-title {
+    font-size: max(min(var(--iqac-card-title-mobile-fs), var(--fs-min)), calc(var(--iqac-card-title-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    margin-bottom: 1.25rem;
+  }
+
+  .iqac-card-list {
+    gap: 0;
+  }
+
+  .iqac-card-list li {
+    font-size: max(min(var(--iqac-card-list-li-mobile-fs), var(--fs-min)), calc(var(--iqac-card-list-li-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+  }
+
+  .iqac-members-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+  }
+
+  .iqac-member-card {
+    padding: 1.25rem 0.75rem;
+    border: 1px solid #DDDDDD;
+    border-radius: 1.25rem;
+    box-shadow: none;
+  }
+
+  .iqac-member-avatar-wrapper {
+    width: 7.5rem;
+    height: 7.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .iqac-member-name {
+    font-size: max(min(var(--iqac-member-name-mobile-fs), var(--fs-min)), calc(var(--iqac-member-name-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    margin-bottom: 0.75rem;
+  }
+
+  .iqac-member-designation {
+    font-size: max(min(var(--iqac-member-designation-mobile-fs), var(--fs-min)), calc(var(--iqac-member-designation-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    margin-bottom: 0.75rem;
+  }
+
+  .iqac-member-badge {
+    padding: 0.625rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: max(min(var(--iqac-member-badge-mobile-fs), var(--fs-min)), calc(var(--iqac-member-badge-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+  }
+
+  .iqac-reports-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin-top: 0;
+  }
+
+  .iqac-report-card,
+  .iqac-report-card-centered {
+    grid-column: auto;
+    max-width: none;
+    padding: 1.25rem;
+    border: none;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.08);
+  }
+
+  .iqac-report-year-title {
+    font-size: max(min(var(--iqac-report-year-title-mobile-fs), var(--fs-min)), calc(var(--iqac-report-year-title-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    margin-bottom: 1.25rem;
+  }
+
+  .iqac-report-items-list {
+    gap: 1.25rem;
+  }
+
+  .iqac-report-item-row {
+    padding: 0;
+    border: none;
+  }
+
+  .iqac-report-item-left {
+    gap: 0.75rem;
+  }
+
+  .iqac-report-item-num {
+    width: 2.5rem;
+    font-size: max(min(var(--iqac-report-item-num-mobile-fs), var(--fs-min)), calc(var(--iqac-report-item-num-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+  }
+
+  .iqac-report-item-name {
+    font-size: max(min(var(--iqac-report-item-name-mobile-fs), var(--fs-min)), calc(var(--iqac-report-item-name-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+  }
+
+  .iqac-download-btn {
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 0.5rem;
+    background-color: #90091D;
+    flex-shrink: 0;
+  }
+}

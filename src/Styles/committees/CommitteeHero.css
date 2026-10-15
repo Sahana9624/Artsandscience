@@ -1,0 +1,165 @@
+:root {
+  --about-header-height: 5.25rem;
+  --committee-hero-title-fs: 2rem;
+  --committee-hero-sub-fs: 1.25rem;
+}
+
+/* ── Committee & Cells Hero Banner ── */
+.committee-hero {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  /* Fill the visible screen (browser toolbars excluded) below the header */
+  min-height: var(--hero-h);
+}
+
+.committee-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #2E030A 0%, rgba(46, 3, 10, 0) 100%);
+  z-index: 1;
+}
+
+.committee-hero-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin: 0 auto;
+  padding: 4rem var(--global-padding-x);
+  box-sizing: border-box;
+}
+
+.committee-hero-content {
+  max-width: 580px;
+}
+
+.committee-hero-title {
+  font-family: inherit;
+  font-size: max(min(var(--committee-hero-title-fs), var(--fs-min)), calc(var(--committee-hero-title-fs) * var(--fs-scale)));
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.25;
+  margin: 0 0 1rem 0;
+  letter-spacing: -0.02em;
+}
+
+.committee-hero-subtitle {
+  font-family: inherit;
+  font-size: max(min(var(--committee-hero-sub-fs), var(--fs-min)), calc(var(--committee-hero-sub-fs) * var(--fs-scale)));
+  font-weight: 400;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  /* max-width: 460px; */
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  .committee-hero {
+    background-position: center center;
+  }
+
+  .committee-hero-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(22, 2, 6, 0.94) 0%,
+      rgba(22, 2, 6, 0.85) 60%,
+      rgba(15, 2, 5, 0.7) 100%
+    );
+  }
+
+  .committee-hero-container {
+    padding: 2.5rem var(--global-padding-x);
+  }
+
+  .committee-hero-title {
+    font-size: max(min(var(--committee-hero-title-mobile-fs), var(--fs-min)), calc(var(--committee-hero-title-mobile-fs) * var(--fs-scale)));
+    margin-bottom: 0.75rem;
+  }
+
+  .committee-hero-subtitle {
+    font-size: max(min(var(--committee-hero-sub-mobile-fs), var(--fs-min)), calc(var(--committee-hero-sub-mobile-fs) * var(--fs-scale)));
+    line-height: 1.5;
+  }
+}
+
+/* ── Height-based Responsive Rules (Laptops, short screens, split screens) ── */
+@media (max-height: 700px) {
+  .committee-hero-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-height: 550px) {
+  .committee-hero {
+    min-height: auto;
+  }
+
+  .committee-hero-container {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+
+/* ── Mobile (Figma 375px) ── */
+@media (max-width: 768px) {
+  :root {
+    --committee-hero-title-mobile-fs: 1.85rem;
+    --committee-hero-sub-mobile-fs: 0.92rem;
+    --committee-hero-title-mobile-375-fs: 1.25rem;
+    --committee-hero-subtitle-mobile-fs: 1rem;
+  }
+
+  .committee-hero {
+    /* Fill the visible screen (browser toolbars excluded) below the header */
+    min-height: var(--hero-h);
+    align-items: flex-end;
+  }
+
+  .committee-hero-overlay {
+    background: linear-gradient(90deg, #2E030A 0%, rgba(46, 3, 10, 0) 100%);
+  }
+
+  .committee-hero-container {
+    padding: 2.5rem 1rem;
+  }
+
+  .committee-hero-content {
+    max-width: none;
+    margin-top: 0;
+  }
+
+  .committee-hero-title {
+    font-size: max(min(var(--committee-hero-title-mobile-375-fs), var(--fs-min)), calc(var(--committee-hero-title-mobile-375-fs) * var(--fs-scale)));
+    line-height: normal;
+    letter-spacing: 0;
+    margin-bottom: 0.75rem;
+  }
+
+  .committee-hero-subtitle {
+    font-size: max(min(var(--committee-hero-subtitle-mobile-fs), var(--fs-min)), calc(var(--committee-hero-subtitle-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+  }
+}
+
+/* ── Tablet & desktop: anchor hero content with the design's bottom gap (84px) ── */
+@media (min-width: 769px) {
+  .committee-hero {
+    align-items: flex-end;
+    padding-bottom: 1.25rem;
+  }
+
+  /* Keep the bottom gap constant on short screens too */
+  .committee-hero-container {
+    padding-bottom: 4rem;
+  }
+}

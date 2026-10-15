@@ -1,0 +1,194 @@
+/* ==========================================================================
+   Research Functions Section Styles (Pink Box with 9 Cards)
+   Strictly uses var(--global-padding-x) for all side padding
+   ========================================================================== */
+
+:root {
+  --research-functions-title-fs: clamp(1.85rem, 2rem, 2.3rem);
+  --research-function-name-fs: 1.25rem;
+}
+
+.research-functions-section {
+  padding: 0 var(--global-padding-x);
+  width: 100%;
+  margin-bottom: 3.5rem;
+}
+
+.research-functions-box {
+  background-color: #E9CED2;
+  border-radius: 2.5rem;
+  padding: clamp(2.5rem, 2vw, 3.5rem) clamp(1.5rem, 3.5vw, 3rem);
+  width: 100%;
+}
+
+.research-functions-title {
+  font-family: var(--font-heading);
+  font-size: max(min(var(--research-functions-title-fs), var(--fs-min)), calc(var(--research-functions-title-fs) * var(--fs-scale)));
+  font-weight: 700;
+  color: #90091D;
+  text-align: center;
+  margin-bottom: 2.25rem;
+  letter-spacing: -0.01875rem;
+}
+
+.research-functions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.research-function-card {
+  background-color: #FFFFFF;
+  border-radius: 1rem;
+  padding: 1.15rem 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0.25rem 0.875rem rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.research-function-card:hover {
+  transform: translateY(-0.1875rem);
+  box-shadow: 0 0.5rem 1.5rem rgba(128, 20, 42, 0.07);
+}
+
+.research-function-icon {
+  min-width: 3rem;
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.research-function-img {
+  width: 2.75rem;
+  height: 2.75rem;
+  object-fit: contain;
+  display: block;
+}
+
+/* ==========================================================================
+   Individual Icon Sizes (Customize width & height for each icon independently)
+   ========================================================================== */
+.icon-proposal {
+  width: 2.313rem;
+  height: 2.5rem;
+}
+
+.icon-industry {
+  width: 3.813rem;
+  height: 2.5rem;
+}
+
+.icon-talks {
+  width: 2.688rem;
+  height: 2.5rem;
+}
+
+.icon-journal {
+  width: 2.5rem;
+  height: 2.125rem;
+}
+
+.icon-lab {
+  width: 2.5rem;
+  height: 2.125rem;
+}
+
+.icon-patent {
+  width: 2.5rem;
+  height: 2.875rem;
+}
+
+.icon-workshops {
+  width: 2.5rem;
+  height: 2.313rem;
+}
+
+.icon-development {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.icon-conference {
+  width: 2.5rem;
+  height: 2.125rem;
+}
+
+.research-function-name {
+  font-family: var(--font-heading);
+  font-size: max(min(var(--research-function-name-fs), var(--fs-min)), calc(var(--research-function-name-fs) * var(--fs-scale)));
+  font-weight: 600;
+  color: #000000;
+  line-height: 1.35;
+  text-align: center;
+}
+
+@media (max-width: 850px) {
+  .research-functions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .research-functions-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Mobile (Figma 375px) ── */
+@media (max-width: 768px) {
+  :root {
+    --research-functions-title-mobile-fs: 1.25rem;
+  }
+
+  .research-functions-section {
+    padding: 0 1rem;
+    margin: 5rem 0 0;
+  }
+
+  .research-functions-box {
+    border-radius: 1.25rem;
+    padding: 1.25rem 1rem;
+  }
+
+  .research-functions-title {
+    font-size: max(min(var(--research-functions-title-mobile-fs), var(--fs-min)), calc(var(--research-functions-title-mobile-fs) * var(--fs-scale)));
+    line-height: normal;
+    letter-spacing: 0;
+    margin-bottom: 1.25rem;
+  }
+
+  .research-functions-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .research-function-card {
+    padding: 1.25rem 0.75rem;
+    border-radius: 1.25rem;
+    border: none;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+    gap: 1.25rem;
+  }
+
+  .research-function-icon {
+    min-width: 0;
+    min-height: 0;
+  }
+
+  .research-function-img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .research-function-name {
+    line-height: normal;
+  }
+}

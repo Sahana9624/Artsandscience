@@ -1,0 +1,87 @@
+/*
+ * Scroll-reveal animations (driven by Hooks/useScrollReveal.js).
+ * Uses the individual `translate` / `scale` / `rotate` properties inside keyframes,
+ * so components' own `transform` hover effects and transitions keep working.
+ */
+
+[data-reveal]:not(.is-revealed) {
+  opacity: 0;
+}
+
+[data-reveal].is-revealed {
+  animation-duration: 0.8s;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  animation-fill-mode: backwards;
+  animation-delay: var(--reveal-delay, 0ms);
+}
+
+[data-reveal="fade-up"].is-revealed { animation-name: reveal-fade-up; }
+[data-reveal="fade-down"].is-revealed { animation-name: reveal-fade-down; }
+[data-reveal="fade-left"].is-revealed { animation-name: reveal-fade-left; }
+[data-reveal="fade-right"].is-revealed { animation-name: reveal-fade-right; }
+[data-reveal="zoom-in"].is-revealed { animation-name: reveal-zoom-in; }
+[data-reveal="tilt-up"].is-revealed { animation-name: reveal-tilt-up; }
+[data-reveal="flip-up"].is-revealed {
+  animation-name: reveal-flip-up;
+  animation-duration: 0.9s;
+}
+
+@keyframes reveal-fade-up {
+  from { opacity: 0; translate: 0 40px; }
+  to { opacity: 1; translate: 0 0; }
+}
+
+@keyframes reveal-fade-down {
+  from { opacity: 0; translate: 0 -40px; }
+  to { opacity: 1; translate: 0 0; }
+}
+
+/* Enters moving leftwards (from the right side) */
+@keyframes reveal-fade-left {
+  from { opacity: 0; translate: 60px 0; }
+  to { opacity: 1; translate: 0 0; }
+}
+
+/* Enters moving rightwards (from the left side) */
+@keyframes reveal-fade-right {
+  from { opacity: 0; translate: -60px 0; }
+  to { opacity: 1; translate: 0 0; }
+}
+
+@keyframes reveal-zoom-in {
+  from { opacity: 0; scale: 0.88; }
+  to { opacity: 1; scale: 1; }
+}
+
+@keyframes reveal-tilt-up {
+  from { opacity: 0; translate: 0 50px; rotate: -4deg; }
+  to { opacity: 1; translate: 0 0; rotate: 0deg; }
+}
+
+@keyframes reveal-flip-up {
+  from { opacity: 0; translate: 0 30px; rotate: x 35deg; }
+  to { opacity: 1; translate: 0 0; rotate: x 0deg; }
+}
+
+@media (max-width: 768px) {
+  /* Shorter travel on small screens */
+  @keyframes reveal-fade-left {
+    from { opacity: 0; translate: 30px 0; }
+    to { opacity: 1; translate: 0 0; }
+  }
+
+  @keyframes reveal-fade-right {
+    from { opacity: 0; translate: -30px 0; }
+    to { opacity: 1; translate: 0 0; }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal]:not(.is-revealed) {
+    opacity: 1;
+  }
+
+  [data-reveal].is-revealed {
+    animation: none;
+  }
+}

@@ -1,0 +1,120 @@
+/* ==========================================================================
+   Campus Life Section Styles - Mother Terasa College of Arts & Science
+   ========================================================================== */
+
+:root {
+  --campus-item-name-fs: 1.25rem;
+}
+
+.home-campus-section {
+  padding: 5rem var(--global-padding-x, 5%);
+  background-color: #FFFFFF;
+}
+
+.home-campus-container {
+  /* max-width: 1160px; */
+  margin: 0 auto;
+}
+
+.home-campus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.campus-item-card {
+  position: relative;
+  height: 17.5rem;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  box-shadow: 0 0.25rem 0.875rem rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.campus-item-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.campus-item-card:hover .campus-item-image {
+  transform: scale(1.06);
+}
+
+.campus-item-gradient-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 65%);
+  pointer-events: none;
+}
+
+.campus-item-content {
+  position: absolute;
+  bottom: 1.125rem;
+  left: 1.25rem;
+  z-index: 2;
+}
+
+.campus-item-name {
+  font-family: var(--font-heading);
+  color: #FFFFFF;
+  font-size: max(min(var(--campus-item-name-fs), var(--fs-min)), calc(var(--campus-item-name-fs) * var(--fs-scale)));
+  font-weight: 700;
+  letter-spacing: 0.01875rem;
+  text-shadow: 0 0.125rem 0.375rem rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Breakpoints for Campus Life */
+@media (max-width: 768px) {
+  .home-campus-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .home-campus-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Mobile (Figma 375px) ── */
+@media (max-width: 768px) {
+  :root {
+    --campus-item-name-mobile-fs: 1.25rem;
+  }
+
+  .home-campus-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .home-campus-section .home-section-header {
+    margin-bottom: 1.25rem;
+  }
+
+  .home-campus-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .campus-item-card {
+    height: 15.625rem;
+    border-radius: 1.25rem;
+    box-shadow: none;
+  }
+
+  .campus-item-gradient-overlay {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, #000000 100%);
+  }
+
+  .campus-item-content {
+    bottom: 1.25rem;
+    left: 1.25rem;
+  }
+
+  .campus-item-name {
+    font-size: max(min(var(--campus-item-name-mobile-fs), var(--fs-min)), calc(var(--campus-item-name-mobile-fs) * var(--fs-scale)));
+    letter-spacing: 0;
+    text-shadow: none;
+  }
+}
