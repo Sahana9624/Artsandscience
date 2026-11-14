@@ -8,7 +8,7 @@
 }
 
 .home-welcome-section {
-  padding: 3rem var(--global-padding-x);
+  padding: 3rem var(--global-padding-x) 1rem;
   background-color: #FFFFFF;
   text-align: center;
 }
@@ -52,7 +52,7 @@
   }
 
   .home-welcome-section {
-    padding: 2.5rem 1rem;
+    padding: 2.5rem 1rem 0.5rem;
   }
 
   .home-welcome-section .home-section-title {

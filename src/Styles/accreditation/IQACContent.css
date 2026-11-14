@@ -230,10 +230,10 @@
 .iqac-report-card {
   width: 100%;
   background: #ffffff;
-  border: 1px solid #e7e7e7;
+  /* border: 1px solid #e7e7e7; */
   border-radius: 16px;
   padding: 1.85rem 2.25rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+box-shadow: 0px 0px 32px 0px #00000014;
   box-sizing: border-box;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }

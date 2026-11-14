@@ -1,7 +1,7 @@
 import React from "react";
-import testi1Img from "../../assets/images/home/testi/testi-1.png";
-import testi2Img from "../../assets/images/home/testi/testi-2.png";
-import testi3Img from "../../assets/images/home/testi/testi-3.png";
+import testi1Img from "../../assets/images/home/testi/testi-1.webp";
+import testi2Img from "../../assets/images/home/testi/testi-2.webp";
+import testi3Img from "../../assets/images/home/testi/testi-3.webp";
 import "../../Styles/home/SuccessStories.css";
 
 export default function SuccessStories() {
@@ -61,7 +61,7 @@ export default function SuccessStories() {
               </div>
 
               <div className="testimonial-author">
-                <div
+                {/* <div
                   className="testimonial-avatar"
                   style={t.avatarBg ? { backgroundColor: t.avatarBg } : undefined}
                 >
@@ -72,7 +72,7 @@ export default function SuccessStories() {
                     style={t.avatarCrop}
                     loading="lazy"
                   />
-                </div>
+                </div> */}
                 <div className="testimonial-author-details">
                   <h4 className="testimonial-name">{t.name}</h4>
                   <span className="testimonial-degree">{t.degree}</span>

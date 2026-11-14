@@ -1,9 +1,9 @@
 // Album covers & photos (from Figma design)
-const coverModules = import.meta.glob("../../assets/images/gallery/cover-*.png", {
+const coverModules = import.meta.glob("../../assets/images/gallery/cover-*.webp", {
   eager: true,
   import: "default",
 });
-const photoModules = import.meta.glob("../../assets/images/gallery/*/*.png", {
+const photoModules = import.meta.glob("../../assets/images/gallery/*/*.webp", {
   eager: true,
   import: "default",
 });
@@ -21,8 +21,8 @@ const COVER_FROM_ALBUM = {
 
 const cover = (n) =>
   COVER_FROM_ALBUM[n]
-    ? photoModules[`../../assets/images/gallery/${COVER_FROM_ALBUM[n]}.png`]
-    : coverModules[`../../assets/images/gallery/cover-${String(n).padStart(2, "0")}.png`];
+    ? photoModules[`../../assets/images/gallery/${COVER_FROM_ALBUM[n]}.webp`]
+    : coverModules[`../../assets/images/gallery/cover-${String(n).padStart(2, "0")}.webp`];
 
 const albumPhotos = (folder, label) =>
   Object.keys(photoModules)
@@ -145,3 +145,4 @@ export const galleryAlbums = rawAlbums.map((album) => ({
   ...album,
   count: Array.isArray(album.photos) ? album.photos.length : 0,
 }));
+

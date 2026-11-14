@@ -1,5 +1,5 @@
-import React, { useRef } from "react";
-import heroImg from "../../../assets/images/academics/pg-hero.png";
+﻿import React, { useRef } from "react";
+import heroImg from "../../../assets/images/academics/pg-hero.webp";
 import { useApply } from "../../../Context/ApplyContext";
 import "../../../Styles/academics/ug/AcademicHero.css";
 import ArrowIcon from "../../common/ArrowIcon";
@@ -52,3 +52,4 @@ export default function PostgraduateHero() {
     </section>
   );
 }
+

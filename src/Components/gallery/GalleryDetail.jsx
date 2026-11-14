@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { galleryAlbums } from "./galleryData";
+import { renderBilingualText } from "./bilingualText";
 import "../../Styles/gallery/GalleryDetail.css";
 import { lockScroll, unlockScroll } from "../../Hooks/scrollLock";
 
@@ -45,8 +46,8 @@ export default function GalleryDetail({ album: propAlbum }) {
         {/* Centered Album Heading with Highlight */}
         <div className="gallery-detail-header">
           <h2 className="gallery-detail-title">
-            {album.titlePrefix}
-            <span className="gallery-title-highlight">{album.titleHighlight}</span>
+            {renderBilingualText(album.titlePrefix)}
+            <span className="gallery-title-highlight">{renderBilingualText(album.titleHighlight)}</span>
           </h2>
         </div>
 

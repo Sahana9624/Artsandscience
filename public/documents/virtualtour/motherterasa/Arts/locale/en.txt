@@ -1,0 +1,124 @@
+#: locale=en
+
+## Action
+
+### Text to Speech
+TextToSpeechBehaviour_5F807D0D_48A0_C795_41B6_7AFF4A107702.text = MOTHER TERASA COLLEGE OF ARTS AND SCIENCE Started from 2010 with 28 Students. Affiliated to Bharathidasan University, Trichy.  It Contains 6 courses, they are BA English, BCA, BSc Computer Science, BSc Mathematics, BBA, BCom. In 2011, 98 Students admitted. In 2012, we introduced new courses of UG Courses (BSc Physics, BSc Chemistry, BCom CA) with 132 Students. In 2013, 229 Students admitted . In 2014, we introduced new courses of PG Courses (M A English, MSc Mathematics, MSc Computer Science) with 264 Students. In 2015, 314 Students admitted. In 2016, 346 Students admitted. Totally, 2355 Students are Studied in our institution.
+
+### URL
+LinkBehaviour_80914B72_99BF_AF49_41A2_4125F86C63E2.source = http://www.motherterasakalvi.com/application/
+LinkBehaviour_834F19C6_99BD_AB49_41D2_55AB57977529.source = http://www.motherterasakalvi.com/application/
+LinkBehaviour_C2E5774F_C245_F35B_41E6_285A0FB1530D.source = https://uandi.media/Virtual-tour/motherterasa/MTC/index.htm
+LinkBehaviour_C2E64780_C247_13C6_41C9_031B1B2D0510.source = https://uandi.media/Virtual-tour/motherterasa/MTC/index.htm
+LinkBehaviour_82F099C5_99BD_AB4B_41BF_B7905F2286F5.source = https://wa.me/+919443372151
+LinkBehaviour_80919B72_99BF_AF49_41CD_4F6592035FE0.source = https://wa.me/+919443372151
+LinkBehaviour_80912B72_99BF_AF49_41B9_3B5BD34EBA7E.source = https://www.facebook.com/motherterasainstitutions.org
+LinkBehaviour_834EB9C6_99BD_AB49_41E1_E7EC69E5D184.source = https://www.facebook.com/motherterasainstitutions.org
+LinkBehaviour_80916B72_99BF_AF49_41A6_14DF7003C3D9.source = https://www.google.com/maps/@10.5013448,78.6453692,3a,75y,32.74h,93.51t/data=!3m7!1e1!3m5!1sAF1QipPqgANPx72FuSpjhWOfSo8g0uK0dWfk3V7rqA33!2e10!3e11!7i7680!8i3840?entry=ttu
+LinkBehaviour_834EC9C6_99BD_AB49_41D6_1C76A82A10DC.source = https://www.google.com/maps/@10.5013448,78.6453692,3a,75y,32.74h,93.51t/data=!3m7!1e1!3m5!1sAF1QipPqgANPx72FuSpjhWOfSo8g0uK0dWfk3V7rqA33!2e10!3e11!7i7680!8i3840?entry=ttu
+LinkBehaviour_80EECB72_99BF_AF49_41D6_EDAA40872662.source = https://www.instagram.com/motherterasagroups
+LinkBehaviour_834E59C6_99BD_AB49_41D6_022A5A33DB47.source = https://www.instagram.com/motherterasagroups
+LinkBehaviour_80910B72_99BF_AF49_41DC_203EE5DFC0D3.source = https://youtube.com/@mtcetilluppur
+LinkBehaviour_834EE9C6_99BD_AB49_41B3_CFB6C41C0573.source = https://youtube.com/@mtcetilluppur
+LinkBehaviour_82F059C5_99BD_AB4B_41BD_3ACECE99F517.source = mailto:mtcasprincipal@gmail.com
+LinkBehaviour_8091BB72_99BF_AF49_41CA_6FA6E40736D3.source = mailto:mtcasprincipal@gmail.com
+LinkBehaviour_487FC5EF_1A1A_C9D1_41B4_D4E21519BDC1.source = mailto:ruthrammedia@gmail.com
+LinkBehaviour_576FB1B7_1A06_49B1_41B4_DB4C218E70D4.source = mailto:ruthrammedia@gmail.com
+LinkBehaviour_8091FB72_99BF_AF49_41D9_4E76E9BC4808.source = tel:9942904539
+LinkBehaviour_82F0E9C4_99BD_AB49_41CE_ECAD0A82F6C9.source = tel:9942904539
+
+## Hotspot
+
+### Tooltip
+HotspotPanoramaOverlayArea_876C5E22_9EE3_383B_41E2_C3A43B297B0B.toolTip = Physics Lab
+
+## Media
+
+### Audio
+audiores_A48A7D25_C982_1649_41DC_F737572449EA.mp3Url = media/audio_A4E4B22A_C982_125B_41CC_118193959F68_en.mp3
+
+### Title
+panorama_8B783184_9999_3CD9_41D4_226FC85D9B6E.label = Chemistry Lab
+panorama_884FAC5D_DCB8_97F6_41EA_9816796FF71A.label = Computer Lab
+panorama_5EC7959C_48A0_C6BB_41CE_75923B4CD4FA.label = Entrance
+panorama_885C3499_999A_C4EB_41C9_1BF5FD8677FF.label = Physics Lab
+video_58A98605_4C26_F1C3_41B4_FE9B84F01114.label = chemistrylab
+
+### Video
+videolevel_6A68E0E2_4939_E7D2_41CC_C3C85C0EEBFF.url = media/video_58A98605_4C26_F1C3_41B4_FE9B84F01114_en.mp4
+videolevel_6A68E0E2_4939_E7D2_41CC_C3C85C0EEBFF.posterURL = media/video_58A98605_4C26_F1C3_41B4_FE9B84F01114_poster_en.jpg
+
+### Video Subtitles
+
+## Skin
+
+### Image
+Image_441B0C01_C245_14C7_41D5_E7D74064AA98.url = skin/Image_441B0C01_C245_14C7_41D5_E7D74064AA98_en.png
+Image_487F85EF_1A1A_C9D1_419F_E586EC6419A4.url = skin/Image_487F85EF_1A1A_C9D1_419F_E586EC6419A4_en.png
+Image_576FC1B7_1A06_49B1_41B0_F4012479D215.url = skin/Image_576FC1B7_1A06_49B1_41B0_F4012479D215_en.png
+Image_80911B72_99BF_AF49_41DD_BD3BD5FD5E4A.url = skin/Image_80911B72_99BF_AF49_41DD_BD3BD5FD5E4A_en.png
+Image_80913B72_99BF_AF49_41D3_B1D4420A6509.url = skin/Image_80913B72_99BF_AF49_41D3_B1D4420A6509_en.png
+Image_80915B72_99BF_AF49_41D2_EB7D586E323C.url = skin/Image_80915B72_99BF_AF49_41D2_EB7D586E323C_en.png
+Image_80917B72_99BF_AF49_41CF_E495DC65B6F5.url = skin/Image_80917B72_99BF_AF49_41CF_E495DC65B6F5_en.png
+Image_80918B72_99BF_AF49_41D5_707331C747BF.url = skin/Image_80918B72_99BF_AF49_41D5_707331C747BF_en.png
+Image_8091CB71_99BF_AF4B_41B6_EED60170B472.url = skin/Image_8091CB71_99BF_AF4B_41B6_EED60170B472_en.png
+Image_8091EB72_99BF_AF49_41C6_4DC28EF6BFAE.url = skin/Image_8091EB72_99BF_AF49_41C6_4DC28EF6BFAE_en.png
+Image_80EEDB72_99BF_AF49_41AE_B3ECA44AA6D7.url = skin/Image_80EEDB72_99BF_AF49_41AE_B3ECA44AA6D7_en.png
+Image_82F069C5_99BD_AB4B_41E3_0C0A3A55B9AD.url = skin/Image_82F069C5_99BD_AB4B_41E3_0C0A3A55B9AD_en.png
+Image_82F0B9C5_99BD_AB4B_41B6_D7991700996A.url = skin/Image_82F0B9C5_99BD_AB4B_41B6_D7991700996A_en.png
+Image_82F0D9C4_99BD_AB49_41D3_18A00FE7D81B.url = skin/Image_82F0D9C4_99BD_AB49_41D3_18A00FE7D81B_en.png
+Image_82F0F9C5_99BD_AB4B_41D3_FE465109DADE.url = skin/Image_82F0F9C5_99BD_AB4B_41D3_FE465109DADE_en.png
+Image_834E49C6_99BD_AB49_41DE_438F9350760A.url = skin/Image_834E49C6_99BD_AB49_41DE_438F9350760A_en.png
+Image_834ED9C6_99BD_AB49_41E1_1819601348F4.url = skin/Image_834ED9C6_99BD_AB49_41E1_1819601348F4_en.png
+Image_834EF9C6_99BD_AB49_41E0_DF5D93A236CF.url = skin/Image_834EF9C6_99BD_AB49_41E0_DF5D93A236CF_en.png
+Image_834F29C6_99BD_AB49_41D8_9E6A7A5DE9CD.url = skin/Image_834F29C6_99BD_AB49_41D8_9E6A7A5DE9CD_en.png
+Image_8B58575A_9999_4469_41D0_2DE480E99350.url = skin/Image_8B58575A_9999_4469_41D0_2DE480E99350_en.png
+Image_8B58575A_9999_4469_41D0_2DE480E99350_mobile.url = skin/Image_8B58575A_9999_4469_41D0_2DE480E99350_mobile_en.png
+Image_A6018C60_F782_C6F1_41E0_7FCE97905457.url = skin/Image_A6018C60_F782_C6F1_41E0_7FCE97905457_en.gif
+Image_A7734405_F782_4633_41E9_DF6BF19C50A0.url = skin/Image_A7734405_F782_4633_41E9_DF6BF19C50A0_en.png
+Image_A7B02E18_F782_C251_41E3_02533C746AB6.url = skin/Image_A7B02E18_F782_C251_41E3_02533C746AB6_en.gif
+Image_BA119A03_F782_C230_41E6_0912CD79DD21.url = skin/Image_BA119A03_F782_C230_41E6_0912CD79DD21_en.png
+Image_BAD704E5_F782_47F3_41C7_BA0EDC5B546C.url = skin/Image_BAD704E5_F782_47F3_41C7_BA0EDC5B546C_en.png
+Image_BBB97F13_F782_4257_41D2_4F946C38574D.url = skin/Image_BBB97F13_F782_4257_41D2_4F946C38574D_en.png
+Image_D71DAF74_C24D_134E_41D1_1F58E0F36F6D.url = skin/Image_D71DAF74_C24D_134E_41D1_1F58E0F36F6D_en.png
+
+### Label
+Label_BAA0E53C_F786_4650_41A3_02F84627D181.text = COURSE DETAILS
+Label_B8E3A45A_F782_46D1_41BF_2EE7ECC27FBC.text = COURSE DETAILS
+Label_487E65EF_1A1A_C9D1_4199_82A1140426C0.text = Created By Ruthram Media
+Label_576FF1B7_1A06_49B1_41B0_6D55E1F3011C.text = Created By Ruthram Media
+Label_576FA1B7_1A06_49B1_4190_0AA043071D41.text = ruthrammedia@gmail.com
+Label_487FA5EF_1A1A_C9D1_41B5_B409760897D5.text = ruthrammedia@gmail.com
+
+### Multiline Text
+HTMLText_A305A6A0_9411_429E_41B5_C15319F50DEA.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-align:right;font-size:25px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#39317d;font-size:25px;font-family:'Arial Narrow';"><B>{{title}}</B></SPAN></SPAN></DIV></div>
+HTMLText_A305A6A0_9411_429E_41B5_C15319F50DEA_mobile.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-align:right;font-size:12.5px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#39317d;font-size:12.5px;font-family:'Arial Narrow';"><B>{{title}}</B></SPAN></SPAN></DIV></div>
+
+### Tooltip
+Image_80915B72_99BF_AF49_41D2_EB7D586E323C.toolTip = Admission
+Image_82F069C5_99BD_AB4B_41E3_0C0A3A55B9AD.toolTip = Admission
+Image_441B0C01_C245_14C7_41D5_E7D74064AA98.toolTip = Back to Homepage
+Image_D71DAF74_C24D_134E_41D1_1F58E0F36F6D.toolTip = Back to Homepage
+Image_A7B02E18_F782_C251_41E3_02533C746AB6.toolTip = Course Details
+Image_A6018C60_F782_C6F1_41E0_7FCE97905457.toolTip = Course Details
+Image_80913B72_99BF_AF49_41D3_B1D4420A6509.toolTip = Facebook
+Image_834EF9C6_99BD_AB49_41E0_DF5D93A236CF.toolTip = Facebook
+Image_80918B72_99BF_AF49_41D5_707331C747BF.toolTip = Gmail
+Image_82F0B9C5_99BD_AB4B_41B6_D7991700996A.toolTip = Gmail
+Image_80EEDB72_99BF_AF49_41AE_B3ECA44AA6D7.toolTip = Instagram
+Image_834E49C6_99BD_AB49_41DE_438F9350760A.toolTip = Instagram
+Image_8091CB71_99BF_AF4B_41B6_EED60170B472.toolTip = Phone
+Image_82F0D9C4_99BD_AB49_41D3_18A00FE7D81B.toolTip = Phone
+Image_834F29C6_99BD_AB49_41D8_9E6A7A5DE9CD.toolTip = Tour Link
+Image_80917B72_99BF_AF49_41CF_E495DC65B6F5.toolTip = Tour Link
+Image_8091EB72_99BF_AF49_41C6_4DC28EF6BFAE.toolTip = Whatsapp
+Image_82F0F9C5_99BD_AB4B_41D3_FE465109DADE.toolTip = Whatsapp
+Image_834ED9C6_99BD_AB49_41E1_1819601348F4.toolTip = Youtube
+Image_80911B72_99BF_AF49_41DD_BD3BD5FD5E4A.toolTip = Youtube
+
+## Tour
+
+### Description
+
+### Title
+tour.name = Arts and Science

@@ -1,5 +1,5 @@
-import React, { useRef } from "react";
-import clubHeroImg from "../../assets/images/club-com/club-hero.jpg";
+﻿import React, { useRef } from "react";
+import clubHeroImg from "../../assets/images/club-com/club-hero.webp";
 import "../../Styles/clubs/ClubHero.css";
 
 export default function ClubHero({
@@ -26,3 +26,4 @@ export default function ClubHero({
     </section>
   );
 }
+

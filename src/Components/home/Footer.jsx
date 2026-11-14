@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import collegeLogo from "../../assets/logo.png";
+import { Link, useLocation } from "react-router-dom";
+import collegeLogo from "../../assets/logo-footer.svg";
 import instagramIcon from "../../assets/instagram.svg";
 import facebookIcon from "../../assets/facebook.svg";
 import linkedinIcon from "../../assets/linkedin.svg";
@@ -13,21 +13,28 @@ export default function Footer() {
   const quickLinks = [
     { label: "Home", href: "/" },
     { label: "About Us", href: "/about" },
-    { label: "Programs", href: "/academics" },
+    // { label: "Programs", href: "/academics" },
     { label: "Research", href: "/research" },
-    { label: "Department", href: "/departments" },
+    // { label: "Department", href: "/departments" },
     { label: "Facilities", href: "/facilities" },
     { label: "Gallery", href: "/gallery" },
     { label: "Contact Us", href: "/contact" },
   ];
 
   const activities = [
-    { label: "Clubs", href: "/clubs" },
-    { label: "Cells", href: "/cells" },
+    // { label: "Clubs", href: "/clubs" },
+    // { label: "Cells", href: "/cells" },
     { label: "News & Events", href: "/news-events" },
     { label: "Placements", href: "/contact" },
   ];
 
+  const { pathname } = useLocation();
+
+  // The home page doesn't reset scroll on mount, so going "home" from the footer
+  // would leave the user at the bottom. Scroll to top: smoothly if already on home.
+  const handleHomeClick = () => {
+    window.scrollTo({ top: 0, behavior: pathname === "/" ? "smooth" : "instant" });
+  };
 
   return (
     <footer className="home-footer" id="main-footer">
@@ -36,7 +43,7 @@ export default function Footer() {
         <div className="home-footer-main">
           {/* Left Column: Brand Info */}
           <div className="footer-col-brand">
-            <Link to="/" className="footer-brand-header">
+            <Link to="/" className="footer-brand-header" onClick={handleHomeClick}>
               <img
                 src={collegeLogo}
                 alt="Mother Terasa College Logo"
@@ -49,8 +56,9 @@ export default function Footer() {
                 </span>
               </div>
             </Link>
+            {/* <br className="desc-break" /> */}
             <p className="footer-brand-desc">
-              Empowering students through quality<br className="desc-break" />
+              Empowering students through quality
               education, practical learning and innovation.
             </p>
           </div>
@@ -60,11 +68,18 @@ export default function Footer() {
             {/* Column: Quick Links */}
             <div className="footer-col">
               <h4 className="footer-col-title">Quick Links</h4>
-              <ul className="footer-links-list">
+              <ul
+                className="footer-links-list footer-links-list--two-col"
+                style={{ "--footer-list-rows": Math.ceil(quickLinks.length / 2) }}
+              >
                 {quickLinks.map((link) => (
                   <li key={link.label}>
                     {link.href.startsWith("/") ? (
-                      <Link to={link.href} className="footer-link">
+                      <Link
+                        to={link.href}
+                        className="footer-link"
+                        onClick={link.href === "/" ? handleHomeClick : undefined}
+                      >
                         {link.label}
                       </Link>
                     ) : (
@@ -98,7 +113,7 @@ export default function Footer() {
             </div>
 
             {/* Column: Legal */}
-            <div className="footer-col">
+            {/* <div className="footer-col">
               <h4 className="footer-col-title">Legal</h4>
               <ul className="footer-links-list">
                 {legalLinks.map((item) => (
@@ -109,7 +124,7 @@ export default function Footer() {
                   </li>
                 ))}
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -127,7 +142,7 @@ export default function Footer() {
 
           <div className="footer-social-icons">
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/mother_terasa_kalvi/?hl=en"
               target="_blank"
               rel="noreferrer"
               aria-label="Instagram"
@@ -136,7 +151,7 @@ export default function Footer() {
               <img src={instagramIcon} alt="Instagram" />
             </a>
             <a
-              href="https://www.facebook.com"
+              href="https://www.facebook.com/motherterasainstitutions.org/"
               target="_blank"
               rel="noreferrer"
               aria-label="Facebook"
@@ -145,7 +160,7 @@ export default function Footer() {
               <img src={facebookIcon} alt="Facebook" />
             </a>
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/company/mother-terasa-group-of-institutions/"
               target="_blank"
               rel="noreferrer"
               aria-label="LinkedIn"
@@ -153,7 +168,7 @@ export default function Footer() {
             >
               <img src={linkedinIcon} alt="LinkedIn" />
             </a>
-            <a
+            {/* <a
               href="https://whatsapp.com"
               target="_blank"
               rel="noreferrer"
@@ -161,9 +176,9 @@ export default function Footer() {
               className="social-icon-btn"
             >
               <img src={whatsappIcon} alt="WhatsApp" />
-            </a>
+            </a> */}
             <a
-              href="https://www.youtube.com"
+              href="https://youtube.com/@motherterasagroupofinstitu7682?si=CXD5qcZpjIhMpkG-"
               target="_blank"
               rel="noreferrer"
               aria-label="YouTube"

@@ -1,0 +1,122 @@
+#: locale=en
+
+## Action
+
+### URL
+LinkBehaviour_84B65FB1_99F1_A265_41D6_8BA578287564.source = http://www.motherterasakalvi.com/application/
+LinkBehaviour_64F30295_4919_EA71_41B8_978F5697F29F.source = http://www.motherterasakalvi.com/application/
+LinkBehaviour_64CC0C52_4918_BEF3_41CA_70BFDF7AD432.source = https://uandi.media/Virtual-tour/motherterasa/MTC/index.htm
+LinkBehaviour_E1FC15C9_C397_4B2F_41E6_6D7A76BE0523.source = https://uandi.media/Virtual-tour/motherterasa/MTC/index.htm
+LinkBehaviour_6772E295_4919_EA71_41B0_8C1AF19E4E16.source = https://wa.me/+919443372151
+LinkBehaviour_84B6EFB1_99F1_A265_41B4_C91239AFF1A9.source = https://wa.me/+919443372151
+LinkBehaviour_8534CFB3_99F1_A265_415D_03B3525B52D2.source = https://www.facebook.com/motherterasainstitutions.org
+LinkBehaviour_64F0A295_4919_EA71_41CC_46119A391BD5.source = https://www.facebook.com/motherterasainstitutions.org
+LinkBehaviour_64F36295_4919_EA71_41CF_12BF08123D3B.source = https://www.google.com/maps/@10.4995748,78.6443026,3a,75y,53.13h,90.76t/data=!3m7!1e1!3m5!1sAF1QipOY7Ywl5_BXxCjbz2FNXv1uYmrugaGLC-i5T1uM!2e10!3e11!7i7680!8i3840?entry=ttu
+LinkBehaviour_85351FB3_99F1_A265_41DF_BCF008398A50.source = https://www.google.com/maps/@10.4995748,78.6443026,3a,75y,53.13h,90.76t/data=!3m7!1e1!3m5!1sAF1QipOY7Ywl5_BXxCjbz2FNXv1uYmrugaGLC-i5T1uM!2e10!3e11!7i7680!8i3840?entry=ttu
+LinkBehaviour_8534EFB3_99F1_A265_41D2_40F14865DBA0.source = https://www.instagram.com/motherterasagroups
+LinkBehaviour_64F08295_4919_EA71_41C0_8263932D171E.source = https://www.instagram.com/motherterasagroups
+LinkBehaviour_85352FB3_99F1_A265_41DE_EF1594D31B8C.source = https://youtube.com/@mtcetilluppur
+LinkBehaviour_64F34295_4919_EA71_41CD_EE23E3530A8A.source = https://youtube.com/@mtcetilluppur
+LinkBehaviour_84B6BFB1_99F1_A265_41D7_D27E121BBC50.source = mailto:mtcon2016@gmail.com
+LinkBehaviour_6772C295_4919_EA71_41D0_22EC1567D873.source = mailto:mtcon2016@gmail.com
+LinkBehaviour_26B06C5C_1A1A_3EF6_4199_52EEE33A0472.source = mailto:ruthrammedia@gmail.com
+LinkBehaviour_64D33C55_4918_BEF1_41C7_6F91F15D4A5C.source = mailto:ruthrammedia@gmail.com
+LinkBehaviour_67728295_4919_EA71_41C9_BA75522A1D28.source = tel:6379353695
+LinkBehaviour_84B6CFB1_99F1_A265_41B5_A99EB6C42187.source = tel:6379353695
+
+## Hotspot
+
+### Tooltip
+HotspotPanoramaOverlayArea_4343A0D3_5104_5C87_4180_DB1D0824FD43.toolTip = Anatomy & Physiology Lab
+HotspotPanoramaOverlayArea_E9722232_C245_0CC5_41DF_591013DDEF06.toolTip = Anatomy & Physiology Lab
+HotspotPanoramaOverlayArea_ED0A41AA_C245_0FDA_41E4_790E2CD39550.toolTip = Community Lab
+HotspotPanoramaOverlayArea_BC9DFFEE_A032_2174_41E0_B9922852885C.toolTip = Foundation Lab
+HotspotPanoramaOverlayArea_5E85D995_511C_4C82_4192_0DF2CF3B43B5.toolTip = Foundation Lab
+HotspotPanoramaOverlayArea_F7E8EFA9_C24B_13C6_41C5_2D57DB24564F.toolTip = Hostel Building
+HotspotPanoramaOverlayArea_F961A1C0_F681_DE31_41BE_CBBD7578D4B5.toolTip = Nutrition Lab
+HotspotPanoramaOverlayArea_BDC09567_A032_2174_41D3_D760D857D9E3.toolTip = OBG & Child Health
+
+## Media
+
+### Audio
+audiores_A28DE5C3_C99E_11C9_41E6_DC064F0518A7.mp3Url = media/audio_A3841E04_C99E_124F_41C1_E5D0DD11DD8C_en.mp3
+
+### Title
+panorama_82A52811_99F2_EE25_41E0_FF9CD816D8F3.label = Anatomy & Physiology Lab
+panorama_832AC9AB_99F3_6E65_41DE_3E0B6441CD1A.label = Community Lab
+panorama_F852FB33_F682_C257_41CB_A02691F005D9.label = Entrance
+panorama_831F6C77_99F1_A6EE_41C5_79B4F909815C.label = Foundation Lab
+panorama_8343C95F_99F3_AEDE_41D8_0617DE69552D.label = Hostel Building
+panorama_82E49878_99F1_6EE2_41DB_7F4806EA6947.label = Nutrition Lab
+panorama_83351A8A_99F1_E226_41D6_A88D88FE1384.label = OBG & Child Health
+
+## Skin
+
+### Image
+Image_26B18C5C_1A1A_3EF6_41B3_54D1E43D531A.url = skin/Image_26B18C5C_1A1A_3EF6_41B3_54D1E43D531A_en.png
+Image_26B18C5C_1A1A_3EF6_41B3_54D1E43D531A_mobile.url = skin/Image_26B18C5C_1A1A_3EF6_41B3_54D1E43D531A_mobile_en.png
+Image_64F0B295_4919_EA71_41CA_99C33485B434.url = skin/Image_64F0B295_4919_EA71_41CA_99C33485B434_en.png
+Image_64F31295_4919_EA71_41C5_E49D930A7FDE.url = skin/Image_64F31295_4919_EA71_41C5_E49D930A7FDE_en.png
+Image_64F35295_4919_EA71_41B4_3EB56616AFBB.url = skin/Image_64F35295_4919_EA71_41B4_3EB56616AFBB_en.png
+Image_64F37295_4919_EA71_41C7_444416C6B7B1.url = skin/Image_64F37295_4919_EA71_41C7_444416C6B7B1_en.png
+Image_663280EF_49E8_E7D2_41B7_5356A425AB1F.url = skin/Image_663280EF_49E8_E7D2_41B7_5356A425AB1F_en.png
+Image_664FAD93_4918_DE71_41CB_8AF471298F2D.url = skin/Image_664FAD93_4918_DE71_41CB_8AF471298F2D_en.png
+Image_67729295_4919_EA71_41B4_50A5481A68EF.url = skin/Image_67729295_4919_EA71_41B4_50A5481A68EF_en.png
+Image_6772B295_4919_EA71_41C5_62528C3B083D.url = skin/Image_6772B295_4919_EA71_41C5_62528C3B083D_en.png
+Image_6772D295_4919_EA71_41C6_16B383DA8443.url = skin/Image_6772D295_4919_EA71_41C6_16B383DA8443_en.png
+Image_6772F295_4919_EA71_41D1_3B3178E892DF.url = skin/Image_6772F295_4919_EA71_41D1_3B3178E892DF_en.png
+Image_849230D4_99F1_9E23_41DA_E292CC8DC114.url = skin/Image_849230D4_99F1_9E23_41DA_E292CC8DC114_en.png
+Image_849230D4_99F1_9E23_41DA_E292CC8DC114_mobile.url = skin/Image_849230D4_99F1_9E23_41DA_E292CC8DC114_mobile_en.png
+Image_84B68FB1_99F1_A265_41CA_51CAF72724ED.url = skin/Image_84B68FB1_99F1_A265_41CA_51CAF72724ED_en.png
+Image_84B6AFB1_99F1_A265_41D5_0C9F4526FF2F.url = skin/Image_84B6AFB1_99F1_A265_41D5_0C9F4526FF2F_en.png
+Image_84B6DFB1_99F1_A265_41C5_7679DF9B3EB0.url = skin/Image_84B6DFB1_99F1_A265_41C5_7679DF9B3EB0_en.png
+Image_84B6FFB1_99F1_A265_41D1_6A1C8746735E.url = skin/Image_84B6FFB1_99F1_A265_41D1_6A1C8746735E_en.png
+Image_8534DFB3_99F1_A265_41B4_55C8330DCA27.url = skin/Image_8534DFB3_99F1_A265_41B4_55C8330DCA27_en.png
+Image_8534FFB3_99F1_A265_41D5_DCFE0D716E6C.url = skin/Image_8534FFB3_99F1_A265_41D5_DCFE0D716E6C_en.png
+Image_85353FB3_99F1_A265_41DD_D33556612DF9.url = skin/Image_85353FB3_99F1_A265_41DD_D33556612DF9_en.png
+Image_85356FB3_99F1_A265_41A8_9B9D863F99D6.url = skin/Image_85356FB3_99F1_A265_41A8_9B9D863F99D6_en.png
+Image_E9C9466F_F68E_C2CF_41E2_E3C7E37A6291.url = skin/Image_E9C9466F_F68E_C2CF_41E2_E3C7E37A6291_en.gif
+Image_E9C9466F_F68E_C2CF_41E2_E3C7E37A6291_mobile.url = skin/Image_E9C9466F_F68E_C2CF_41E2_E3C7E37A6291_mobile_en.gif
+Image_F715B049_C24D_0D47_41E6_259D5DA97B80.url = skin/Image_F715B049_C24D_0D47_41E6_259D5DA97B80_en.png
+Image_F715B049_C24D_0D47_41E6_259D5DA97B80_mobile.url = skin/Image_F715B049_C24D_0D47_41E6_259D5DA97B80_mobile_en.png
+
+### Label
+Label_67569C7D_4918_DEB1_41B4_32C5611144FA.text = COURSE DETAILS
+Label_799D3FA0_4918_DA4F_41CB_DA078C36933C.text = COURSE DETAILS
+Label_26B19C5C_1A1A_3EF6_41A4_B38450491C3B_mobile.text = Created By Ruthram Media
+Label_26B19C5C_1A1A_3EF6_41A4_B38450491C3B.text = Created By Ruthram Media
+Label_26B07C5C_1A1A_3EF6_41A5_F42EEBABBBD8_mobile.text = ruthrammedia@gmail.com
+Label_26B07C5C_1A1A_3EF6_41A5_F42EEBABBBD8.text = ruthrammedia@gmail.com
+
+### Multiline Text
+HTMLText_85E99095_99F2_BE22_41CA_8086A07EF88E.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-align:right;font-size:25px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#39317d;font-size:25px;font-family:'Arial Narrow';"><B>{{title}}</B></SPAN></SPAN></DIV></div>
+HTMLText_85E99095_99F2_BE22_41CA_8086A07EF88E_mobile.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-align:right;font-size:12.5px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#39317d;font-size:12.5px;font-family:'Arial Narrow';"><B>{{title}}</B></SPAN></SPAN></DIV></div>
+
+### Tooltip
+Image_84B6AFB1_99F1_A265_41D5_0C9F4526FF2F.toolTip = Admission
+Image_6772D295_4919_EA71_41C6_16B383DA8443.toolTip = Admission
+Image_F715B049_C24D_0D47_41E6_259D5DA97B80_mobile.toolTip = Back to Homepage
+Image_F715B049_C24D_0D47_41E6_259D5DA97B80.toolTip = Back to Homepage
+Image_E9C9466F_F68E_C2CF_41E2_E3C7E37A6291_mobile.toolTip = Course Details
+Image_E9C9466F_F68E_C2CF_41E2_E3C7E37A6291.toolTip = Course Details
+Image_8534DFB3_99F1_A265_41B4_55C8330DCA27.toolTip = Facebook
+Image_64F35295_4919_EA71_41B4_3EB56616AFBB.toolTip = Facebook
+Image_6772F295_4919_EA71_41D1_3B3178E892DF.toolTip = Gmail
+Image_84B68FB1_99F1_A265_41CA_51CAF72724ED.toolTip = Gmail
+Image_64F0B295_4919_EA71_41CA_99C33485B434.toolTip = Instagram
+Image_8534FFB3_99F1_A265_41D5_DCFE0D716E6C.toolTip = Instagram
+Image_84B6DFB1_99F1_A265_41C5_7679DF9B3EB0.toolTip = Phone
+Image_6772B295_4919_EA71_41C5_62528C3B083D.toolTip = Phone
+Image_64F31295_4919_EA71_41C5_E49D930A7FDE.toolTip = Tour Link
+Image_85356FB3_99F1_A265_41A8_9B9D863F99D6.toolTip = Tour Link
+Image_67729295_4919_EA71_41B4_50A5481A68EF.toolTip = Whatsapp
+Image_84B6FFB1_99F1_A265_41D1_6A1C8746735E.toolTip = Whatsapp
+Image_85353FB3_99F1_A265_41DD_D33556612DF9.toolTip = Youtube
+Image_64F37295_4919_EA71_41C7_444416C6B7B1.toolTip = Youtube
+
+## Tour
+
+### Description
+
+### Title
+tour.name = Nursing

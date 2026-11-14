@@ -1,6 +1,6 @@
-import React from "react";
+﻿import React from "react";
 import NoDataCard from "../accreditation/NoDataCard";
-import noDataImg from "../../assets/images/club-com/no-data.png";
+import noDataImg from "../../assets/images/club-com/no-data.webp";
 import "../../Styles/clubs/ClubFaculty.css";
 
 export default function ClubFaculty({ faculty = [] }) {
@@ -48,3 +48,4 @@ export default function ClubFaculty({ faculty = [] }) {
     </section>
   );
 }
+

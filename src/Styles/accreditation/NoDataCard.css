@@ -48,9 +48,9 @@
 .no-data-subtitle {
   font-family: inherit;
   font-size: max(min(var(--no-data-sub-fs), var(--fs-min)), calc(var(--no-data-sub-fs) * var(--fs-scale)));
-  color: #4b5563;
+  color: #111827;
   margin: 0;
-  max-width: 500px;
+  max-width: 20rem;
   line-height: 1.6;
 }
 

@@ -1,6 +1,6 @@
-// Member photos for clubs & committees (from the Figma design), stored per
+﻿// Member photos for clubs & committees (from the Figma design), stored per
 // group id as <group>/<slot>.png, e.g. "rrc/f1" (faculty 1) or "nss/s2" (student 2).
-const memberPhotoModules = import.meta.glob("../../assets/images/club-com/members/*/*.png", {
+const memberPhotoModules = import.meta.glob("../../assets/images/club-com/members/*/*.webp", {
   eager: true,
   import: "default",
 });
@@ -59,5 +59,6 @@ const SHARED_PHOTOS = {
 
 export const memberPhoto = (groupId, slot) => {
   const key = SHARED_PHOTOS[`${groupId}/${slot}`] || `${groupId}/${slot}`;
-  return memberPhotoModules[`../../assets/images/club-com/members/${key}.png`];
+  return memberPhotoModules[`../../assets/images/club-com/members/${key}.webp`];
 };
+

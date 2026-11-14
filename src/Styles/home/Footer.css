@@ -16,7 +16,7 @@
 .home-footer {
   background-color: #90091D; /* Deep crimson maroon matching referral */
   color: #FFFFFF;
-  padding: 4.5rem var(--global-padding-x, 5%) 2rem;
+  padding: 4.5rem var(--global-padding-x) 2rem;
   width: 100%;
   box-sizing: border-box;
   font-family: var(--font-heading, "Poppins", sans-serif);
@@ -80,7 +80,7 @@
   font-weight: 400;
   color: #FFFFFF;
   margin-top: 0.35rem;
-  letter-spacing: 0.01rem;
+  /* letter-spacing: 0.01rem; */
 }
 
 .footer-brand-desc {
@@ -89,7 +89,7 @@
   font-weight: 400;
   color: #FFFFFF;
   line-height: 1.55;
-  /* max-width: 22rem; */
+  max-width: 25rem;
 }
 
 /* ── Right Navigation Columns Group ── */
@@ -120,6 +120,14 @@
   padding: 0;
   margin: 0;
   margin-left: 0.8rem;
+}
+
+/* Quick Links: two even columns, filled top-to-bottom */
+.footer-links-list.footer-links-list--two-col {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(var(--footer-list-rows, 3), auto);
+  column-gap: 2.5rem;
 }
 
 .footer-link {
@@ -264,23 +272,32 @@
     gap: 1.25rem;
   }
 
+  /* Brand row scales as one unit with the content width (design: 343px at 375px),
+     capped at the design sizes, so "MOTHER TERASA" stays on one line on every phone */
   .footer-brand-header {
-    gap: 1rem;
+    --footer-brand-unit: calc((100vw - 2rem) / 343);
+    gap: min(1rem, calc(var(--footer-brand-unit) * 16));
     margin-bottom: 1.25rem;
   }
 
   .footer-brand-logo {
-    width: 5.0625rem;
-    height: 5.22rem;
+    width: min(5.0625rem, calc(var(--footer-brand-unit) * 81));
+    height: min(5.22rem, calc(var(--footer-brand-unit) * 83.5));
+  }
+
+  .footer-brand-text {
+    min-width: 0;
   }
 
   .footer-brand-title {
-    font-size: max(min(var(--footer-brand-title-mobile-fs), var(--fs-min)), calc(var(--footer-brand-title-mobile-fs) * var(--fs-scale)));
+    font-size: min(var(--footer-brand-title-mobile-fs), calc(var(--footer-brand-unit) * 27));
+    white-space: nowrap;
     color: #F5F5F5;
   }
 
   .footer-brand-subtitle {
-    font-size: max(min(var(--footer-brand-subtitle-mobile-fs), var(--fs-min)), calc(var(--footer-brand-subtitle-mobile-fs) * var(--fs-scale)));
+    font-size: min(var(--footer-brand-subtitle-mobile-fs), calc(var(--footer-brand-unit) * 16));
+    white-space: nowrap;
     font-weight: 500;
     color: #F5F5F5;
     margin-top: 0.8rem;
@@ -297,9 +314,13 @@
     display: inline;
   }
 
+  /* Stretch the group and its columns to full width so each link row
+     (and its tap area) spans the whole footer, not just the longest label */
   .footer-links-group {
     display: flex;
     flex-direction: column;
+    align-items: stretch;
+    width: 100%;
     gap: 0.75rem;
   }
 
@@ -320,11 +341,20 @@
     margin-left: 0;
   }
 
+  /* Mobile reference: Quick Links stacks as a single column like the other lists */
+  .footer-links-list.footer-links-list--two-col {
+    display: flex;
+  }
+
   .footer-link {
     font-size: max(min(var(--footer-link-mobile-fs), var(--fs-min)), calc(var(--footer-link-mobile-fs) * var(--fs-scale)));
     font-weight: 500;
     line-height: normal;
     padding: 0.625rem;
+    /* Full-width row so tapping anywhere along it opens the link */
+    display: block;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
   }
 
   .footer-divider {
@@ -383,7 +413,7 @@
   .footer-brand-desc {
     font-weight: 500;
     line-height: normal;
-    max-width: 23.875rem;
+    /* max-width: 23.875rem; */
     padding: 0.625rem;
   }
 

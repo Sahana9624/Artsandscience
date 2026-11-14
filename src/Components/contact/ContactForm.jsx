@@ -1,5 +1,10 @@
 import React, { useState } from "react";
+import { createPortal } from "react-dom";
+import SubmissionModal from "../SubmissionModal";
 import "../../Styles/contact/ContactForm.css";
+
+const WEB3FORMS_ACCESS_KEY = "44033051-c053-43c1-a839-baac6846f465";
+const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
 
 const INITIAL_FORM = {
   name: "",
@@ -11,7 +16,13 @@ const INITIAL_FORM = {
 
 export default function ContactForm() {
   const [formData, setFormData] = useState(INITIAL_FORM);
-  const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [statusModal, setStatusModal] = useState({
+    isOpen: false,
+    type: "success",
+    title: "",
+    buttonText: "",
+  });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -43,31 +54,66 @@ export default function ContactForm() {
   const isNameValid = formData.name.trim().length > 0;
   const isEmailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email.trim());
   const isPhoneValid = formData.phone.length === 10;
-  const isDeptValid = formData.department.trim().length > 0;
-
   // Submit button enabled ONLY after filling all input fields EXCEPT message box
-  const isFormValid = isNameValid && isEmailValid && isPhoneValid && isDeptValid;
+  // (department select is currently hidden, so it is not required)
+  const isFormValid = isNameValid && isEmailValid && isPhoneValid;
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!isFormValid) return;
+    if (!isFormValid || isSubmitting) return;
 
-    setSubmitted(true);
-    setFormData(INITIAL_FORM);
-    setTimeout(() => {
-      setSubmitted(false);
-    }, 4000);
+    setIsSubmitting(true);
+
+    let succeeded = false;
+    try {
+      const response = await fetch(WEB3FORMS_ENDPOINT, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_ACCESS_KEY,
+          subject: `New Contact Enquiry - ${formData.name.trim()}`,
+          from_name: "Mother Terasa College Website",
+          replyto: formData.email.trim(),
+          Name: formData.name.trim(),
+          Email: formData.email.trim(),
+          Phone: `+91 ${formData.phone}`,
+          ...(formData.department && { Department: formData.department }),
+          Message: formData.message.trim() || "(No message)",
+        }),
+      });
+      const result = await response.json();
+      succeeded = response.ok && result.success;
+    } catch {
+      succeeded = false;
+    }
+
+    setIsSubmitting(false);
+
+    if (succeeded) {
+      setFormData(INITIAL_FORM);
+      setStatusModal({
+        isOpen: true,
+        type: "success",
+        title: "Message Successfully Sent",
+        buttonText: "Continue",
+      });
+    } else {
+      // Keep the entered data so the user can retry without retyping
+      setStatusModal({
+        isOpen: true,
+        type: "error",
+        title: "Your Message Could Not Be Sent",
+        buttonText: "Try Again",
+      });
+    }
   };
 
   return (
     <div className="contact-form-card" aria-label="Send us a message card">
       <h2 className="contact-card-title">Send us a message</h2>
-
-      {submitted && (
-        <div className="contact-success-msg" role="alert">
-          Thank you! Your message has been sent successfully. We will get in touch with you shortly.
-        </div>
-      )}
 
       <form className="contact-form" onSubmit={handleSubmit}>
         <input
@@ -102,7 +148,7 @@ export default function ContactForm() {
           required
         />
 
-        <div className="contact-select-wrapper">
+        {/* <div className="contact-select-wrapper">
           <select
             name="department"
             className={`contact-select-field ${formData.department ? "selected" : ""}`}
@@ -134,7 +180,7 @@ export default function ContactForm() {
           >
             <polyline points="6 9 12 15 18 9"></polyline>
           </svg>
-        </div>
+        </div> */}
 
         {/* Message is optional as requested */}
         <textarea
@@ -150,7 +196,7 @@ export default function ContactForm() {
         <button
           type="submit"
           className="contact-submit-btn"
-          disabled={!isFormValid}
+          disabled={!isFormValid || isSubmitting}
         >
           <svg
             width="16"
@@ -166,9 +212,21 @@ export default function ContactForm() {
             <line x1="22" y1="2" x2="11" y2="13"></line>
             <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
           </svg>
-          <span>Send Message</span>
+          <span>{isSubmitting ? "Sending..." : "Send Message"}</span>
         </button>
       </form>
+
+      {/* Submission Status Modal (portaled so page-level transforms can't clip the overlay) */}
+      {createPortal(
+        <SubmissionModal
+          isOpen={statusModal.isOpen}
+          type={statusModal.type}
+          title={statusModal.title}
+          buttonText={statusModal.buttonText}
+          onClose={() => setStatusModal({ ...statusModal, isOpen: false })}
+        />,
+        document.body
+      )}
     </div>
   );
 }

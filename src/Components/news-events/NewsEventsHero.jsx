@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import heroImg from "../../assets/images/news/news-hero.png";
+import heroImg from "../../assets/images/news/news-hero.webp";
 import "../../Styles/news-events/NewsEventsHero.css";
 
 export default function NewsEventsHero() {

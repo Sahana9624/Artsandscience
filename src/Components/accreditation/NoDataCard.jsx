@@ -1,5 +1,5 @@
-import React from "react";
-import defaultNoDataImg from "../../assets/images/accreditations/no-data.png";
+﻿import React from "react";
+import defaultNoDataImg from "../../assets/images/accreditations/no-data.webp";
 import "../../Styles/accreditation/NoDataCard.css";
 
 export default function NoDataCard({

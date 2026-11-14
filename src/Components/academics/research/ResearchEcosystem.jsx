@@ -1,5 +1,5 @@
-import React from "react";
-import ecosystemImg from "../../../assets/images/academics/ecosystem.png";
+﻿import React from "react";
+import ecosystemImg from "../../../assets/images/academics/ecosystem.webp";
 import "../../../Styles/academics/research/ResearchEcosystem.css";
 
 export default function ResearchEcosystem() {
@@ -18,3 +18,4 @@ export default function ResearchEcosystem() {
     </section>
   );
 }
+

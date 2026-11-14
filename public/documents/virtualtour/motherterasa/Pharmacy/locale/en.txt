@@ -1,0 +1,128 @@
+#: locale=en
+
+## Action
+
+### Text to Speech
+TextToSpeechBehaviour_C9358FED_E228_FCEE_41E4_DEEA6B9A7B1F.text = Mother Terasa College of Pharmacy was started D Pharm in the Year 2018 and B Pharm in the year 2019.
+
+### URL
+LinkBehaviour_B5992FCB_9A31_A226_41B6_2B302B37EF9C.source = http://www.motherterasakalvi.com/application/
+LinkBehaviour_AAE3316F_9A31_7EFE_41DA_053256C18369.source = http://www.motherterasakalvi.com/application/
+LinkBehaviour_E00306D7_C3FA_C923_41C1_DA79576DE20B.source = https://uandi.media/Virtual-tour/motherterasa/MTC/index.htm
+LinkBehaviour_E7CDFE18_C3FA_B92D_41E0_D8B1697DC70E.source = https://uandi.media/Virtual-tour/motherterasa/MTC/index.htm
+LinkBehaviour_AAE3816E_9A31_7EFE_41E0_55CFE498DC59.source = https://wa.me/+919443372151
+LinkBehaviour_B5996FCB_9A31_A226_41D6_501CBDB77E3E.source = https://wa.me/+919443372151
+LinkBehaviour_B5988FCB_9A31_A226_41D4_8E6803C7166F.source = https://www.facebook.com/motherterasainstitutions.org
+LinkBehaviour_AAE2B16F_9A31_7EFE_41DA_1DCF2A60FC83.source = https://www.facebook.com/motherterasainstitutions.org
+LinkBehaviour_B598CFCB_9A31_A226_41D7_98755E08C27B.source = https://www.google.com/maps/@10.5008426,78.6455836,3a,75y,158.5h,81.7t/data=!3m7!1e1!3m5!1sAF1QipOPp7Zvd-w5WeFs3DVdeuiVKdNeBbRV4y2K7KYr!2e10!3e11!7i7680!8i3840?entry=ttu
+LinkBehaviour_AAE3116F_9A31_7EFE_41C6_C0EAB1607835.source = https://www.google.com/maps/@10.5008426,78.6455836,3a,75y,158.5h,81.7t/data=!3m7!1e1!3m5!1sAF1QipOPp7Zvd-w5WeFs3DVdeuiVKdNeBbRV4y2K7KYr!2e10!3e11!7i7680!8i3840?entry=ttu
+LinkBehaviour_B598AFCB_9A31_A226_41CB_0448E72D948B.source = https://www.instagram.com/motherterasagroups
+LinkBehaviour_B5612170_9A31_7EE2_41CF_14ABC6D59318.source = https://www.instagram.com/motherterasagroups
+LinkBehaviour_B598EFCB_9A31_A226_41DE_B7F69A286625.source = https://youtube.com/@mtcetilluppur
+LinkBehaviour_AAE2E16F_9A31_7EFE_41E1_CB0EBBD26B0C.source = https://youtube.com/@mtcetilluppur
+LinkBehaviour_AAE3516E_9A31_7EFE_41E1_20F34EBD67BE.source = mailto:mtcp18@gmail.com
+LinkBehaviour_B5990FCB_9A31_A226_4183_0113B8701B61.source = mailto:mtcp18@gmail.com
+LinkBehaviour_15ABB94E_1A3A_3C48_41B1_DADED96DA637.source = mailto:ruthrammedia@gmail.com
+LinkBehaviour_0C780231_1A06_4FD9_41A1_B44FCA41BC4B.source = mailto:ruthrammedia@gmail.com
+LinkBehaviour_B5995FCB_9A31_A226_41DE_0484C4F4634C.source = tel:9443372151
+LinkBehaviour_AAE3A16E_9A31_7EFE_41D4_E1133B4A406D.source = tel:9443372151
+
+## Hotspot
+
+### Tooltip
+HotspotPanoramaOverlayArea_D40D54A4_9A12_A662_41DA_9E57EEA73DBC.toolTip = Anatomy Physiology Lab
+HotspotPanoramaOverlayArea_FD102145_9A3F_BE2D_41E2_A69DF9B4CCC4.toolTip = Biotechnology lab
+HotspotPanoramaOverlayArea_C55B145A_9A32_A626_41D3_4EEAD8BD35EE.toolTip = Ceutics Lab
+HotspotPanoramaOverlayArea_DD994D7A_9A16_E6E6_41B5_A48F50A555C1.toolTip = Chemistry Lab
+HotspotPanoramaOverlayArea_DC1AFB18_9A12_A223_41D5_60FA15325B45.toolTip = Go Back
+HotspotPanoramaOverlayArea_D18BF24E_9A12_E23F_41DD_BB9E657EF73E.toolTip = Go Back
+HotspotPanoramaOverlayArea_F48AFB22_9A32_E267_41D4_BC95D2037EB4.toolTip = Go Back
+HotspotPanoramaOverlayArea_C7DD7129_9A33_9E65_41B1_C4AEC54B3EB6.toolTip = Go Back
+HotspotPanoramaOverlayArea_C7B56772_9A36_A2E6_41C5_E58495F76334.toolTip = Go Back
+HotspotPanoramaOverlayArea_F2B9FA78_9A3E_A2E3_41A3_BCF1D48F7B3E.toolTip = Go Back
+HotspotPanoramaOverlayArea_DF7BFF93_9A16_A225_41E3_4482A35427AB.toolTip = Go Inside
+HotspotPanoramaOverlayArea_C6844B72_9A31_A2E7_41D4_364946527346.toolTip = Pharmacology Lab
+
+## Media
+
+### Audio
+audiores_A257E59B_C986_F679_41DF_3E2A666FF5A6.mp3Url = media/audio_A16C1423_C986_1649_41E5_E9550B6A5F60_en.mp3
+
+### Title
+panorama_6538603C_7AC6_D218_41D2_6C100E066125.label = Anatomy Physiology Lab
+panorama_713D3D00_7FDB_BC5E_41CC_A66217B95EFB.label = Biotechnology lab
+panorama_ACF32BE0_800B_2A13_41D1_7D8B7243366E.label = Entrance
+panorama_5D656CCC_7DCD_F278_41CE_9513C2F45F70.label = Pharmaceutics Lab
+panorama_5BF30F24_7A4D_4E28_41D8_20911DFD6389.label = Pharmachemical Lab
+panorama_5A882FAA_7A4B_4E38_41D0_83195C0DF858.label = Pharmacognosy Lab
+panorama_5C20FD08_7DCB_B3F8_41C7_2F6F2A05FFBB.label = Pharmacology Lab
+
+## Skin
+
+### Image
+Image_0C786231_1A06_4FD9_41B0_7B985EEC30F0.url = skin/Image_0C786231_1A06_4FD9_41B0_7B985EEC30F0_en.png
+Image_15ABD94E_1A3A_3C48_419D_D0FFCA5C30A5.url = skin/Image_15ABD94E_1A3A_3C48_419D_D0FFCA5C30A5_en.png
+Image_73C11604_F781_C231_41E6_4BC31EE32B5B.url = skin/Image_73C11604_F781_C231_41E6_4BC31EE32B5B_en.gif
+Image_76B02AED_F782_43F3_41E8_8D215AE4B012.url = skin/Image_76B02AED_F782_43F3_41E8_8D215AE4B012_en.gif
+Image_791725CC_F786_C631_41E4_B723EB838298.url = skin/Image_791725CC_F786_C631_41E4_B723EB838298_en.png
+Image_7E446640_F786_4231_41E9_56B53FBB566A.url = skin/Image_7E446640_F786_4231_41E9_56B53FBB566A_en.png
+Image_A5A2A554_C24B_374D_41DD_4A2D355EE6AF.url = skin/Image_A5A2A554_C24B_374D_41DD_4A2D355EE6AF_en.png
+Image_AAB22B81_9A37_6222_41E1_BBCA973B4BA5.url = skin/Image_AAB22B81_9A37_6222_41E1_BBCA973B4BA5_en.png
+Image_AAE2A16F_9A31_7EFE_41C1_DE6C1131B8B4.url = skin/Image_AAE2A16F_9A31_7EFE_41C1_DE6C1131B8B4_en.png
+Image_AAE2D16F_9A31_7EFE_41D7_0FD2A4F25BF3.url = skin/Image_AAE2D16F_9A31_7EFE_41D7_0FD2A4F25BF3_en.png
+Image_AAE3016F_9A31_7EFE_4134_CE79D69B5A3C.url = skin/Image_AAE3016F_9A31_7EFE_4134_CE79D69B5A3C_en.png
+Image_AAE3216F_9A31_7EFE_41E0_802D15A67FA6.url = skin/Image_AAE3216F_9A31_7EFE_41E0_802D15A67FA6_en.png
+Image_AAE3416E_9A31_7EFE_41C6_C9ECA3BC7797.url = skin/Image_AAE3416E_9A31_7EFE_41C6_C9ECA3BC7797_en.png
+Image_AAE3616E_9A31_7EFE_41DF_CF6EC4FAC2FA.url = skin/Image_AAE3616E_9A31_7EFE_41DF_CF6EC4FAC2FA_en.png
+Image_AAE3916E_9A31_7EFE_419B_9D9B33F7A55F.url = skin/Image_AAE3916E_9A31_7EFE_419B_9D9B33F7A55F_en.png
+Image_AAE3B16E_9A31_7EFE_41B7_C90769A202CD.url = skin/Image_AAE3B16E_9A31_7EFE_41B7_C90769A202CD_en.png
+Image_B5989FCB_9A31_A226_41BA_CF456C69995E.url = skin/Image_B5989FCB_9A31_A226_41BA_CF456C69995E_en.png
+Image_B598BFCB_9A31_A226_41E2_68F462947988.url = skin/Image_B598BFCB_9A31_A226_41E2_68F462947988_en.png
+Image_B598DFCB_9A31_A226_41E2_5AC32A4B9180.url = skin/Image_B598DFCB_9A31_A226_41E2_5AC32A4B9180_en.png
+Image_B598FFCB_9A31_A226_41CB_8C957E426893.url = skin/Image_B598FFCB_9A31_A226_41CB_8C957E426893_en.png
+Image_B5991FCB_9A31_A226_41DD_F17143CD4138.url = skin/Image_B5991FCB_9A31_A226_41DD_F17143CD4138_en.png
+Image_B5993FCB_9A31_A226_41E1_E41E3C3050B4.url = skin/Image_B5993FCB_9A31_A226_41E1_E41E3C3050B4_en.png
+Image_B5997FCB_9A31_A226_41C3_9702DE8E27E8.url = skin/Image_B5997FCB_9A31_A226_41C3_9702DE8E27E8_en.png
+Image_B599AFCB_9A31_A226_41E0_32523D6FB44D.url = skin/Image_B599AFCB_9A31_A226_41E0_32523D6FB44D_en.png
+Image_B87BEF47_C24D_134A_41CA_89A9707C50E9.url = skin/Image_B87BEF47_C24D_134A_41CA_89A9707C50E9_en.png
+
+### Label
+Label_7F46A843_F786_4E37_41EC_18F19D8619E9.text = COURSE DETAILS
+Label_72462C72_F786_46D1_41D7_57E6E6F06CAD.text = COURSE DETAILS
+Label_0C784231_1A06_4FD9_41A7_4BAA9AFCA293.text = Created By Ruthram Media
+Label_15AA594D_1A3A_3C48_41AF_6CD25696FEA3.text = Created By Ruthram Media
+Label_15ABC94E_1A3A_3C48_41A6_04891C7CE5EB.text = ruthrammedia@gmail.com
+Label_0C787231_1A06_4FD9_4186_B6B31F96B85A.text = ruthrammedia@gmail.com
+
+### Multiline Text
+HTMLText_B6281433_9A36_A665_41DC_222C55A4DA5F.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-align:right;font-size:25px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#39317d;font-size:25px;font-family:'Arial Narrow';"><B>{{title}}</B></SPAN></SPAN></DIV></div>
+HTMLText_B6281433_9A36_A665_41DC_222C55A4DA5F_mobile.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-align:right;font-size:12.5px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#39317d;font-size:12.5px;font-family:'Arial Narrow';"><B>{{title}}</B></SPAN></SPAN></DIV></div>
+
+### Tooltip
+Image_AAE3416E_9A31_7EFE_41C6_C9ECA3BC7797.toolTip = Admission
+Image_B5993FCB_9A31_A226_41E1_E41E3C3050B4.toolTip = Admission
+Image_B87BEF47_C24D_134A_41CA_89A9707C50E9.toolTip = Back to Homepage
+Image_A5A2A554_C24B_374D_41DD_4A2D355EE6AF.toolTip = Back to Homepage
+Image_76B02AED_F782_43F3_41E8_8D215AE4B012.toolTip = Course Details
+Image_73C11604_F781_C231_41E6_4BC31EE32B5B.toolTip = Course Details
+Image_AAE2D16F_9A31_7EFE_41D7_0FD2A4F25BF3.toolTip = Facebook
+Image_B5989FCB_9A31_A226_41BA_CF456C69995E.toolTip = Facebook
+Image_AAE3616E_9A31_7EFE_41DF_CF6EC4FAC2FA.toolTip = Gmail
+Image_B5991FCB_9A31_A226_41DD_F17143CD4138.toolTip = Gmail
+Image_AAE2A16F_9A31_7EFE_41C1_DE6C1131B8B4.toolTip = Instagram
+Image_B598BFCB_9A31_A226_41E2_68F462947988.toolTip = Instagram
+Image_AAE3B16E_9A31_7EFE_41B7_C90769A202CD.toolTip = Phone
+Image_B599AFCB_9A31_A226_41E0_32523D6FB44D.toolTip = Phone
+Image_B598DFCB_9A31_A226_41E2_5AC32A4B9180.toolTip = Tour Link
+Image_AAE3216F_9A31_7EFE_41E0_802D15A67FA6.toolTip = Tour Link
+Image_AAE3916E_9A31_7EFE_419B_9D9B33F7A55F.toolTip = Whatsapp
+Image_B5997FCB_9A31_A226_41C3_9702DE8E27E8.toolTip = Whatsapp
+Image_B598FFCB_9A31_A226_41CB_8C957E426893.toolTip = Youtube
+Image_AAE3016F_9A31_7EFE_4134_CE79D69B5A3C.toolTip = Youtube
+
+## Tour
+
+### Description
+
+### Title
+tour.name = Pharmacy

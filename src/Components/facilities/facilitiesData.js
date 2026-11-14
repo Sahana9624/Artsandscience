@@ -1,13 +1,13 @@
-import faci1 from "../../assets/images/facility/faci-1.png";
-import faci2 from "../../assets/images/facility/faci-2.png";
-import faci3 from "../../assets/images/facility/faci-3.png";
-import faci4 from "../../assets/images/facility/faci-4.png";
-import faci5 from "../../assets/images/facility/faci-5.png";
-import faci6 from "../../assets/images/facility/faci-6.png";
-import faci7 from "../../assets/images/facility/faci-7.png";
-import faci8 from "../../assets/images/facility/faci-8.png";
-import faci9 from "../../assets/images/facility/faci-9.png";
-import faci10 from "../../assets/images/facility/faci-10.png";
+import faci1 from "../../assets/images/facility/faci-1.webp";
+import faci2 from "../../assets/images/facility/faci-2.webp";
+import faci3 from "../../assets/images/facility/faci-3.webp";
+import faci4 from "../../assets/images/facility/faci-4.webp";
+import faci5 from "../../assets/images/facility/faci-5.webp";
+import faci6 from "../../assets/images/facility/faci-6.webp";
+import faci7 from "../../assets/images/facility/faci-7.webp";
+import faci8 from "../../assets/images/facility/faci-8.webp";
+import faci9 from "../../assets/images/facility/faci-9.webp";
+import faci10 from "../../assets/images/facility/faci-10.webp";
 
 export const facilitiesData = [
   {
@@ -91,3 +91,4 @@ export const facilitiesData = [
       "The college offers extensive indoor and outdoor sports facilities, including cricket, football, volleyball, hockey, badminton, kabaddi, kho-kho, table tennis, chess, and more. A modern gymnasium, regular sports training, annual competitions, and guidance from a qualified Physical Director promote fitness, teamwork, leadership, and sporting excellence among students.",
   },
 ];
+

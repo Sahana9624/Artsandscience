@@ -1,9 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../../../Styles/academics/ug/UndergraduatePrograms.css";
 import ArrowIcon from "../../common/ArrowIcon";
 
 export default function UndergraduatePrograms() {
+  const navigate = useNavigate();
+
   const programs = [
     {
       id: "ba-tamil",
@@ -106,6 +108,10 @@ export default function UndergraduatePrograms() {
     <div
       key={program.id}
       className={`academic-program-card ${program.isWide ? "academic-item-wide" : ""}`}
+      onClick={(e) => {
+        // The "View Program" link navigates on its own
+        if (!e.target.closest("a")) navigate(`/academics/${program.id}`);
+      }}
     >
       <div className="academic-program-body">
         <h3 className="academic-program-name">

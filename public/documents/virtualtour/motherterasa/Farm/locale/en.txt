@@ -1,0 +1,48 @@
+#: locale=en
+
+## Action
+
+### URL
+LinkBehaviour_D584BEC7_E23B_1F19_41E5_E1E63CFBBFB3.source = https://uandi.media/Virtual-tour/motherterasa/MTC/index.htm
+LinkBehaviour_A0F7C6ED_E26B_0CE9_41D1_45CA544DB29B.source = https://uandi.media/Virtual-tour/motherterasa/MTC/index.htm
+LinkBehaviour_33BA2F72_1A7A_345B_4199_4D945ED424FA.source = mailto:ruthrammedia@gmail.com
+LinkBehaviour_33106CF2_1A7A_345B_41AA_3DF9492978F0.source = mailto:ruthrammedia@gmail.com
+
+## Media
+
+### Audio
+audiores_DE61F6F4_E259_0CFF_41C6_9C6FEC803D6D.mp3Url = media/audio_DE32AF5C_E259_3D2F_41E8_C39D5754D8D2_en.mp3
+
+### Title
+panorama_D484DF88_E239_3D17_41DC_D249026D6F75.label = Farm
+
+## Skin
+
+### Image
+Image_33108CF2_1A7A_345B_41A8_150CF528585E.url = skin/Image_33108CF2_1A7A_345B_41A8_150CF528585E_en.png
+Image_33BBCF72_1A7A_345B_41A2_9AC2D7A6AB74.url = skin/Image_33BBCF72_1A7A_345B_41A2_9AC2D7A6AB74_en.png
+Image_D7CF8505_E239_0D1E_41C4_89F5F8A25965.url = skin/Image_D7CF8505_E239_0D1E_41C4_89F5F8A25965_en.png
+Image_D7CF8505_E239_0D1E_41C4_89F5F8A25965_mobile.url = skin/Image_D7CF8505_E239_0D1E_41C4_89F5F8A25965_mobile_en.png
+Image_D82F824C_E22B_072F_41D9_D27EB631B4A0.url = skin/Image_D82F824C_E22B_072F_41D9_D27EB631B4A0_en.png
+Image_D82F824C_E22B_072F_41D9_D27EB631B4A0_mobile.url = skin/Image_D82F824C_E22B_072F_41D9_D27EB631B4A0_mobile_en.png
+Image_D8A907B0_E229_0D76_41DD_690C472DEA00.url = skin/Image_D8A907B0_E229_0D76_41DD_690C472DEA00_en.gif
+Image_D8A907B0_E229_0D76_41DD_690C472DEA00_mobile.url = skin/Image_D8A907B0_E229_0D76_41DD_690C472DEA00_mobile_en.gif
+
+### Label
+Label_33BBEF72_1A7A_345B_4186_0BC9AFD3E0A8.text = Created By Ruthram Media
+Label_33109CF2_1A7A_345B_41B8_A7566A3F4A82.text = Created By Ruthram Media
+Label_33107CF2_1A7A_345B_418E_9E93F69FBD06.text = ruthrammedia@gmail.com
+Label_33BA3F72_1A7A_345B_41AA_9C6999C2F571.text = ruthrammedia@gmail.com
+
+### Tooltip
+Image_D7CF8505_E239_0D1E_41C4_89F5F8A25965_mobile.toolTip = Back to Homepage
+Image_D7CF8505_E239_0D1E_41C4_89F5F8A25965.toolTip = Back to Homepage
+Image_D8A907B0_E229_0D76_41DD_690C472DEA00.toolTip = Farm Details
+Image_D8A907B0_E229_0D76_41DD_690C472DEA00_mobile.toolTip = Farm Details
+
+## Tour
+
+### Description
+
+### Title
+tour.name = Farm

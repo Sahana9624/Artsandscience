@@ -1,5 +1,5 @@
 import React from "react";
-import heroBuildingImg from "../../assets/images/home/home-hero.png";
+import heroBuildingImg from "../../assets/images/home/home-hero.webp";
 import { useApply } from "../../Context/ApplyContext";
 import "../../Styles/home/Hero.css";
 

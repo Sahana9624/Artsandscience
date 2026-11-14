@@ -1,6 +1,6 @@
-import React from "react";
+﻿import React from "react";
 import NoDataCard from "../accreditation/NoDataCard";
-import noDataImg from "../../assets/images/club-com/no-data.png";
+import noDataImg from "../../assets/images/club-com/no-data.webp";
 import "../../Styles/clubs/ClubStudents.css";
 
 export default function ClubStudents({ students = [] }) {
@@ -37,3 +37,4 @@ export default function ClubStudents({ students = [] }) {
     </section>
   );
 }
+

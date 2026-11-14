@@ -1,5 +1,5 @@
 import React from "react";
-import excellenceImg from "../../assets/images/about/excellence.jpg";
+import excellenceImg from "../../assets/images/about/excellence.webp";
 import "../../Styles/about/CampusExcellence.css";
 
 export default function CampusExcellence() {

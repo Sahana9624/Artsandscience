@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
-import founderImg from "../../assets/images/about/founder.png";
-import chairmanImg from "../../assets/images/about/chairman.png";
-import principalImg from "../../assets/images/about/prinicipal.png";
+import founderImg from "../../assets/images/about/founder.webp";
+import chairmanImg from "../../assets/images/about/chairman.webp";
+import principalImg from "../../assets/images/about/prinicipal.webp";
 import "../../Styles/about/LeadershipMessages.css";
 
 export default function LeadershipMessages() {

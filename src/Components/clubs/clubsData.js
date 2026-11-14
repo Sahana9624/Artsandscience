@@ -1,26 +1,26 @@
 // Club & Committee Illustrations
-import redClubIllustration from "../../assets/images/club-com/red-club-1.png";
-import nssIllustration from "../../assets/images/club-com/nss.png";
-import yrcIllustration from "../../assets/images/club-com/yrc.png";
-import culturalIllustration from "../../assets/images/club-com/cultural.png";
-import yogaIllustration from "../../assets/images/club-com/yoga.png";
-import ecoIllustration from "../../assets/images/club-com/eco.png";
-import alumniIllustration from "../../assets/images/club-com/alumni.png";
-import proIllustration from "../../assets/images/club-com/pro.png";
+import redClubIllustration from "../../assets/images/club-com/red-club-1.webp";
+import nssIllustration from "../../assets/images/club-com/nss.webp";
+import yrcIllustration from "../../assets/images/club-com/yrc.webp";
+import culturalIllustration from "../../assets/images/club-com/cultural.webp";
+import yogaIllustration from "../../assets/images/club-com/yoga.webp";
+import ecoIllustration from "../../assets/images/club-com/eco.webp";
+import alumniIllustration from "../../assets/images/club-com/alumni.webp";
+import proIllustration from "../../assets/images/club-com/pro.webp";
 
 // Committee Illustrations
-import antiRagIllustration from "../../assets/images/committee/anti-rag.png";
-import grievanceIllustration from "../../assets/images/committee/grievance.png";
-import placementIllustration from "../../assets/images/committee/placement.png";
-import entrepreneurIllustration from "../../assets/images/committee/entrepreneur.png";
-import disciplineIllustration from "../../assets/images/committee/discipline.png";
-import studentGrieveIllustration from "../../assets/images/committee/student-grieve.png";
-import greenCampusIllustration from "../../assets/images/committee/green-campus.png";
-import careerGuideIllustration from "../../assets/images/committee/career-guide.png";
-import antiDrugIllustration from "../../assets/images/committee/anti-drug.png";
-import iicIllustration from "../../assets/images/committee/IIC.png";
-import researchIllustration from "../../assets/images/committee/research.png";
-import womenIllustration from "../../assets/images/committee/women.png";
+import antiRagIllustration from "../../assets/images/committee/anti-rag.webp";
+import grievanceIllustration from "../../assets/images/committee/grievance.webp";
+import placementIllustration from "../../assets/images/committee/placement.webp";
+import entrepreneurIllustration from "../../assets/images/committee/entrepreneur.webp";
+import disciplineIllustration from "../../assets/images/committee/discipline.webp";
+import studentGrieveIllustration from "../../assets/images/committee/student-grieve.webp";
+import greenCampusIllustration from "../../assets/images/committee/green-campus.webp";
+import careerGuideIllustration from "../../assets/images/committee/career-guide.webp";
+import antiDrugIllustration from "../../assets/images/committee/anti-drug.webp";
+import iicIllustration from "../../assets/images/committee/IIC.webp";
+import researchIllustration from "../../assets/images/committee/research.webp";
+import womenIllustration from "../../assets/images/committee/women.webp";
 
 // Club Logos (SVG icons from icon folders)
 import rrcLogo from "../../assets/icons/club-logos/rrc.svg";
@@ -1157,3 +1157,5 @@ export function getClubData(idOrSlug) {
   // Default to Red Ribbon Club
   return clubsData.rrc;
 }
+
+

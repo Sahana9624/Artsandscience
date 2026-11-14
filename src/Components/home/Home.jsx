@@ -10,6 +10,7 @@ import FAQSection from "./FAQSection";
 import CTABanner from "../CTABanner";
 import Footer from "./Footer";
 import ApplyModal from "./ApplyModal";
+import NewsBannerPopup from "./NewsBannerPopup";
 import "../../Styles/home/Home.css";
 
 export default function Home() {
@@ -49,6 +50,9 @@ export default function Home() {
 
       {/* 11. Admission Enquiry Modal */}
       <ApplyModal />
+
+      {/* 12. Latest News Banner Popup */}
+      <NewsBannerPopup />
     </div>
   );
 }

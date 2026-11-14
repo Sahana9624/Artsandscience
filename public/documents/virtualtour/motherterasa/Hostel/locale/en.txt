@@ -1,0 +1,42 @@
+#: locale=en
+
+## Action
+
+### URL
+LinkBehaviour_AFD3EC1B_E259_032A_41B4_1F5DCC1E9D30.source = https://uandi.media/Virtual-tour/motherterasa/MTC/index.htm
+LinkBehaviour_B266DDE4_E25F_1D1F_41D9_62A0A14DC682.source = https://uandi.media/Virtual-tour/motherterasa/MTC/index.htm
+LinkBehaviour_2844D9D7_1A0A_3C59_41B9_793B92DA3241.source = mailto:ruthrammedia@gmail.com
+LinkBehaviour_2B192DD1_1A05_F459_41A3_A62CA3BECE31.source = mailto:ruthrammedia@gmail.com
+
+## Media
+
+### Audio
+audiores_BA6F3933_E227_057A_41CA_B1AC57E4EFF3.mp3Url = media/audio_BBF76909_E259_0516_41D6_F8E433F3B86D_en.mp3
+
+### Title
+panorama_AD6ABBC8_E259_0517_41DB_3DFE55FD00B3.label = Hostel
+
+## Skin
+
+### Image
+Image_2844F9D7_1A0A_3C59_419C_3E273F47451D.url = skin/Image_2844F9D7_1A0A_3C59_419C_3E273F47451D_en.png
+Image_2B190DD1_1A05_F459_419A_375452B0FF25.url = skin/Image_2B190DD1_1A05_F459_419A_375452B0FF25_en.png
+Image_AFC43848_E25B_0317_41E8_1D86E012B688.url = skin/Image_AFC43848_E25B_0317_41E8_1D86E012B688_en.png
+Image_AFC43848_E25B_0317_41E8_1D86E012B688_mobile.url = skin/Image_AFC43848_E25B_0317_41E8_1D86E012B688_mobile_en.png
+
+### Label
+Label_284409D7_1A0A_3C59_41B0_D9198FE14B58.text = Created By Ruthram Media
+Label_2B191DD1_1A05_F459_4184_5F3284C2551A.text = Created By Ruthram Media
+Label_2B193DD1_1A05_F459_41B4_754B3DA4DA48.text = ruthrammedia@gmail.com
+Label_2844E9D7_1A0A_3C59_4180_B637CC9427E6.text = ruthrammedia@gmail.com
+
+### Tooltip
+Image_AFC43848_E25B_0317_41E8_1D86E012B688.toolTip = Back to Homepage
+Image_AFC43848_E25B_0317_41E8_1D86E012B688_mobile.toolTip = Back to Homepage
+
+## Tour
+
+### Description
+
+### Title
+tour.name = Hostel

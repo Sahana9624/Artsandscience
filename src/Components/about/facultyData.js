@@ -1,4 +1,4 @@
-// Faculty & staff shown under "View More" in the About page Administration
+﻿// Faculty & staff shown under "View More" in the About page Administration
 // section, in the order of the design (Figma "Component 4", expanded state).
 // Photos live in assets/images/about/faculty/<photo>.webp, exported as framed
 // in the design (gradient background and rounded corners included).

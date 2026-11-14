@@ -92,7 +92,7 @@
 }
 
 .gallery-album-title {
-  font-family: var(--font-heading, 'Outfit', 'Poppins', sans-serif);
+  font-family: var(--font-heading, 'Outfit', 'Poppins', 'Noto Sans Tamil', 'Mukta Malar', sans-serif);
   font-size: max(min(var(--album-card-title-fs), var(--fs-min)), calc(var(--album-card-title-fs) * var(--fs-scale)));
   font-weight: 500;
   color: #000000;
@@ -103,6 +103,13 @@
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 1.35;
+}
+
+.gallery-album-title .gallery-tamil-text {
+  font-family: 'Noto Sans Tamil', 'Mukta Malar', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: inherit;
 }
 
 .gallery-album-card:hover .gallery-album-title {
@@ -186,6 +193,12 @@
     font-size: max(min(var(--gallery-album-title-mobile-fs), var(--fs-min)), calc(var(--gallery-album-title-mobile-fs) * var(--fs-scale)));
     font-weight: 500;
     line-height: normal;
+  }
+
+  .gallery-album-title .gallery-tamil-text {
+    font-family: 'Noto Sans Tamil', 'Mukta Malar', sans-serif;
+    font-weight: 600;
+    color: inherit;
   }
 
   .gallery-album-count {

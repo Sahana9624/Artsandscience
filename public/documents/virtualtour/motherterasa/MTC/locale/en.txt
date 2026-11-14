@@ -1,0 +1,115 @@
+#: locale=en
+
+## Action
+
+### URL
+LinkBehaviour_506C73B7_F686_425F_41E7_CC1A5E0FD8E2.source = https://motherterasakalvi.com/virtualtour/motherterasa/Agri/index.htm
+LinkBehaviour_04D9F2CD_1A05_CC49_419A_338927240746.source = https://motherterasakalvi.com/virtualtour/motherterasa/Agri/index.htm
+LinkBehaviour_94CE67DA_DD0C_EAFF_41E5_E6DF957CBEB8.source = https://motherterasakalvi.com/virtualtour/motherterasa/Agri/index.htm
+LinkBehaviour_8E922278_C46E_C9ED_41E3_7D4F0B2EA482.source = https://motherterasakalvi.com/virtualtour/motherterasa/Arts/index.htm
+LinkBehaviour_04DE72CE_1A05_CC4B_419D_98D00140F3CD.source = https://motherterasakalvi.com/virtualtour/motherterasa/Arts/index.htm
+LinkBehaviour_E2FD5D19_FB06_463E_41EB_712FC7C1D80F.source = https://motherterasakalvi.com/virtualtour/motherterasa/Arts/index.htm
+LinkBehaviour_85D63835_E227_0379_41B0_431BE8309668.source = https://motherterasakalvi.com/virtualtour/motherterasa/Cafeteria/index.htm
+LinkBehaviour_04DC32D1_1A05_CC59_4163_7336F97E1DF4.source = https://motherterasakalvi.com/virtualtour/motherterasa/Catering/index.htm
+LinkBehaviour_E2CDDB8B_FB02_4212_41D5_7D0BF4C16990.source = https://motherterasakalvi.com/virtualtour/motherterasa/Catering/index.htm
+LinkBehaviour_26D1658D_F682_4633_41E5_8C389963AE98.source = https://motherterasakalvi.com/virtualtour/motherterasa/Catering/index.htm
+LinkBehaviour_9254099B_E239_052A_41B6_DF315A0F3DA0.source = https://motherterasakalvi.com/virtualtour/motherterasa/Dininghall/index.htm
+LinkBehaviour_E2F8AE78_FB02_42FE_41E3_9E2050ACE871.source = https://motherterasakalvi.com/virtualtour/motherterasa/Engineering/index.htm
+LinkBehaviour_8654EA23_DD14_654D_41D8_E97F0E37479C.source = https://motherterasakalvi.com/virtualtour/motherterasa/Engineering/index.htm
+LinkBehaviour_04DFE2D0_1A05_CC57_4199_123E338030A2.source = https://motherterasakalvi.com/virtualtour/motherterasa/Engineering/index.htm
+LinkBehaviour_890AF283_E23B_0719_41D3_DB1346372FFB.source = https://motherterasakalvi.com/virtualtour/motherterasa/Farm/index.htm
+LinkBehaviour_BFB63271_E227_07F6_41EA_D3158082D44B.source = https://motherterasakalvi.com/virtualtour/motherterasa/Hostel/index.htm
+LinkBehaviour_E2F0AE41_FB06_420E_41ED_7635945F855A.source = https://motherterasakalvi.com/virtualtour/motherterasa/Law/index.htm
+LinkBehaviour_04D9C2CD_1A05_CC49_41A7_BD176DCABB3F.source = https://motherterasakalvi.com/virtualtour/motherterasa/Law/index.htm
+LinkBehaviour_833A2103_C469_4B23_41DE_B3A3DBCCEC58.source = https://motherterasakalvi.com/virtualtour/motherterasa/Law/index.htm
+LinkBehaviour_04C452BF_1A05_CCC9_41A4_03E125B01478.source = https://motherterasakalvi.com/virtualtour/motherterasa/MTC/index.htm
+LinkBehaviour_D3E7AC5B_C782_16F9_41E8_C56DBE3765FB.source = https://motherterasakalvi.com/virtualtour/motherterasa/MTC/index.htm
+LinkBehaviour_C45ABEC8_EC8F_8742_41D6_2348F9E87CCD.source = https://motherterasakalvi.com/virtualtour/motherterasa/Naturopathy/index.htm
+LinkBehaviour_FDC6932A_C46E_CF6D_41E6_4314BE86E3B1.source = https://motherterasakalvi.com/virtualtour/motherterasa/Nursing/index.htm
+LinkBehaviour_04DEE2CE_1A05_CC4B_4196_18EA085D9D70.source = https://motherterasakalvi.com/virtualtour/motherterasa/Nursing/index.htm
+LinkBehaviour_E2DEEAA6_FB06_4215_41B8_CDC093436335.source = https://motherterasakalvi.com/virtualtour/motherterasa/Nursing/index.htm
+LinkBehaviour_E2D3BC0D_FB06_4616_41DB_AB36C34EFE4B.source = https://motherterasakalvi.com/virtualtour/motherterasa/Pharmacy/index.htm
+LinkBehaviour_04DEB2CE_1A05_CC4B_4190_C38BBCFDAC94.source = https://motherterasakalvi.com/virtualtour/motherterasa/Pharmacy/index.htm
+LinkBehaviour_F24B03DF_C469_4F23_41E0_3EF806C36048.source = https://motherterasakalvi.com/virtualtour/motherterasa/Pharmacy/index.htm
+LinkBehaviour_5F1BF0F8_4A15_53A6_41C2_117CFFA72DCE.source = https://motherterasakalvi.com/virtualtour/motherterasa/Physiotherapy/index.htm
+LinkBehaviour_E288A3AA_FB06_4212_41C7_D8886342C6DF.source = https://motherterasakalvi.com/virtualtour/motherterasa/Physiotherapy/index.htm
+LinkBehaviour_04DFA2D0_1A05_CC57_41A9_15E5BF5808DA.source = https://motherterasakalvi.com/virtualtour/motherterasa/Physiotherapy/index.htm
+LinkBehaviour_04DF22CF_1A05_CC49_41B0_471D1D11076C.source = https://motherterasakalvi.com/virtualtour/motherterasa/Polytechnic/index.htm
+LinkBehaviour_E2A997C2_FB06_420D_41B4_968F204845A3.source = https://motherterasakalvi.com/virtualtour/motherterasa/Polytechnic/index.htm
+LinkBehaviour_F8738DB9_C499_5B6F_41BA_0F41B306D78E.source = https://motherterasakalvi.com/virtualtour/motherterasa/Polytechnic/index.htm
+LinkBehaviour_FB118A0A_C497_592D_417D_FE87D179E742.source = https://motherterasakalvi.com/virtualtour/motherterasa/School/index.htm
+LinkBehaviour_E2B775AC_FB06_4616_41D6_F729C79CDB83.source = https://uandi.media/Virtual-tour/motherterasa/Naturopathic/index.htm
+LinkBehaviour_04DF62CF_1A05_CC49_41B7_76398C82CAD8.source = https://uandi.media/Virtual-tour/motherterasa/Naturopathic/index.htm
+LinkBehaviour_E3D724CA_FB3D_C61D_41DB_6E7DEE792993.source = https://uandi.media/Virtual-tour/motherterasa/School/index.htm
+LinkBehaviour_04DC72D1_1A05_CC59_41A2_658C557125D6.source = https://uandi.media/Virtual-tour/motherterasa/School/index.htm
+LinkBehaviour_0482B895_1A1A_3CD9_4195_DB2CA490AE21.source = mailto:ruthrammedia@gmail.com
+LinkBehaviour_5A23C089_105F_423E_419A_DB27FADD7BB4.source = mailto:ruthrammedia@gmail.com
+
+## Media
+
+### Audio
+audiores_B9884AC4_DCF4_3ACB_41E9_5E30078ECBCF.mp3Url = media/audio_8B78FAC0_DD14_5ACB_41D0_92462CFB8B70_en.mp3
+audiores_94802517_D719_8FF2_41DE_7EF9B397D95D.mp3Url = media/audio_968E2D20_D719_9FCF_41DB_8D706A0BCF08_en.mp3
+
+### Title
+panorama_F77624DF_C3A9_4924_41DC_42F42BB01AF9.label = Aerialview
+panorama_AC0ACCAB_EC85_8BC7_41E9_9E631576C502.label = Transport
+
+## Skin
+
+### Button
+Button_52F4238E_F68E_C230_41E1_DFC1B5B1982A_mobile.label = B.P.E.S.
+Button_52F4238E_F68E_C230_41E1_DFC1B5B1982A.label = B.P.E.S.
+Button_5D107D4F_F68E_46CF_41B5_C5FCB1B9526E_mobile.label = B.P.Ed.
+Button_5D107D4F_F68E_46CF_41B5_C5FCB1B9526E.label = B.P.Ed.
+Button_5D26BB76_F68E_42D1_41E2_4505A3AFF84F.label = M.P.Ed.
+Button_5D26BB76_F68E_42D1_41E2_4505A3AFF84F_mobile.label = M.P.Ed.
+
+### Image
+Image_04835895_1A1A_3CD9_41A9_959386ED11F2.url = skin/Image_04835895_1A1A_3CD9_41A9_959386ED11F2_en.png
+Image_55010D62_11B0_C2ED_4193_3F7B28A77F71.url = skin/Image_55010D62_11B0_C2ED_4193_3F7B28A77F71_en.png
+Image_D10A8F4F_C781_F2D9_41CB_E56232567FB8.url = skin/Image_D10A8F4F_C781_F2D9_41CB_E56232567FB8_en.png
+Image_D10A8F4F_C781_F2D9_41CB_E56232567FB8_mobile.url = skin/Image_D10A8F4F_C781_F2D9_41CB_E56232567FB8_mobile_en.png
+Image_E4456929_FB06_4E1F_41ED_772D9BD28159.url = skin/Image_E4456929_FB06_4E1F_41ED_772D9BD28159_en.png
+Image_E4456929_FB06_4E1F_41ED_772D9BD28159_mobile.url = skin/Image_E4456929_FB06_4E1F_41ED_772D9BD28159_mobile_en.png
+
+### Label
+Label_5994A40B_F682_4637_41E9_9426AFAED2F7_mobile.text = Agriculture College
+Label_5994A40B_F682_4637_41E9_9426AFAED2F7.text = Agriculture College
+Label_E2C2AD16_FB06_4632_41E2_0A4887F299D4_mobile.text = Arts & Science College
+Label_E2C2AD16_FB06_4632_41E2_0A4887F299D4.text = Arts & Science College
+Label_44EF4BA9_F682_C273_41D2_C5A548C89E03_mobile.text = COURSE DETAILS
+Label_44EF4BA9_F682_C273_41D2_C5A548C89E03.text = COURSE DETAILS
+Label_E2CE1B8B_FB02_4212_41A2_60068DF84B7E_mobile.text = Catering College
+Label_E2CE1B8B_FB02_4212_41A2_60068DF84B7E.text = Catering College
+Label_04837895_1A1A_3CD9_41AA_80D995AB45E8.text = Created By Ruthram Media
+Label_57C09673_11D0_CED3_4199_CF260DC7AF65.text = Created By Ruthram Media
+Label_E2FBDE76_FB02_42F2_41E9_E49F56B0BFD4.text = Engineering College
+Label_E2FBDE76_FB02_42F2_41E9_E49F56B0BFD4_mobile.text = Engineering College
+Label_E2F6FE3E_FB06_4273_41D5_A49638F08F83_mobile.text = Law College
+Label_E2F6FE3E_FB06_4273_41D5_A49638F08F83.text = Law College
+Label_E2B655AC_FB06_4616_41A3_EB91E156ECA4_mobile.text = Naturopathy College
+Label_E2B655AC_FB06_4616_41A3_EB91E156ECA4.text = Naturopathy College
+Label_E2DD3A9F_FB06_4233_41EA_2C200C24CB22_mobile.text = Nursing College
+Label_E2DD3A9F_FB06_4233_41EA_2C200C24CB22.text = Nursing College
+Label_E2D28C06_FB06_4612_41E8_2A5E464DAF66.text = Pharmacy College
+Label_E2D28C06_FB06_4612_41E8_2A5E464DAF66_mobile.text = Pharmacy College
+Label_E28E53A9_FB06_421E_41E2_704119A38084.text = Physiotherapy College
+Label_E28E53A9_FB06_421E_41E2_704119A38084_mobile.text = Physiotherapy College
+Label_E2AFE7BF_FB06_4273_4182_A26185A2DC41_mobile.text = Polytechnic College
+Label_E2AFE7BF_FB06_4273_4182_A26185A2DC41.text = Polytechnic College
+Label_E3D5A4C7_FB3D_C613_41DE_0677CBC8E134.text = School
+Label_E3D5A4C7_FB3D_C613_41DE_0677CBC8E134_mobile.text = School
+Label_57E21D4B_11D0_C233_41A0_887996647D14.text = ruthrammedia@gmail.com
+Label_04834895_1A1A_3CD9_41B8_619E68962A53.text = ruthrammedia@gmail.com
+
+### Tooltip
+Image_D10A8F4F_C781_F2D9_41CB_E56232567FB8.toolTip = Back to Homepage
+Image_D10A8F4F_C781_F2D9_41CB_E56232567FB8_mobile.toolTip = Back to Homepage
+
+## Tour
+
+### Description
+
+### Title
+tour.name = MTC

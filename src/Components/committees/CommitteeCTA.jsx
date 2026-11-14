@@ -1,6 +1,6 @@
 import React from "react";
 import defaultJoinIcon from "../../assets/icons/cc-cta/anti-rag-join.svg";
-import { useApply } from "../../Context/ApplyContext";
+import { Link } from "react-router-dom";
 import "../../Styles/committees/CommitteeCTA.css";
 
 export default function CommitteeCTA({
@@ -10,8 +10,6 @@ export default function CommitteeCTA({
   icon = defaultJoinIcon,
   themeColor = "#D73432",
 }) {
-  const { setApplyOpen } = useApply ? useApply() : { setApplyOpen: () => {} };
-
   return (
     <section
       className="committee-cta"
@@ -37,11 +35,7 @@ export default function CommitteeCTA({
       </div>
 
       <div className="committee-cta-right">
-        <button
-          type="button"
-          className="committee-cta-btn"
-          onClick={() => (setApplyOpen ? setApplyOpen(true) : null)}
-        >
+        <Link to="/contact" className="committee-cta-btn">
           <span>{buttonText}</span>
           <svg
             className="committee-cta-btn-arrow"
@@ -58,7 +52,7 @@ export default function CommitteeCTA({
             <line x1="5" y1="12" x2="19" y2="12"></line>
             <polyline points="12 5 19 12 12 19"></polyline>
           </svg>
-        </button>
+        </Link>
       </div>
     </section>
   );

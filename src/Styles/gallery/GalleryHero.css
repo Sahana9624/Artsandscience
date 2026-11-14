@@ -47,7 +47,7 @@ background: linear-gradient(180deg, rgba(46, 3, 10, 0) 27.93%, #2E030A 100%);
 }
 
 .gallery-hero-title {
-  font-family: var(--font-heading, 'Outfit', 'Poppins', sans-serif);
+  font-family: var(--font-heading, 'Outfit', 'Poppins', 'Noto Sans Tamil', 'Mukta Malar', sans-serif);
   font-size: max(min(var(--gallery-hero-title-fs), var(--fs-min)), calc(var(--gallery-hero-title-fs) * var(--fs-scale)));
   font-weight: 700;
   color: #FFFFFF;

@@ -1,9 +1,9 @@
-import React from "react";
+﻿import React from "react";
 import { Link } from "react-router-dom";
-import cta1Img from "../assets/images/gallery/generative-ai/05.png";
-import cta2Img from "../assets/images/gallery/pongal-2026/02.png";
-import cta3Img from "../assets/images/gallery/nanneri/10.png";
-import cta4Img from "../assets/images/gallery/sports/01.png";
+import cta1Img from "../assets/images/gallery/generative-ai/05.webp";
+import cta2Img from "../assets/images/gallery/pongal-2026/02.webp";
+import cta3Img from "../assets/images/gallery/nanneri/10.webp";
+import cta4Img from "../assets/images/gallery/sports/01.webp";
 import contactIcon from "../assets/contact.svg";
 import { useApply } from "../Context/ApplyContext";
 import "../Styles/CTABanner.css";
@@ -64,3 +64,4 @@ export default function CTABanner({
     </section>
   );
 }
+

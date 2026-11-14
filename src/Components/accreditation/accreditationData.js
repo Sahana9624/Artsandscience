@@ -1,11 +1,13 @@
-// IQAC Member Photos
-import iqacMember1 from "../../assets/images/club-com/members/iic/f1.png";
-import iqacMember2 from "../../assets/images/accreditations/members/iqac-2.png";
-import iqacMember3 from "../../assets/images/club-com/members/iic/f2.png";
-import iqacMember4 from "../../assets/images/club-com/members/anti-drug/f3.png";
-import iqacMember5 from "../../assets/images/club-com/members/anti-drug/f2.png";
-import noDataImg from "../../assets/images/accreditations/no-data.png";
-import heroImg from "../../assets/images/accreditations/accreditation-hero.jpg";
+﻿// IQAC Member Photos
+import iqacMember1 from "../../assets/images/club-com/members/iic/f1.webp";
+import iqacMember2 from "../../assets/images/accreditations/members/iqac-2.webp";
+import iqacMember3 from "../../assets/images/club-com/members/iic/f2.webp";
+import iqacMember4 from "../../assets/images/club-com/members/anti-drug/f3.webp";
+import iqacMember5 from "../../assets/images/club-com/members/anti-drug/f2.webp";
+import noDataImg from "../../assets/images/accreditations/no-data.webp";
+import heroImg from "../../assets/images/accreditations/accreditation-hero.webp";
+import iiqaHeroImg from "../../assets/images/accreditations/IIQA.webp";
+import ssrHeroImg from "../../assets/images/accreditations/SSR.webp";
 
 export const accreditationData = {
   iqac: {
@@ -136,7 +138,7 @@ export const accreditationData = {
     title: "Institutional Information for Quality Assessment (IIQA)",
     subtitle:
       "Presenting institutional information that reflects our commitment to academic excellence, continuous improvement, transparent governance, and quality assurance in accordance with NAAC guidelines.",
-    heroImage: heroImg,
+    heroImage: iiqaHeroImg,
     hasContent: false,
     noDataImage: noDataImg,
     noDataTitle: "No Data Available",
@@ -150,7 +152,7 @@ export const accreditationData = {
     title: "Self Study Report (SSR)",
     subtitle:
       "Comprehensive self-study report detailing institutional performance, curriculum delivery, teaching-learning processes, research outcomes, and infrastructure.",
-    heroImage: heroImg,
+    heroImage: ssrHeroImg,
     hasContent: false,
     noDataImage: noDataImg,
     noDataTitle: "No Data Available",
@@ -165,3 +167,5 @@ export function getAccreditationData(tabId) {
   if (clean.includes("ssr")) return accreditationData.ssr;
   return accreditationData.iqac;
 }
+
+

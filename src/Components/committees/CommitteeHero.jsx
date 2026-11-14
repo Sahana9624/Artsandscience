@@ -1,5 +1,5 @@
-import React, { useRef } from "react";
-import defaultHeroImg from "../../assets/images/committee/committee-hero.png";
+﻿import React, { useRef } from "react";
+import defaultHeroImg from "../../assets/images/committee/committee-hero.webp";
 import "../../Styles/committees/CommitteeHero.css";
 
 export default function CommitteeHero({
@@ -26,3 +26,4 @@ export default function CommitteeHero({
     </section>
   );
 }
+

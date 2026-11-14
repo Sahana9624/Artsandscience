@@ -1,0 +1,115 @@
+#: locale=en
+
+## Action
+
+### Text to Speech
+TextToSpeechBehaviour_FA63AF96_E1E9_7D3A_41C5_1313768A7E45.text = Mother Terasa Law College established in the year 2022 is affiliated to The Tamil Nadu Doctor Ambedkar Law University Chennai. Mother Terasa Law College offers five years BA LLB Integrated Degree Program and three years LLB Degree Program. All the law courses follow a carefully framedcurriculum that is in par with the global standards. The main motto of our college is to provide diverse knowledge in the field of legal studies and to groom students with necessary practical skills to cater the needs of the society.
+
+### URL
+LinkBehaviour_9650F843_998F_4C5F_41CC_01B664D5707D.source = http://www.motherterasakalvi.com/application/
+LinkBehaviour_BF1CF33F_9410_C3E2_41D2_F3CD22D867A0.source = http://www.motherterasakalvi.com/application/
+LinkBehaviour_C2EB2675_C24D_154F_41D7_4352412D388F.source = https://uandi.media/Virtual-tour/motherterasa/MTC/index.htm
+LinkBehaviour_C2EAD965_C24F_3F4E_419F_A1A55EC5133A.source = https://uandi.media/Virtual-tour/motherterasa/MTC/index.htm
+LinkBehaviour_89DF6B84_997F_F287_41C2_58D587C79E71.source = https://wa.me/+919443372151
+LinkBehaviour_9650C843_998F_4C5F_41DA_83F1682F8932.source = https://wa.me/+919443372151
+LinkBehaviour_96506843_998F_4C5F_41D8_227D6EC3D5AD.source = https://www.facebook.com/motherterasainstitutions.org
+LinkBehaviour_BC0CE0D8_9411_BEAE_41BC_D654C6CE2B66.source = https://www.facebook.com/motherterasainstitutions.org
+LinkBehaviour_96501843_998F_4C5F_41D7_ECA7ADBE3737.source = https://www.google.com/maps/@10.5013448,78.6453692,3a,75y,32.74h,93.51t/data=!3m7!1e1!3m5!1sAF1QipPqgANPx72FuSpjhWOfSo8g0uK0dWfk3V7rqA33!2e10!3e11!7i7680!8i3840?entry=ttu
+LinkBehaviour_8B7E1DE3_9969_5681_41C5_45CF25A1632E.source = https://www.google.com/maps/@10.5013448,78.6453692,3a,75y,32.74h,93.51t/data=!3m7!1e1!3m5!1sAF1QipPqgANPx72FuSpjhWOfSo8g0uK0dWfk3V7rqA33!2e10!3e11!7i7680!8i3840?entry=ttu
+LinkBehaviour_96578843_998F_4C5F_41D4_5B0AB0613577.source = https://www.instagram.com/motherterasagroups
+LinkBehaviour_BD8C48A8_9410_CEEE_41D5_7F7FB9402DEE.source = https://www.instagram.com/motherterasagroups
+LinkBehaviour_96504843_998F_4C5F_41E1_DBC87AD67195.source = https://youtube.com/@mtcetilluppur
+LinkBehaviour_B2EA6A88_9410_C2AE_41A0_516B21F72A2F.source = https://youtube.com/@mtcetilluppur
+LinkBehaviour_96B1BA41_99A2_A94B_41CB_E52F81521EBA.source = mailto:mtlcpdk2020@gmail.com
+LinkBehaviour_8C1E87C0_99AE_E749_41E1_D81666AD65C6.source = mailto:mtlcpdk2020@gmail.com
+LinkBehaviour_5F60E0D2_1A0A_47F2_41AA_C90A9800679D.source = mailto:ruthrammedia@gmail.com
+LinkBehaviour_52FD1A32_1A0F_DAB3_41B2_A7D49D8E3A3C.source = mailto:ruthrammedia@gmail.com
+LinkBehaviour_9650A843_998F_4C5F_41D7_645D39CA5E98.source = tel:9942904534
+LinkBehaviour_8B333880_9977_FD7F_41E2_007BBFBB1997.source = tel:9942904534
+
+## Hotspot
+
+### Tooltip
+HotspotPanoramaOverlayArea_5B6FFD1B_4C27_5B92_41C7_E1AC6C362EFA.toolTip = Go Inside
+HotspotPanoramaOverlayArea_379B75A3_9A0F_6665_41D9_458A4A5EA146.toolTip = Moot Court
+
+## Media
+
+### Audio
+audiores_AE27C40C_C986_165F_41E6_A4DADCE91CE7.mp3Url = media/audio_A0813108_C986_0E47_41C4_FE309721E351_en.mp3
+
+### Title
+panorama_CC7BC650_C399_493D_41D0_1AF1DDC2FBA4.label = Entrance
+panorama_94486941_998B_4C5B_41E3_2E59ED5A847E.label = Library
+panorama_94233DA8_998B_C429_41B2_6835E4265A59.label = Moot Court
+
+## Skin
+
+### Image
+Image_52F2FA32_1A0F_DAB3_41AC_77174EF1B704.url = skin/Image_52F2FA32_1A0F_DAB3_41AC_77174EF1B704_en.png
+Image_53727F47_C2BB_134A_41D5_FE8D50D16CCA.url = skin/Image_53727F47_C2BB_134A_41D5_FE8D50D16CCA_en.png
+Image_5F60C0D2_1A0A_47F2_41B9_3591FD0DCD1C.url = skin/Image_5F60C0D2_1A0A_47F2_41B9_3591FD0DCD1C_en.png
+Image_90E0B2C5_F78E_4233_41C2_5E7152B4CE0E.url = skin/Image_90E0B2C5_F78E_4233_41C2_5E7152B4CE0E_en.gif
+Image_940A114B_F78E_5E37_41CC_88AAEA67F056.url = skin/Image_940A114B_F78E_5E37_41CC_88AAEA67F056_en.gif
+Image_963C2B5A_9989_4C69_41E2_CFD71F3CB59D.url = skin/Image_963C2B5A_9989_4C69_41E2_CFD71F3CB59D_en.png
+Image_963C2B5A_9989_4C69_41E2_CFD71F3CB59D_mobile.url = skin/Image_963C2B5A_9989_4C69_41E2_CFD71F3CB59D_mobile_en.png
+Image_96500843_998F_4C5F_41D1_9E979BBEFFB3.url = skin/Image_96500843_998F_4C5F_41D1_9E979BBEFFB3_en.png
+Image_96503843_998F_4C5F_41E2_9FD294F5B2E0.url = skin/Image_96503843_998F_4C5F_41E2_9FD294F5B2E0_en.png
+Image_96505843_998F_4C5F_41C1_11DF1AFEA568.url = skin/Image_96505843_998F_4C5F_41C1_11DF1AFEA568_en.png
+Image_96507843_998F_4C5F_4189_D3F2FA8D4E10.url = skin/Image_96507843_998F_4C5F_4189_D3F2FA8D4E10_en.png
+Image_96509842_998F_4C59_41D8_421024DF61DA.url = skin/Image_96509842_998F_4C59_41D8_421024DF61DA_en.png
+Image_9650B843_998F_4C5F_41D6_371E92111493.url = skin/Image_9650B843_998F_4C5F_41D6_371E92111493_en.png
+Image_9650D843_998F_4C5F_41D4_66F89FFAC048.url = skin/Image_9650D843_998F_4C5F_41D4_66F89FFAC048_en.png
+Image_9650E843_998F_4C5F_41BF_CC71FE47BA48.url = skin/Image_9650E843_998F_4C5F_41BF_CC71FE47BA48_en.png
+Image_9B0A4D0F_F782_C64F_41E8_E35979E293B5.url = skin/Image_9B0A4D0F_F782_C64F_41E8_E35979E293B5_en.png
+Image_9DF5A61B_F781_C250_41E6_048C70692A6D.url = skin/Image_9DF5A61B_F781_C250_41E6_048C70692A6D_en.png
+Image_B0A93856_9433_CDA2_41D6_567A28D2B695.url = skin/Image_B0A93856_9433_CDA2_41D6_567A28D2B695_en.png
+Image_B0A9E854_9433_CDA6_419B_5B5BD67B9729.url = skin/Image_B0A9E854_9433_CDA6_419B_5B5BD67B9729_en.png
+Image_B0AA885B_9433_CDA2_41DE_B3A2A021BEC0.url = skin/Image_B0AA885B_9433_CDA2_41DE_B3A2A021BEC0_en.png
+Image_B0AB385A_9433_CDA2_41C3_E2FC63C21B00.url = skin/Image_B0AB385A_9433_CDA2_41C3_E2FC63C21B00_en.png
+Image_B0ABC85D_9433_CDA6_41DE_0147E936D5B3.url = skin/Image_B0ABC85D_9433_CDA6_41DE_0147E936D5B3_en.png
+Image_B0AE2850_9433_CDBE_41CE_60137FA50632.url = skin/Image_B0AE2850_9433_CDBE_41CE_60137FA50632_en.png
+Image_BD21B638_94F0_C5EE_41BD_DC261E60491F.url = skin/Image_BD21B638_94F0_C5EE_41BD_DC261E60491F_en.png
+Image_BE8078DE_9410_CEA3_418B_551E01BBA258.url = skin/Image_BE8078DE_9410_CEA3_418B_551E01BBA258_en.png
+Image_E28C42D3_C27D_0D4B_41D4_237DC46F486C.url = skin/Image_E28C42D3_C27D_0D4B_41D4_237DC46F486C_en.png
+
+### Label
+Label_91DAD393_F782_4257_41E9_0A91DDF4E256.text = COURSE DETAILS
+Label_910A0B7D_F782_C2D3_41DD_A119E0C91DE6.text = COURSE DETAILS
+Label_52F2EA32_1A0F_DAB3_419A_E1C7F1EF8A23.text = Created By Ruthram Media
+Label_5F60D0D2_1A0A_47F2_41AF_0206F5104717.text = Created By Ruthram Media
+Label_5F60F0D2_1A0A_47F2_41B7_D64E2A592A4A.text = ruthrammedia@gmail.com
+Label_52FD0A32_1A0F_DAB3_41A0_71C29114627B.text = ruthrammedia@gmail.com
+
+### Multiline Text
+HTMLText_B69DE5EB_9411_4662_41E0_E996C662C26B.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-align:right;font-size:25px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#39317d;font-size:25px;font-family:'Arial Narrow';"><B>{{title}}</B></SPAN></SPAN></DIV></div>
+HTMLText_B69DE5EB_9411_4662_41E0_E996C662C26B_mobile.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-align:right;font-size:12.5px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#39317d;font-size:12.5px;font-family:'Arial Narrow';"><B>{{title}}</B></SPAN></SPAN></DIV></div>
+
+### Tooltip
+Image_BE8078DE_9410_CEA3_418B_551E01BBA258.toolTip = Admission
+Image_9650E843_998F_4C5F_41BF_CC71FE47BA48.toolTip = Admission
+Image_53727F47_C2BB_134A_41D5_FE8D50D16CCA.toolTip = Back to Homepage
+Image_E28C42D3_C27D_0D4B_41D4_237DC46F486C.toolTip = Back to Homepage
+Image_940A114B_F78E_5E37_41CC_88AAEA67F056.toolTip = Course Details
+Image_90E0B2C5_F78E_4233_41C2_5E7152B4CE0E.toolTip = Course Details
+Image_BD21B638_94F0_C5EE_41BD_DC261E60491F.toolTip = Facebook
+Image_96505843_998F_4C5F_41C1_11DF1AFEA568.toolTip = Facebook
+Image_B0A93856_9433_CDA2_41D6_567A28D2B695.toolTip = Gmail
+Image_9650D843_998F_4C5F_41D4_66F89FFAC048.toolTip = Gmail
+Image_B0ABC85D_9433_CDA6_41DE_0147E936D5B3.toolTip = Instagram
+Image_96507843_998F_4C5F_4189_D3F2FA8D4E10.toolTip = Instagram
+Image_B0AE2850_9433_CDBE_41CE_60137FA50632.toolTip = Phone
+Image_96509842_998F_4C59_41D8_421024DF61DA.toolTip = Phone
+Image_96500843_998F_4C5F_41D1_9E979BBEFFB3.toolTip = Tour Link
+Image_B0AB385A_9433_CDA2_41C3_E2FC63C21B00.toolTip = Tour Link
+Image_B0A9E854_9433_CDA6_419B_5B5BD67B9729.toolTip = Whatsapp
+Image_9650B843_998F_4C5F_41D6_371E92111493.toolTip = Whatsapp
+Image_96503843_998F_4C5F_41E2_9FD294F5B2E0.toolTip = Youtube
+Image_B0AA885B_9433_CDA2_41DE_B3A2A021BEC0.toolTip = Youtube
+
+## Tour
+
+### Description
+
+### Title
+tour.name = Law College

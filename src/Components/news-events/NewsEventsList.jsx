@@ -54,7 +54,7 @@ Website: www.motherterasacollege.com
                   )}
                 </div>
 
-                <button
+                {/* <button
                   type="button"
                   className="news-event-action-btn"
                   title="Download Now"
@@ -77,7 +77,7 @@ Website: www.motherterasacollege.com
                     <line x1="12" y1="15" x2="12" y2="3" />
                   </svg>
                   <span className="news-event-action-text">Download Now</span>
-                </button>
+                </button> */}
               </div>
             </article>
           ))}

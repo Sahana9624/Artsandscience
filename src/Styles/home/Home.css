@@ -118,6 +118,11 @@
     padding-bottom: 5rem;
   }
 
+  /* Tighter gap between Welcome and Courses */
+  .home-welcome-section {
+    padding-bottom: 1rem;
+  }
+
   /* Welcome: 20px title → text, 40px text → button */
   .home-welcome-section .home-section-title {
     margin-bottom: 1.25rem;

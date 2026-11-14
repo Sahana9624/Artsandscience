@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
+﻿import React, { useEffect, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
-import heroImg from "../../assets/images/gallery/gallery-hero.png";
+import heroImg from "../../assets/images/gallery/gallery-hero.webp";
 import { galleryAlbums } from "./galleryData";
 import "../../Styles/gallery/GalleryHero.css";
 
@@ -59,3 +59,4 @@ export default function GalleryHero({ albumId: propAlbumId }) {
     </section>
   );
 }
+

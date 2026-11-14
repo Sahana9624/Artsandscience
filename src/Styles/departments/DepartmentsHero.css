@@ -99,7 +99,7 @@
   box-shadow: 0 0.375rem 1.125rem rgba(128, 20, 42, 0.4);
 }
 
-.dept-hero-btn-secondary {
+/* .dept-hero-btn-secondary {
 
   color: #FFFFFF;
   font-family: var(--font-body);
@@ -113,14 +113,39 @@
   gap: 0.625rem;
   text-decoration: none;
   transition: all 0.25s ease;
+} */
+
+.dept-hero-btn-secondary {
+   background-color: #90091D;
+  color: #FFFFFF;
+  font-family: var(--font-body);
+  font-size: max(min(var(--dept-hero-btn-fs), var(--fs-min)), calc(var(--dept-hero-btn-fs) * var(--fs-scale)));
+  font-weight: 500;
+  padding: 0.625rem 3.125rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  text-decoration: none;
+  transition: all 0.25s ease;
 }
 
 .dept-hero-btn-secondary:hover {
+  background-color: #690F22;
+  border-color: #690F22;
+  transform: translateY(-0.125rem);
+  box-shadow: 0 0.375rem 1.125rem rgba(128, 20, 42, 0.4);
+}
+
+/* .dept-hero-btn-secondary:hover {
   background-color: rgba(255, 255, 255, 0.2);
   border-color: #FFFFFF;
   transform: translateY(-0.125rem);
-}
+} */
 
+.dept-hero-btn-primary svg,
 .dept-hero-btn-secondary svg {
   width: 1.125rem;
   height: 1.125rem;
@@ -210,6 +235,7 @@
     border-width: 1px;
   }
 
+  .dept-hero-btn-primary svg,
   .dept-hero-btn-secondary svg {
     width: 1.25rem;
     height: 1.25rem;

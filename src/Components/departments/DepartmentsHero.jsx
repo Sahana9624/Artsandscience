@@ -25,12 +25,12 @@ export default function DepartmentsHero({
           <h1 className="departments-hero-title">{title}</h1>
           <p className="departments-hero-desc">{description}</p>
           <div className="departments-hero-actions">
-            <Link to="/academic" className="dept-hero-btn-primary">
+            {/* <Link to="/academic" className="dept-hero-btn-primary">
               View Programs <ArrowIcon />
-            </Link>
+            </Link> */}
             <button
               type="button"
-              className="dept-hero-btn-secondary glass-effect glass-effect--clear"
+              className="dept-hero-btn-primary"
               onClick={() => (setApplyOpen ? setApplyOpen(true) : null)}
             >
               <svg

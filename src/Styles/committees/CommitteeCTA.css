@@ -82,6 +82,7 @@
   background: var(--cta-color, #c53030);
   color: #ffffff;
   border: none;
+  text-decoration: none;
   border-radius: 8px;
   padding: 0.625rem 1.25rem;
   font-family: inherit;

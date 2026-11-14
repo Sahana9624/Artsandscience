@@ -1,26 +1,26 @@
-// Hero Images for Department Categories
-import scienceHeroImg from "../../assets/images/departments/science-hero.jpg";
-import artsHeroImg from "../../assets/images/departments/arts-hero.jpg";
-import manageHeroImg from "../../assets/images/departments/manage-hero.jpg";
+﻿// Hero Images for Department Categories
+import scienceHeroImg from "../../assets/images/departments/science-hero.webp";
+import artsHeroImg from "../../assets/images/departments/arts-hero.webp";
+import manageHeroImg from "../../assets/images/departments/manage-hero.webp";
 
 // Chalkboard Card Images - Arts
-import tamilImg from "../../assets/images/departments/tamil.png";
-import englishImg from "../../assets/images/departments/english.png";
+import tamilImg from "../../assets/images/departments/tamil.webp";
+import englishImg from "../../assets/images/departments/english.webp";
 
 // Chalkboard Card Images - Management
-import commerceImg from "../../assets/images/departments/commerce.png";
-import commerceCAImg from "../../assets/images/departments/commerce-CA.png";
-import commercePAImg from "../../assets/images/departments/commerce-PA.png";
-import baImg from "../../assets/images/departments/BA.png";
+import commerceImg from "../../assets/images/departments/commerce.webp";
+import commerceCAImg from "../../assets/images/departments/commerce-CA.webp";
+import commercePAImg from "../../assets/images/departments/commerce-PA.webp";
+import baImg from "../../assets/images/departments/BA.webp";
 
 // Chalkboard Card Images - Science
-import csImg from "../../assets/images/departments/CS.png";
-import caImg from "../../assets/images/departments/CA.png";
-import physicsImg from "../../assets/images/departments/physics.png";
-import chemistryImg from "../../assets/images/departments/chemistry.png";
-import mathsImg from "../../assets/images/departments/maths.png";
-import dsImg from "../../assets/images/departments/DS.png";
-import hotelImg from "../../assets/images/departments/hotel.png";
+import csImg from "../../assets/images/departments/CS.webp";
+import caImg from "../../assets/images/departments/CA.webp";
+import physicsImg from "../../assets/images/departments/physics.webp";
+import chemistryImg from "../../assets/images/departments/chemistry.webp";
+import mathsImg from "../../assets/images/departments/maths.webp";
+import dsImg from "../../assets/images/departments/DS.webp";
+import hotelImg from "../../assets/images/departments/hotel.webp";
 
 export const departmentsData = {
   science: {
@@ -202,3 +202,4 @@ export const departmentsData = {
 
 // Export convenience shortcut for Science (7 departments)
 export const scienceDepartmentsData = departmentsData.science.items;
+

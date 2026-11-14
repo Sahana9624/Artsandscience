@@ -1,5 +1,5 @@
-import React, { useRef } from "react";
-import defaultHeroImg from "../../assets/images/accreditations/accreditation-hero.jpg";
+﻿import React, { useRef } from "react";
+import defaultHeroImg from "../../assets/images/accreditations/accreditation-hero.webp";
 import "../../Styles/accreditation/AccreditationHero.css";
 
 export default function AccreditationHero({
@@ -28,3 +28,4 @@ export default function AccreditationHero({
     </section>
   );
 }
+

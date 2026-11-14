@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import offer1Img from "../../assets/images/home/offer/offer-1.jpg";
-import offer2Img from "../../assets/images/home/offer/offer-2.jpg";
+import offer1Img from "../../assets/images/home/offer/offer-1.webp";
+import offer2Img from "../../assets/images/home/offer/offer-2.webp";
 import "../../Styles/home/CoursesOffered.css";
 import ArrowIcon from "../common/ArrowIcon";
 

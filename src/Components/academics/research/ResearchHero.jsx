@@ -1,11 +1,10 @@
-import React, { useRef } from "react";
-import labImg from "../../../assets/images/academics/research-hero.jpg";
-import { useApply } from "../../../Context/ApplyContext";
+﻿import React, { useRef } from "react";
+import { Link } from "react-router-dom";
+import labImg from "../../../assets/images/academics/research-hero.webp";
 import "../../../Styles/academics/research/ResearchHero.css";
 import ArrowIcon from "../../common/ArrowIcon";
 
 export default function ResearchHero() {
-  const { setApplyOpen } = useApply ? useApply() : { setApplyOpen: () => {} };
   const heroRef = useRef(null);
 
   return (
@@ -29,19 +28,16 @@ export default function ResearchHero() {
           </p>
 
           <div className="research-hero-buttons">
-            <button
-              type="button"
-              className="research-btn-primary"
-              onClick={() => (setApplyOpen ? setApplyOpen(true) : null)}
-            >
+            <a href="#research-ecosystem" className="research-btn-primary">
               Our Research Ecosystem <ArrowIcon />
-            </button>
-            <a href="#research-objectives" className="research-btn-outline glass-effect">
-              Contact R&amp;D Cell <ArrowIcon />
             </a>
+            <Link to="/contact" className="research-btn-outline glass-effect">
+              Contact R&amp;D Cell <ArrowIcon />
+            </Link>
           </div>
         </div>
       </div>
     </section>
   );
 }
+

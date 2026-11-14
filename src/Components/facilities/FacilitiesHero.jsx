@@ -1,11 +1,12 @@
 import React, { useRef } from "react";
-import heroImg from "../../assets/images/facility/facility-hero.png";
-import { useApply } from "../../Context/ApplyContext";
+import heroImg from "../../assets/images/facility/facility-hero.webp";
 import "../../Styles/facilities/FacilitiesHero.css";
 import ArrowIcon from "../common/ArrowIcon";
 
+// 360° tour served from public/documents/virtualtour (Arts & Science college tour)
+const VIRTUAL_TOUR_URL = `${import.meta.env.BASE_URL}documents/virtualtour/motherterasa/Arts/index.htm`;
+
 export default function FacilitiesHero() {
-  const { setApplyOpen } = useApply ? useApply() : { setApplyOpen: () => {} };
   const heroRef = useRef(null);
 
   const handleScrollToGrid = (e) => {
@@ -42,16 +43,18 @@ export default function FacilitiesHero() {
               <span>Explore Facilities</span>
               <ArrowIcon />
             </button>
-            <button
-              type="button"
+            <a
+              href={VIRTUAL_TOUR_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="facilities-btn-secondary glass-effect glass-effect--clear"
-              onClick={() => (setApplyOpen ? setApplyOpen(true) : null)}
             >
               Try Virtual Tour
-            </button>
+            </a>
           </div>
         </div>
       </div>
     </section>
   );
 }
+

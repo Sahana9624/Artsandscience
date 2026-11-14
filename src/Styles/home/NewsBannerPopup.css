@@ -1,0 +1,102 @@
+.news-banner-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  z-index: 2100;
+  animation: newsBannerFade 0.3s ease;
+}
+
+.news-banner-popup {
+  position: relative;
+  max-width: min(90vw, 50rem);
+  max-height: 90vh;
+  border-radius: var(--radius-md);
+  background: #fff;
+  box-shadow: var(--shadow-lg);
+  animation: newsBannerDrop 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.news-banner-image-btn {
+  display: block;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.news-banner-image {
+  display: block;
+  max-width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: var(--radius-md);
+}
+
+.news-banner-close-btn {
+  position: absolute;
+  top: -0.875rem;
+  right: -0.875rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background: var(--primary);
+  cursor: pointer;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+  z-index: 1;
+}
+
+.news-banner-close-btn:hover {
+  background: var(--primary-hover);
+}
+
+.news-banner-close-btn img {
+  width: 0.875rem;
+  height: 0.875rem;
+  filter: brightness(0) invert(1);
+}
+
+/* Closing: popup lifts back up and fades while the backdrop fades out */
+.news-banner-overlay.is-closing {
+  animation: newsBannerFadeOut 0.4s ease forwards;
+  pointer-events: none;
+}
+
+.news-banner-overlay.is-closing .news-banner-popup {
+  animation: newsBannerLift 0.4s cubic-bezier(0.64, 0, 0.78, 0) forwards;
+}
+
+@keyframes newsBannerFadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes newsBannerLift {
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(-100px); }
+}
+
+@keyframes newsBannerFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes newsBannerDrop {
+  from { opacity: 0; transform: translateY(-100px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .news-banner-close-btn {
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+}

@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
-import admin1Img from "../../assets/images/about/admin-2.png";
-import principalImg from "../../assets/images/about/prinicipal.png";
-import admin3Img from "../../assets/images/about/admin-3.png";
-import admin2Img from "../../assets/images/about/HOD.png";
+import admin1Img from "../../assets/images/about/admin-2.webp";
+import principalImg from "../../assets/images/about/prinicipal.webp";
+import admin3Img from "../../assets/images/about/admin-3.webp";
+import admin2Img from "../../assets/images/about/HOD.webp";
 import faculty from "./facultyData";
 import "../../Styles/about/Administration.css";
 

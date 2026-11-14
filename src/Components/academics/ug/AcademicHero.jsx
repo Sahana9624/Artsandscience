@@ -1,5 +1,5 @@
-import React, { useRef } from "react";
-import heroImg from "../../../assets/images/academics/hero-academics.jpg";
+﻿import React, { useRef } from "react";
+import heroImg from "../../../assets/images/academics/hero-academics.webp";
 import { useApply } from "../../../Context/ApplyContext";
 import "../../../Styles/academics/ug/AcademicHero.css";
 import ArrowIcon from "../../common/ArrowIcon";
@@ -51,3 +51,4 @@ export default function AcademicHero() {
     </section>
   );
 }
+

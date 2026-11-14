@@ -1,7 +1,7 @@
-import news1Img from "../../assets/images/news/news-1.png";
-import news2Img from "../../assets/images/news/news-2.png";
-import news3Img from "../../assets/images/news/news-3.png";
-import news4Img from "../../assets/images/news/news-4.png";
+import news1Img from "../../assets/images/news/news-1.webp";
+import news2Img from "../../assets/images/news/news-2.webp";
+import news3Img from "../../assets/images/news/news-3.webp";
+import news4Img from "../../assets/images/news/news-4.webp";
 
 export const newsEventsData = [
   {

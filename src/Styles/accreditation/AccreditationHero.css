@@ -11,7 +11,7 @@
   width: 100%;
   box-sizing: border-box;
   background-size: cover;
-  background-position: center center;
+  background-position: center 30%;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;

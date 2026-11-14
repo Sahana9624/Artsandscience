@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700;900&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@400;500;600;700;800&family=Noto+Sans+Tamil:wght@400;500;600;700;800&family=Playfair+Display+SC:wght@700;900&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
   --about-header-height: 5.25rem;
@@ -14,8 +14,8 @@
   --text-body: #4A4A4A;
   --text-muted: #6E6E6E;
   --border-color: #E6D5D8;
-  --font-heading: "Poppins", sans-serif;
-  --font-body: "Poppins", sans-serif;
+  --font-heading: "Poppins", "Noto Sans Tamil", "Mukta Malar", sans-serif;
+  --font-body: "Poppins", "Noto Sans Tamil", "Mukta Malar", sans-serif;
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --shadow-sm: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.04);
   --shadow-md: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.06);
@@ -67,7 +67,7 @@ html {
   scrollbar-width: none;
   -ms-overflow-style: none;
   overscroll-behavior-y: none;
-  overscroll-behavior: none;
+  overscroll-behavior-x: auto;
   touch-action: pan-y;
 }
 
@@ -89,6 +89,13 @@ body {
   overscroll-behavior-y: none;
   overscroll-behavior: none;
   touch-action: pan-y;
+}
+
+/* Global Tamil text styling for typography and weight harmony */
+:lang(ta),
+.tamil-text,
+.gallery-tamil-text {
+  font-family: "Noto Sans Tamil", "Mukta Malar", var(--font-heading, "Poppins", sans-serif);
 }
 
 body::-webkit-scrollbar {

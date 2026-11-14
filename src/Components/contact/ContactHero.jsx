@@ -1,5 +1,5 @@
-import React, { useRef } from "react";
-import heroBg from "../../assets/images/contact/contact-hero.png";
+﻿import React, { useRef } from "react";
+import heroBg from "../../assets/images/contact/contact-hero.webp";
 import "../../Styles/contact/ContactHero.css";
 
 export default function ContactHero({
@@ -26,7 +26,7 @@ export default function ContactHero({
           <h1 className="contact-hero-title">{title}</h1>
           <p className="contact-hero-subtitle">{subtitle}</p>
 
-          <div className="contact-hero-actions">
+          {/* <div className="contact-hero-actions">
             <a href={`tel:${phone.replace(/\s+/g, "")}`} className="contact-btn-call">
               <svg
                 width="16"
@@ -65,7 +65,7 @@ export default function ContactHero({
               </svg>
               <span>Get Directions</span>
             </a>
-          </div>
+          </div> */}
         </div>
 
         {/* Right: Glassmorphism Info Card */}
@@ -152,3 +152,4 @@ export default function ContactHero({
     </section>
   );
 }
+

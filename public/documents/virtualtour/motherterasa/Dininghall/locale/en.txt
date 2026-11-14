@@ -1,0 +1,42 @@
+#: locale=en
+
+## Action
+
+### URL
+LinkBehaviour_A66FA491_E279_0336_41D8_780E63463A85.source = https://uandi.media/Virtual-tour/motherterasa/MTC/index.htm
+LinkBehaviour_BB76E610_E3D9_0F37_41D2_D8DD64111849.source = https://uandi.media/Virtual-tour/motherterasa/MTC/index.htm
+LinkBehaviour_2E7F39ED_1A0F_FC49_4190_08D433F46DD3.source = mailto:ruthrammedia@gmail.com
+LinkBehaviour_29A92A10_1A0A_3FD7_41B3_1C5BDF599D2D.source = mailto:ruthrammedia@gmail.com
+
+## Media
+
+### Audio
+audiores_A50B73F6_E279_04FA_41C8_0721A08F2677.mp3Url = media/audio_AB0BA81F_E279_0329_41E7_6EA0436535CE_en.mp3
+
+### Title
+panorama_A5EFF727_E27F_0D19_41E0_357BE68699CF.label = Dininghall
+
+## Skin
+
+### Image
+Image_29A94A10_1A0A_3FD7_41B2_4580D7A6EE8F.url = skin/Image_29A94A10_1A0A_3FD7_41B2_4580D7A6EE8F_en.png
+Image_2E7F19EC_1A0F_FC4F_41A0_0CF32C409B08.url = skin/Image_2E7F19EC_1A0F_FC4F_41A0_0CF32C409B08_en.png
+Image_A70CC556_E27F_0D3B_41E5_E67506C889A1.url = skin/Image_A70CC556_E27F_0D3B_41E5_E67506C889A1_en.png
+Image_A70CC556_E27F_0D3B_41E5_E67506C889A1_mobile.url = skin/Image_A70CC556_E27F_0D3B_41E5_E67506C889A1_mobile_en.png
+
+### Label
+Label_2E7CE9EC_1A0F_FC4F_4155_AFFA1E29A686.text = Created By Ruthram Media
+Label_29A95A0F_1A0A_3FC9_4195_97255B8C1F92.text = Created By Ruthram Media
+Label_29A93A10_1A0A_3FD7_41B7_365C382743E2.text = ruthrammedia@gmail.com
+Label_2E7F09ED_1A0F_FC49_4191_24AEC71BDB96.text = ruthrammedia@gmail.com
+
+### Tooltip
+Image_A70CC556_E27F_0D3B_41E5_E67506C889A1.toolTip = Back to Homepage
+Image_A70CC556_E27F_0D3B_41E5_E67506C889A1_mobile.toolTip = Back to Homepage
+
+## Tour
+
+### Description
+
+### Title
+tour.name = Dininghall

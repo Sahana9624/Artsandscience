@@ -1,0 +1,115 @@
+#: locale=en
+
+## Action
+
+### Text to Speech
+TextToSpeechBehaviour_FD90EFC9_E1FB_3D29_41DE_8883FA4B6648.text = Mother Terasa College of Physiotherapy is an affiliated college by The Tamilnadu Dr. MGR. Medical University, Chennai, and Tamilnadu. Mother Terasa College Of Physiotherapy was started in the year of 2020.
+
+### URL
+LinkBehaviour_8031B723_99FE_E265_41C8_4E229F58A8BB.source = http://www.motherterasakalvi.com/application/
+LinkBehaviour_97062FDF_99F3_61DD_41D2_F4D88CABB937.source = http://www.motherterasakalvi.com/application/
+LinkBehaviour_E14794E0_C399_491D_4186_011E402E19B8.source = https://uandi.media/Virtual-tour/motherterasa/MTC/index.htm
+LinkBehaviour_E1462240_C399_C91D_41D6_A22CD08FDD48.source = https://uandi.media/Virtual-tour/motherterasa/MTC/index.htm
+LinkBehaviour_97066FDE_99F3_61DF_41DD_45B07EF8D5F6.source = https://wa.me/+919443372151
+LinkBehaviour_80310723_99FE_E265_41CF_E6544B6FE90A.source = https://wa.me/+919443372151
+LinkBehaviour_80B29725_99FE_E26D_41E0_4133BC988E45.source = https://www.facebook.com/motherterasainstitutions.org
+LinkBehaviour_9706CFDF_99F3_61DD_41DA_8DDF62988DA4.source = https://www.facebook.com/motherterasainstitutions.org
+LinkBehaviour_80B26724_99FE_E263_41CA_8CBED3CF8DA1.source = https://www.google.com/maps/@10.4972594,78.6437509,3a,75y,94.84h,82.73t/data=!3m7!1e1!3m5!1sAF1QipMTY3aRyCtuZMhFefGEG8Ai4v142BZA8WsTU3dp!2e10!3e11!7i7680!8i3840?entry=ttu
+LinkBehaviour_97060FDF_99F3_61DD_41E1_C96E1BCDAA37.source = https://www.google.com/maps/@10.4972594,78.6437509,3a,75y,94.84h,82.73t/data=!3m7!1e1!3m5!1sAF1QipMTY3aRyCtuZMhFefGEG8Ai4v142BZA8WsTU3dp!2e10!3e11!7i7680!8i3840?entry=ttu
+LinkBehaviour_80B2E725_99FE_E26D_41CD_9D49273833A8.source = https://www.instagram.com/motherterasagroups
+LinkBehaviour_97845FE0_99F3_61E3_41D7_1230354AAA0F.source = https://www.instagram.com/motherterasagroups
+LinkBehaviour_80B24724_99FE_E263_41C1_223F50354E5B.source = https://youtube.com/@mtcetilluppur
+LinkBehaviour_9706EFDF_99F3_61DD_41C1_F1059F1FCA3A.source = https://youtube.com/@mtcetilluppur
+LinkBehaviour_97064FDE_99F3_61DF_41B8_93BD716DBB3E.source = mailto:mtcppdk@gmail.com
+LinkBehaviour_80316723_99FE_E265_41DE_7EFC8944118A.source = mailto:mtcppdk@gmail.com
+LinkBehaviour_7ADF955B_10D0_C2D3_41A9_A09CE222A361.source = mailto:ruthrammedia@gmail.com
+LinkBehaviour_7ED1030E_10D1_4635_4188_E163EBB3E512.source = mailto:ruthrammedia@gmail.com
+LinkBehaviour_80312723_99FE_E265_41E3_19BA012AE9CD.source = tel:8668169844
+LinkBehaviour_9701DFDE_99F3_61DF_41D5_F6BBFBEEF2E4.source = tel:8668169844
+
+## Hotspot
+
+### Tooltip
+HotspotPanoramaOverlayArea_C2A09D6B_C2FB_375A_41B4_CE34FDC31F8E.toolTip = Electro Lab
+
+## Media
+
+### Audio
+audiores_BB2B6014_C882_0E4F_41DD_23FD93E924A4.mp3Url = media/audio_B8B43755_C882_12C9_41E6_86D80F104F49_en.mp3
+
+### Title
+panorama_8A167E91_DCE8_B34E_41C5_79F61EE1BFCB.label = Anatomy & Physiology Lab
+panorama_8DED96A2_DCE8_9352_41B7_09519C36E787.label = Community Lab
+panorama_654DDDE2_7030_9CFB_41D9_B69670B6046D.label = Electro Lab
+panorama_65EA52D3_7010_84D9_41D9_DB31297CEB5F.label = Exercise Therapy
+
+## Skin
+
+### Image
+Image_3C0B4DD6_C2C5_174D_41D2_083DC2E196FF.url = skin/Image_3C0B4DD6_C2C5_174D_41D2_083DC2E196FF_en.png
+Image_3C3B6E71_C2C5_1547_41DC_1CDFE2A35347.url = skin/Image_3C3B6E71_C2C5_1547_41DC_1CDFE2A35347_en.png
+Image_7482A712_F786_C251_41DB_3B49C4C8EC15.url = skin/Image_7482A712_F786_C251_41DB_3B49C4C8EC15_en.png
+Image_7ADFB55B_10D0_C2D3_41AF_3E9EC1E5E188.url = skin/Image_7ADFB55B_10D0_C2D3_41AF_3E9EC1E5E188_en.png
+Image_7ED1530E_10D1_4635_418F_71552368FC2C.url = skin/Image_7ED1530E_10D1_4635_418F_71552368FC2C_en.png
+Image_80311723_99FE_E265_41DD_73591FC58F5A.url = skin/Image_80311723_99FE_E265_41DD_73591FC58F5A_en.png
+Image_80313723_99FE_E265_41DE_24C01E33030C.url = skin/Image_80313723_99FE_E265_41DE_24C01E33030C_en.png
+Image_80314723_99FE_E265_41BA_F40DCBE24AFC.url = skin/Image_80314723_99FE_E265_41BA_F40DCBE24AFC_en.png
+Image_80317723_99FE_E265_41E1_0349ADB09950.url = skin/Image_80317723_99FE_E265_41E1_0349ADB09950_en.png
+Image_80B25724_99FE_E263_41CC_EA3DFE66A2F6.url = skin/Image_80B25724_99FE_E263_41CC_EA3DFE66A2F6_en.png
+Image_80B27724_99FE_E263_41C9_3D5826CB6DAA.url = skin/Image_80B27724_99FE_E263_41C9_3D5826CB6DAA_en.png
+Image_80B28725_99FE_E26D_41D9_175A582E3B37.url = skin/Image_80B28725_99FE_E26D_41D9_175A582E3B37_en.png
+Image_80B2A724_99FE_E263_41B2_B9A1AF2C1188.url = skin/Image_80B2A724_99FE_E263_41B2_B9A1AF2C1188_en.png
+Image_894E4312_99F3_6226_41E0_B4F6F11AC277.url = skin/Image_894E4312_99F3_6226_41E0_B4F6F11AC277_en.png
+Image_894E4312_99F3_6226_41E0_B4F6F11AC277_mobile.url = skin/Image_894E4312_99F3_6226_41E0_B4F6F11AC277_mobile_en.png
+Image_8B9B8B71_F781_C2D3_41E0_7AAB797093B5.url = skin/Image_8B9B8B71_F781_C2D3_41E0_7AAB797093B5_en.gif
+Image_8C078EB0_F781_C251_41E0_9586F56D33E5.url = skin/Image_8C078EB0_F781_C251_41E0_9586F56D33E5_en.png
+Image_8C41883C_F783_CE51_41BF_924EBC318E18.url = skin/Image_8C41883C_F783_CE51_41BF_924EBC318E18_en.gif
+Image_97019FDE_99F3_61DF_41B0_67CE77526D4D.url = skin/Image_97019FDE_99F3_61DF_41B0_67CE77526D4D_en.png
+Image_9701CFDE_99F3_61DF_41CC_EDFCD1DCA710.url = skin/Image_9701CFDE_99F3_61DF_41CC_EDFCD1DCA710_en.png
+Image_97061FDF_99F3_61DD_41DB_13C21EBF701E.url = skin/Image_97061FDF_99F3_61DD_41DB_13C21EBF701E_en.png
+Image_97063FDF_99F3_61DD_41D4_4147D9C38AC5.url = skin/Image_97063FDF_99F3_61DD_41D4_4147D9C38AC5_en.png
+Image_97065FDE_99F3_61DF_41C6_76A02D5B2384.url = skin/Image_97065FDE_99F3_61DF_41C6_76A02D5B2384_en.png
+Image_97067FDE_99F3_61DF_41B2_363536E55440.url = skin/Image_97067FDE_99F3_61DF_41B2_363536E55440_en.png
+Image_9706FFDF_99F3_61DD_41DF_1D52C5F348EE.url = skin/Image_9706FFDF_99F3_61DD_41DF_1D52C5F348EE_en.png
+Image_97844FE0_99F3_61E3_41DE_C5701A51A11C.url = skin/Image_97844FE0_99F3_61E3_41DE_C5701A51A11C_en.png
+
+### Label
+Label_89BAAEDA_F787_C3D1_41D4_C640DE4359C9.text = COURSE DETAILS
+Label_8B86DC95_F786_C653_41E3_E57699F4BB73.text = COURSE DETAILS
+Label_7ED1430E_10D1_4635_41AD_167EC283E738.text = Created By Ruthram Media
+Label_7ADFA55B_10D0_C2D3_41AC_1D393B27F9CA.text = Created By Ruthram Media
+Label_7ADF855B_10D0_C2D3_41A0_B7A7A3E3AA3F.text = ruthrammedia@gmail.com
+Label_7ED1730E_10D1_4635_41A8_67FC875BD2DA.text = ruthrammedia@gmail.com
+
+### Multiline Text
+HTMLText_896F59AF_99F3_EE7D_41BC_418DB88B68B3.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-align:right;font-size:25px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#39317d;font-size:25px;font-family:'Arial Narrow';"><B>{{title}}</B></SPAN></SPAN></DIV></div>
+HTMLText_896F59AF_99F3_EE7D_41BC_418DB88B68B3_mobile.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-align:right;font-size:12.5px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#39317d;font-size:12.5px;font-family:'Arial Narrow';"><B>{{title}}</B></SPAN></SPAN></DIV></div>
+
+### Tooltip
+Image_97065FDE_99F3_61DF_41C6_76A02D5B2384.toolTip = Admission
+Image_80314723_99FE_E265_41BA_F40DCBE24AFC.toolTip = Admission
+Image_3C0B4DD6_C2C5_174D_41D2_083DC2E196FF.toolTip = Back to Homepage
+Image_3C3B6E71_C2C5_1547_41DC_1CDFE2A35347.toolTip = Back to Homepage
+Image_8C41883C_F783_CE51_41BF_924EBC318E18.toolTip = Course Details
+Image_8B9B8B71_F781_C2D3_41E0_7AAB797093B5.toolTip = Course Details
+Image_9706FFDF_99F3_61DD_41DF_1D52C5F348EE.toolTip = Facebook
+Image_80B2A724_99FE_E263_41B2_B9A1AF2C1188.toolTip = Facebook
+Image_97067FDE_99F3_61DF_41B2_363536E55440.toolTip = Gmail
+Image_80317723_99FE_E265_41E1_0349ADB09950.toolTip = Gmail
+Image_97844FE0_99F3_61E3_41DE_C5701A51A11C.toolTip = Instagram
+Image_80B28725_99FE_E26D_41D9_175A582E3B37.toolTip = Instagram
+Image_9701CFDE_99F3_61DF_41CC_EDFCD1DCA710.toolTip = Phone
+Image_80313723_99FE_E265_41DE_24C01E33030C.toolTip = Phone
+Image_80B27724_99FE_E263_41C9_3D5826CB6DAA.toolTip = Tour Link
+Image_97063FDF_99F3_61DD_41D4_4147D9C38AC5.toolTip = Tour Link
+Image_97019FDE_99F3_61DF_41B0_67CE77526D4D.toolTip = Whatsapp
+Image_80311723_99FE_E265_41DD_73591FC58F5A.toolTip = Whatsapp
+Image_80B25724_99FE_E263_41CC_EA3DFE66A2F6.toolTip = Youtube
+Image_97061FDF_99F3_61DD_41DB_13C21EBF701E.toolTip = Youtube
+
+## Tour
+
+### Description
+
+### Title
+tour.name = Physiotherapy

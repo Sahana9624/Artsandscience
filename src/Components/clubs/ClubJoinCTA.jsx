@@ -1,6 +1,6 @@
 import React from "react";
 import defaultJoinIcon from "../../assets/icons/cc-cta/red-club-2.svg";
-import { useApply } from "../../Context/ApplyContext";
+import { Link } from "react-router-dom";
 import "../../Styles/clubs/ClubJoinCTA.css";
 
 export default function ClubJoinCTA({
@@ -10,8 +10,6 @@ export default function ClubJoinCTA({
   icon = defaultJoinIcon,
   themeColor = "#E02327",
 }) {
-  const { setApplyOpen } = useApply ? useApply() : { setApplyOpen: () => {} };
-
   return (
     <section
       className="club-join-cta"
@@ -37,11 +35,7 @@ export default function ClubJoinCTA({
       </div>
 
       <div className="club-join-cta-right">
-        <button
-          type="button"
-          className="club-join-cta-btn"
-          onClick={() => (setApplyOpen ? setApplyOpen(true) : null)}
-        >
+        <Link to="/contact" className="club-join-cta-btn">
           <span>{buttonText}</span>
           <svg
             className="club-join-cta-btn-arrow"
@@ -58,7 +52,7 @@ export default function ClubJoinCTA({
             <line x1="5" y1="12" x2="19" y2="12"></line>
             <polyline points="12 5 19 12 12 19"></polyline>
           </svg>
-        </button>
+        </Link>
       </div>
     </section>
   );

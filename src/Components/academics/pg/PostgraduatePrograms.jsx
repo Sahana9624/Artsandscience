@@ -1,10 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../../../Styles/academics/ug/UndergraduatePrograms.css";
 import "../../../Styles/academics/pg/PostgraduatePrograms.css";
 import ArrowIcon from "../../common/ArrowIcon";
 
 export default function PostgraduatePrograms() {
+  const navigate = useNavigate();
+
   const pgPrograms = [
     {
       id: "ma-tamil",
@@ -81,6 +83,10 @@ export default function PostgraduatePrograms() {
               className={`academic-program-card ${
                 program.isCentered ? "pg-item-centered" : ""
               }`}
+              onClick={(e) => {
+                // The "View Program" link navigates on its own
+                if (!e.target.closest("a")) navigate(`/academics/pg/${program.id}`);
+              }}
             >
               <div className="academic-program-body">
                 <h3 className="academic-program-name">

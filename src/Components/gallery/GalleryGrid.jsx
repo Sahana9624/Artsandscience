@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { galleryAlbums } from "./galleryData";
+import { renderBilingualText } from "./bilingualText";
 import galleryIcon from "../../assets/icons/gallery.svg";
 import "../../Styles/gallery/GalleryGrid.css";
 
@@ -30,7 +31,7 @@ export default function GalleryGrid() {
 
                 <div className="gallery-album-info">
                   <h2 className="gallery-album-title" title={album.title}>
-                    {album.title}
+                    {renderBilingualText(album.title)}
                   </h2>
                   <span className="gallery-album-count">
                     <img

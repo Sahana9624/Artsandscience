@@ -8,6 +8,22 @@ import chevronIcon from "../../assets/icons/modal/chevron-down.svg";
 import chevronSmIcon from "../../assets/icons/modal/chevron-down-sm.svg";
 import "../../Styles/home/ApplyModal.css";
 
+const WEB3FORMS_ACCESS_KEY = "44033051-c053-43c1-a839-baac6846f465";
+const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
+
+const DEGREE_LABELS = {
+  bachelors: "Undergraduate (UG)",
+  masters: "Postgraduate (PG)",
+};
+
+const PROGRAM_LABELS = {
+  bsc: "B.Sc - Bachelor of Science",
+  bcom: "B.Com - Bachelor of Commerce",
+  bba: "BBA - Bachelor of Business Administration",
+  msc: "M.Sc - Master of Science",
+  mcom: "M.Com - Master of Commerce",
+};
+
 const INITIAL_FORM_STATE = {
   fullName: "",
   email: "",
@@ -62,6 +78,7 @@ const INDIAN_STATES = [
 export default function ApplyModal() {
   const { applyOpen, setApplyOpen } = useApply ? useApply() : { applyOpen: false, setApplyOpen: () => {} };
   const [formData, setFormData] = useState(INITIAL_FORM_STATE);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [statusModal, setStatusModal] = useState({
     isOpen: false,
     type: "success",
@@ -164,18 +181,67 @@ export default function ApplyModal() {
     isProgramValid &&
     isConsentValid;
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!isFormValid) return;
+    if (!isFormValid || isSubmitting) return;
 
-    setFormData(INITIAL_FORM_STATE);
+    setIsSubmitting(true);
+
+    let succeeded = false;
+    try {
+      const response = await fetch(WEB3FORMS_ENDPOINT, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_ACCESS_KEY,
+          subject: `New Admission Application - ${formData.fullName.trim()}`,
+          from_name: "Mother Terasa College Website",
+          replyto: formData.email.trim(),
+          "Full Name": formData.fullName.trim(),
+          Email: formData.email.trim(),
+          Phone: `+91 ${formData.phone}`,
+          State: formData.state,
+          City: formData.city.trim(),
+          Degree: DEGREE_LABELS[formData.degree] || formData.degree,
+          Program: PROGRAM_LABELS[formData.program] || formData.program,
+          Consent: "Yes",
+        }),
+      });
+      const result = await response.json();
+      succeeded = response.ok && result.success;
+    } catch {
+      succeeded = false;
+    }
+
+    setIsSubmitting(false);
     setApplyOpen(false);
-    setStatusModal({
-      isOpen: true,
-      type: "success",
-      title: "Enquiry Successfully Submitted",
-      buttonText: "Continue",
-    });
+
+    if (succeeded) {
+      setFormData(INITIAL_FORM_STATE);
+      setStatusModal({
+        isOpen: true,
+        type: "success",
+        title: "Enquiry Successfully Submitted",
+        buttonText: "Continue",
+      });
+    } else {
+      // Keep the entered data so the user can retry without retyping
+      setStatusModal({
+        isOpen: true,
+        type: "error",
+        title: "Your Enquiry Could Not Be Submitted",
+        buttonText: "Try Again",
+      });
+    }
+  };
+
+  const handleStatusClose = () => {
+    const shouldRetry = statusModal.type === "error";
+    setStatusModal({ ...statusModal, isOpen: false });
+    if (shouldRetry) setApplyOpen(true);
   };
 
   return (
@@ -338,9 +404,9 @@ export default function ApplyModal() {
               <button
                 type="submit"
                 className="home-apply-submit-btn"
-                disabled={!isFormValid}
+                disabled={!isFormValid || isSubmitting}
               >
-                Register Now
+                {isSubmitting ? "Submitting..." : "Register Now"}
               </button>
             </form>
           </div>
@@ -353,7 +419,7 @@ export default function ApplyModal() {
         type={statusModal.type}
         title={statusModal.title}
         buttonText={statusModal.buttonText}
-        onClose={() => setStatusModal({ ...statusModal, isOpen: false })}
+        onClose={handleStatusClose}
       />
     </>
   );

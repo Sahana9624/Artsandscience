@@ -1,10 +1,10 @@
-import React from "react";
-import libraryImg from "../../assets/images/campus/library.png";
-import labImg from "../../assets/images/campus/labs.png";
-import sportsImg from "../../assets/images/campus/sports.jpg";
-import hostelImg from "../../assets/images/campus/hostel.png";
-import auditoriumImg from "../../assets/images/campus/auditorium.jpg";
-import cafeteriaImg from "../../assets/images/campus/cafeteria.jpg";
+﻿import React from "react";
+import libraryImg from "../../assets/images/campus/library.webp";
+import labImg from "../../assets/images/campus/labs.webp";
+import sportsImg from "../../assets/images/campus/sports.webp";
+import hostelImg from "../../assets/images/campus/hostel.webp";
+import auditoriumImg from "../../assets/images/campus/auditorium.webp";
+import cafeteriaImg from "../../assets/images/campus/cafeteria.webp";
 import "../../Styles/home/CampusLife.css";
 
 export default function CampusLife() {
@@ -66,3 +66,4 @@ export default function CampusLife() {
     </section>
   );
 }
+

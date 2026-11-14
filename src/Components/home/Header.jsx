@@ -283,14 +283,15 @@ export default function Header({ activePage = "home", activeSubPage = "" }) {
                         item.subItems.some(
                           (sub) =>
                             location.pathname === sub.to ||
-                            activeSubPage === sub.id ||
+                            (isActive && activeSubPage === sub.id) ||
                             (sub.to && location.pathname.startsWith(sub.to))
                         );
 
                       const isItemActive =
                         hasActiveChild ||
-                        activeSubPage === item.subId ||
-                        activeSubPage === item.flyoutKey ||
+                        (isActive &&
+                          (activeSubPage === item.subId ||
+                            activeSubPage === item.flyoutKey)) ||
                         (activePage === link.id &&
                           ((link.dropdownKey === "about" && item.subId === "about-mtcas" && !activeSubPage) ||
                             (link.dropdownKey === "academics" && item.subId === "ug" && !activeSubPage) ||
@@ -329,7 +330,7 @@ export default function Header({ activePage = "home", activeSubPage = "" }) {
                               {item.subItems.map((sub) => {
                                 const isSubActive =
                                   location.pathname === sub.to ||
-                                  activeSubPage === sub.id;
+                                  (isActive && activeSubPage === sub.id);
 
                                 return (
                                   <Link
@@ -441,7 +442,10 @@ export default function Header({ activePage = "home", activeSubPage = "" }) {
               (link.id === "life" &&
                 (activePage === "facilities" ||
                   activePage === "news-events" ||
-                  activePage === "gallery"));
+                  activePage === "gallery" ||
+                  activePage === "clubs" ||
+                  activePage === "committees" ||
+                  activePage === "life"));
 
             if (link.isDropdown) {
               const isSubOpen = !!mobileSubOpen[link.dropdownKey];
@@ -467,14 +471,15 @@ export default function Header({ activePage = "home", activeSubPage = "" }) {
                           item.subItems.some(
                             (sub) =>
                               location.pathname === sub.to ||
-                              activeSubPage === sub.id ||
+                              (isActive && activeSubPage === sub.id) ||
                               (sub.to && location.pathname.startsWith(sub.to))
                           );
 
                         const isItemActive =
                           hasActiveChild ||
-                          activeSubPage === item.subId ||
-                          activeSubPage === item.flyoutKey;
+                          (isActive &&
+                            (activeSubPage === item.subId ||
+                              activeSubPage === item.flyoutKey));
 
                         if (item.subItems) {
                           const isNestedOpen = !!mobileSubOpen[item.flyoutKey];
@@ -499,7 +504,7 @@ export default function Header({ activePage = "home", activeSubPage = "" }) {
                                   {item.subItems.map((sub) => {
                                     const isSubActive =
                                       location.pathname === sub.to ||
-                                      activeSubPage === sub.id;
+                                      (isActive && activeSubPage === sub.id);
 
                                     return (
                                       <Link

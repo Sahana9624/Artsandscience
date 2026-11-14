@@ -15,7 +15,7 @@
   width: 100%;
   box-sizing: border-box;
   background-size: cover;
-  background-position: center right;
+  background-position: center 30%;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
@@ -40,7 +40,6 @@
 }
 
 .facilities-hero-content {
-  /* max-width: 30rem; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -51,6 +50,7 @@
   font-family: var(--font-heading, 'Outfit', 'Poppins', sans-serif);
   font-size: max(min(var(--facilities-hero-title-fs), var(--fs-min)), calc(var(--facilities-hero-title-fs) * var(--fs-scale)));
   font-weight: 700;
+    max-width: 28rem;
   color: #FFFFFF;
   line-height: 1.32;
   margin-bottom: 1.25rem;
@@ -64,7 +64,7 @@
   color: #FFFFFF;
   line-height: 1.48;
   margin-bottom: 2.25rem;
-  max-width: 40rem;
+  max-width: 28rem;
 }
 
 .facilities-hero-actions {
